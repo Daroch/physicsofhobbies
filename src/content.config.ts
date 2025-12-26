@@ -9,6 +9,7 @@ const blog = defineCollection({
     title: z.string(),
     pubDate: z.coerce.date(), // coerce asegura que el texto se convierta a objeto Date
     description: z.string().optional(),
+    referenceUrl: z.string().url().optional(),
   }),
 });
 

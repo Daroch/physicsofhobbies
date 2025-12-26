@@ -2,9 +2,8 @@
 title: "La Melodía Cuántica y el Blues del Desafinado: ¡Cómo Mantener tus Qubits en Tono!"
 pubDate: 2025-12-25
 description: "Imagina qubits como instrumentos cuánticos. Descubrimos que, como un violín en un concierto, pueden desafinarse y sus vibraciones (coherencia) fluctúan, sobre todo si son 'buenos'. Y tras varios 'ensayos' (enfriamientos), ¡cambian de tono!"
+referenceUrl: "https://arxiv.org/pdf/2512.18037v1"
 ---
-
-# La Melodía Cuántica y el Blues del Desafinado: ¡Cómo Mantener tus Qubits en Tono!
 
 ¡Hola, curiosos del cosmos y manitas del micromundo! Aquí vuestro físico teórico de cabecera, listo para despeinaros un poco el cerebro con las últimas movidas cuánticas, pero con la mente puesta en vuestro taller. Hoy vamos a hablar de cómo mantener a raya a esos cacharros esquivos que son los **qubits**, los ladrillos de los ordenadores cuánticos. Y os prometo, ¡tiene más que ver con afinar un violín viejo que con ecuaciones aburridas!
 
