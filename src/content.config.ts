@@ -7,9 +7,10 @@ const blog = defineCollection({
   loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: "./src/content/blog" }),
   schema: z.object({
     title: z.string(),
-    pubDate: z.coerce.date(), // coerce asegura que el texto se convierta a objeto Date
-    description: z.string().optional(),
+    pubDate: z.coerce.date(),
+    description: z.string(),
     referenceUrl: z.string().url().optional(),
+    image: z.string().optional(),
   }),
 });
 
