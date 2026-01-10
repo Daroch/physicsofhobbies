@@ -18,36 +18,122 @@ const { Content } = await render(post);
 ---
 
 <Layout title={post.data.title}>
-  <main class="max-w-3xl mx-auto py-12 px-4">
-    <article class="prose prose-slate lg:prose-xl mx-auto">
-      <header class="mb-8">
-        <h1 class="text-4xl font-extrabold mb-2">{post.data.title}</h1>
-        <p class="text-slate-400">
-          {post.data.pubDate ? post.data.pubDate.toLocaleDateString() : 'Fecha no disponible'}
-        </p>
-      </header>
+  <div class="post-hero">
+    <div class="hero-overlay"></div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-3xl mx-auto">
+        <span class="category-badge">{post.data.category || 'Física'}</span>
+        <h1 class="post-title">{post.data.title}</h1>
+        <div class="post-meta">
+          <time>{post.data.pubDate ? post.data.pubDate.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }) : 'Fecha no disponible'}</time>
+          <span class="separator">•</span>
+          <span>Lectura de 5 min</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="max-w-3xl mx-auto py-8 px-4">
+    <article class="prose prose-slate prose-lg lg:prose-xl mx-auto prose-headings:font-bold prose-a:text-indigo-600 prose-img:rounded-3xl prose-img:shadow-2xl">
+      
       {post.data.image && (
-      <img 
-        src={post.data.image} 
-        alt={post.data.title} 
-        class="w-full h-auto rounded-2xl shadow-lg my-8" 
-      />
-    )}
+        <div class="main-image-container">
+          <img 
+            src={post.data.image} 
+            alt={post.data.title} 
+          />
+        </div>
+      )}
+
       <Content />
       
       {post.data.referenceUrl && (
-      <div class="mt-12 p-4 bg-slate-100 rounded-lg not-prose">
-        <p class="text-sm text-slate-600 mb-2">Basado en el estudio original de ArXiv:</p>
-        <a 
-          href={post.data.referenceUrl} 
-          target="_blank" 
-          class="text-indigo-600 font-bold hover:underline"
-        >
-          🔗 Leer Paper Original (ArXiv)
-        </a>
-      </div>
-    )}
-      
+        <div class="arxiv-card">
+          <div class="arxiv-icon">📄</div>
+          <div class="arxiv-content">
+            <h4>Fuentes y Referencias</h4>
+            <p>Este artículo se basa en investigaciones publicadas en ArXiv.</p>
+            <a href={post.data.referenceUrl} target="_blank">
+              Ver Paper Original <span>→</span>
+            </a>
+          </div>
+        </div>
+      )}
     </article>
   </main>
 </Layout>
+
+<style>
+  /* Estilos específicos para la página de lectura */
+  .post-hero {
+    background: #0f172a; /* Mismo color que el header oscuro */
+    padding: 4rem 0;
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 70% 30%, rgba(99, 102, 241, 0.15) 0%, transparent 60%);
+  }
+  .category-badge {
+    background: #4338ca;
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .post-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 1.5rem 0;
+    color: white;
+  }
+  .post-meta {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+  }
+  .main-image-container {
+    margin: -3rem 0 3rem 0; /* Efecto de solapado con el hero */
+    position: relative;
+    z-index: 20;
+  }
+  .main-image-container img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+
+  /* Estilo para la tarjeta de ArXiv */
+  .arxiv-card {
+    margin-top: 4rem;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+  .arxiv-icon { font-size: 2.5rem; }
+  .arxiv-content h4 { margin: 0 0 0.5rem 0; color: #1e293b; }
+  .arxiv-content p { margin: 0 0 1rem 0; font-size: 0.9rem; color: #64748b; }
+  .arxiv-content a {
+    color: #4338ca;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+</style>

@@ -3,7 +3,7 @@ title: "El Taller del Eco: Cuando tus Materiales Hacen Música Lógica (y sin pi
 pubDate: 2025-12-26
 description: "Imagina tus ondas de sonido como mensajeros. Hemos descubierto cómo construir 'laberintos' en materiales que dirigen estos mensajeros para hacer cálculos. ¡Es como tener una calculadora que funciona solo con vibraciones, sin enchufes ni cables!"
 referenceUrl: "https://arxiv.org/pdf/2511.17949v1"
-image: "/images/blog/2025-12-26-el-taller-del-eco-cuando-tus-materiales-hacen-musica-logica-y-sin-pilas-.jpg"
+image: "/images/blog/2025-12-26-el-taller-del-eco-cuando-tus-materiales-hacen-musica-logica-y-sin-pilas-.png"
 ---
 
 ¡Hola, mis queridos alquimistas de lo cotidiano y magos del bricolaje! ¿Cansados de que vuestros proyectos se queden sin batería justo cuando ibais a ver el resultado de esa ecuación cuántica que calculaba el mejor ángulo para vuestro nuevo estante? ¡Pues agarraos que viene una idea que os va a volar la cabeza (y no por el consumo eléctrico)!

@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+const allPosts = await getCollection('blog');
+
+const categories = [...new Set(allPosts.map((post) => 
+  post.data.category ? post.data.category : "General"
+))];
+---
+<header class="navbar">
+  <div class="header-visual-bg"></div> <div class="container">
+    <div class="brand">
+      <a href="/">
+        <span class="icon">⚛️</span>
+        <div class="text">
+          <strong class="text-white">Physics of Hobbies</strong>
+          <small class="text-slate-300">El porqué de las cosas</small>
+        </div>
+      </a>
+    </div>
+    
+    <nav class="menu">
+      <a href="/" class="nav-link">Inicio</a>
+      {categories.map(cat => (
+        <a href={`/categorias/${cat.toLowerCase()}`} class="nav-link">{cat}</a>
+      ))}
+    </nav>
+  </div>
+</header>
+
+<style>
+  .navbar {
+    background: #0f172a; /* Azul muy oscuro (Slate 900) */
+    position: relative;
+    border-bottom: 1px solid #1e293b;
+    padding: 1.5rem 0;
+    overflow: hidden;
+  }
+  /* Imagen decorativa de fondo similar a la de las tarjetas */
+  .header-visual-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(67, 56, 202, 0.2) 0%, transparent 70%),
+                url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+  }
+  .brand a { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+  .text { display: flex; flex-direction: column; }
+  .text-white { color: #ffffff; font-size: 1.25rem; }
+  .text-slate-300 { color: #cbd5e1; font-size: 0.8rem; }
+  .icon { font-size: 2rem; filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.8)); }
+
+  .menu { display: flex; gap: 2rem; }
+  .nav-link {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  .nav-link:hover { color: #818cf8; transform: translateY(-1px); }
+</style>

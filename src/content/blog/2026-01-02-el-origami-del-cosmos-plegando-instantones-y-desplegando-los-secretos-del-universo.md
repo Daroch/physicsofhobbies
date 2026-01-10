@@ -3,7 +3,7 @@ title: "El Origami del Cosmos: Plegando Instantones y Desplegando los Secretos d
 pubDate: 2026-01-02
 description: "Imagina que el universo tiene un manual de instrucciones secreto, plegado como origami. Estamos descubriendo fórmulas que revelan cómo esas 'plegaduras' (instantones) forman la estructura de todo, desde partículas exóticas hasta geometrías misteriosas. ¡Y puedes verlo en tu cocina!"
 referenceUrl: "https://arxiv.org/pdf/2512.21606v1"
-image: "/images/blog/2026-01-02-el-origami-del-cosmos-plegando-instantones-y-desplegando-los-secretos-del-universo.jpg"
+image: "/images/blog/2026-01-02-el-origami-del-cosmos-plegando-instantones-y-desplegando-los-secretos-del-universo.png"
 ---
 
 ¡Saludos, hobbistas cósmicos y maestros del "hazlo tú mismo"! Soy vuestro físico teórico de cabecera, ese que siempre tiene un soldador en una mano y una ecuación de campo unificado en la otra. Hoy vamos a hablar de algo que a primera vista suena a chino mandarín mezclado con élfico, pero que en el fondo es tan fascinante y tangible como construir una silla o plegar una grulla de papel: ¡instantones, origami y las "fórmulas shell" del universo!

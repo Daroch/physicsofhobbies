@@ -1,33 +1,28 @@
 ---
+import Layout from '../layouts/Layout.astro';
+import PostCard from '../components/PostCard.astro';
 import { getCollection } from 'astro:content';
-const posts = await getCollection('blog');
+const allPosts = await getCollection('blog');
 ---
+<Layout title="Bienvenido a Physics Maker">
+  <h1>Que investigar hoy...</h1>
+  <section class="grid">
+    {allPosts.map(post => <PostCard post={post} />)}
+  </section>
+</Layout>
 
-<html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<title>The Physics of Hobbies</title>
-	</head>
-	<body class="bg-slate-50 text-slate-900 font-sans">
-		<main class="max-w-4xl mx-auto py-12 px-4">
-			<header class="mb-12 border-b border-slate-200 pb-8">
-				<h1 class="text-4xl font-bold text-indigo-700">The Physics of Hobbies ⚛️</h1>
-				<p class="mt-2 text-slate-600">Entendiendo el "por qué" detrás de nuestras pasiones.</p>
-			</header>
-
-			<section class="grid gap-8">
-				{posts.map(post => (
-					<article class="p-6 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition">
-						<h2 class="text-2xl font-semibold mb-2">
-							<a href={`/blog/${post.id}`} class="text-slate-800 hover:text-indigo-600">
-								{post.data.title}
-							</a>
-						</h2>
-						<p class="text-sm text-slate-400 mb-4">{post.data.pubDate.toLocaleDateString()}</p>
-						<p class="text-slate-600">{post.data.description || "Haz clic para leer la física detrás de este hobby..."}</p>
-					</article>
-				))}
-			</section>
-		</main>
-	</body>
-</html>
+<style>
+.grid {
+  display: grid;
+  /* Crea 3 columnas si hay espacio, si no, se ajusta */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+  margin-top: 2rem;
+}
+</style>
