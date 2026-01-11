@@ -1,41 +1,20 @@
-name: Deploy Astro a GitHub Pages
+steps:
+  - name: Checkout
+    uses: actions/checkout@v4
 
-on:
-  push:
-    branches: [main] # Se activa cuando n8n sube un post a 'main'
+  - name: Install pnpm
+    uses: pnpm/action-setup@v3
+    with:
+      version: 9 # O la versión que uses en local
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+  - name: Setup Node
+    uses: actions/setup-node@v4
+    with:
+      node-version: 20
+      cache: "pnpm"
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: "npm"
-      - name: Install dependencies
-        run: npm install
-      - name: Build Astro
-        run: npm run build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./dist
+  - name: Install dependencies
+    run: pnpm install
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+  - name: Build Astro
+    run: pnpm run build

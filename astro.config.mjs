@@ -14,7 +14,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: "https://daroch.github.io", // Cambiaremos esto luego por el subdominio
+  site: "https://physicshobbies.daroch.ovh", // Cambiaremos esto luego por el subdominio
   base: "/physicsofhobbies", // Si el repo no es el principal de tu usuario
   integrations: [tailwind()],
 });
