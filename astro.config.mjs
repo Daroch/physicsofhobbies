@@ -1,11 +1,9 @@
 // @ts-check
 import { defineConfig } from "astro/config";
-
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from "@tailwindcss/vite"; // Usaremos solo esto
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
-// https://astro.build/config
 export default defineConfig({
   markdown: {
     remarkPlugins: [remarkMath],
@@ -14,7 +12,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: "https://physicshobbies.daroch.ovh", // Cambiaremos esto luego por el subdominio
-  base: "/physicsofhobbies", // Si el repo no es el principal de tu usuario
-  integrations: [tailwind()],
+  site: "https://physicshobbies.daroch.ovh",
+  base: "/",
+  // ELIMINAMOS la línea de integrations: [tailwind()]
 });
