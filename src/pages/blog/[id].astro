@@ -59,6 +59,11 @@ const { Content } = await render(post);
           </div>
         </div>
       )}
+      <footer class="affiliate-footer">
+        <p>
+        Participo en el Programa de Afiliados de Amazon. Algunos enlaces en este artículo son de afiliado, lo que significa que recibo una pequeña comisión por las compras realizadas sin coste adicional para ti. Esto ayuda a mantener el laboratorio activo.
+        </p>
+      </footer>
     </article>
   </main>
 </Layout>
@@ -135,5 +140,21 @@ const { Content } = await render(post);
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+  }
+  .affiliate-footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e2e8f0;
+  }
+  
+  .affiliate-footer p {
+    font-family: system-ui, -apple-system, sans-serif; /* Fuente neutra */
+    font-size: 0.75rem; /* Tamaño muy pequeño */
+    line-height: 1.4;
+    color: #94a3b8; /* Gris suave (Slate 400) */
+    text-align: justify;
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
   }
 </style>

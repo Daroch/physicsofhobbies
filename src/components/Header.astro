@@ -23,6 +23,8 @@ const categories = [...new Set(allPosts.map((post) =>
       {categories.map(cat => (
         <a href={`/categorias/${cat.toLowerCase()}`} class="nav-link">{cat}</a>
       ))}
+      <a href="/sobre-mi" class="nav-link">Sobre el Proyecto</a>
+      <a href="/privacidad" class="nav-link">Privacidad</a>
     </nav>
   </div>
 </header>

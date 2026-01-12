@@ -3,9 +3,21 @@ import Layout from '../layouts/Layout.astro';
 import PostCard from '../components/PostCard.astro';
 import { getCollection } from 'astro:content';
 const allPosts = await getCollection('blog');
+
+// Extraemos categorías únicas y eliminamos duplicados
+const categories = [...new Set(allPosts.map((post) => post.data.category || 'General'))];
 ---
 <Layout title="Bienvenido a Physics Maker">
   <h1>Que investigar hoy...</h1>
+  <nav class="category-nav">
+    <div class="container">
+      <a href="/" class="cat-link active">Todos</a>
+      {categories.map(cat => (
+        <a href={`/categoria/${cat.toLowerCase()}`} class="cat-link">{cat}</a>
+      ))}
+    </div>
+  </nav>
+
   <section class="grid">
     {allPosts.map(post => <PostCard post={post} />)}
   </section>
@@ -25,4 +37,33 @@ const allPosts = await getCollection('blog');
   text-align: center;
   margin-top: 2rem;
 }
+  .category-nav {
+    background: white;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 0.75rem 0;
+    margin-bottom: 2rem;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto; /* Por si crecen mucho en el futuro */
+  }
+  .cat-link {
+    text-decoration: none;
+    color: #64748b;
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: color 0.2s;
+  }
+  .cat-link:hover, .cat-link.active {
+    color: #4338ca;
+  }
+  .cat-link.active {
+    border-bottom: 2px solid #4338ca;
+    padding-bottom: 0.5rem;
+  }
 </style>

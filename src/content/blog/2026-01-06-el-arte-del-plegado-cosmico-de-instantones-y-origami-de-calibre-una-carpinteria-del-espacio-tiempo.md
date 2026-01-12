@@ -3,6 +3,7 @@ title: "El Arte del Plegado Cósmico: De Instantones y Origami de Calibre, ¡Una
 pubDate: 2026-01-06
 description: "Descubre cómo los físicos 'despliegan' los secretos del universo con fórmulas de 'capas', revelando estructuras ocultas en la energía y el espacio, como si hicieras origami cuántico."
 referenceUrl: "https://arxiv.org/pdf/2512.21606v1"
+category: "materiales"
 image: "/images/blog/2026-01-06-el-arte-del-plegado-cosmico-de-instantones-y-origami-de-calibre-una-carpinteria-del-espacio-tiempo.png"
 ---
 
