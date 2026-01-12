@@ -1,11 +1,3 @@
----
-import { getCollection } from 'astro:content';
-const allPosts = await getCollection('blog');
-
-const categories = [...new Set(allPosts.map((post) => 
-  post.data.category ? post.data.category : "General"
-))];
----
 <header class="navbar">
   <div class="header-visual-bg"></div> <div class="container">
     <div class="brand">
@@ -20,9 +12,6 @@ const categories = [...new Set(allPosts.map((post) =>
     
     <nav class="menu">
       <a href="/" class="nav-link">Inicio</a>
-      {categories.map(cat => (
-        <a href={`/categorias/${cat.toLowerCase()}`} class="nav-link">{cat}</a>
-      ))}
       <a href="/sobre-mi" class="nav-link">Sobre el Proyecto</a>
       <a href="/privacidad" class="nav-link">Privacidad</a>
     </nav>
