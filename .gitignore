@@ -22,3 +22,9 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+CLAUDE.md
+Physics v3.json
+infraestructura_n8n.md
+conversacion_claude
+.claude/settings.local.json
+.claude/settings.local.json
