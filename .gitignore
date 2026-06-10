@@ -6,6 +6,7 @@ dist/
 
 # dependencies
 node_modules/
+venv
 
 # logs
 npm-debug.log*
@@ -17,15 +18,17 @@ pnpm-debug.log*
 .env
 .env.production
 
+
 # macOS-specific files
 .DS_Store
 
 # jetbrains setting folder
 .idea/
 CLAUDE.md
-Physics v3.json
-infraestructura_n8n.md
-conversacion_claude
-.claude/settings.local.json
-.claude/settings.local.json
-README_mejoras.md
+.claude/
+notas/
+automatizaciones/README.md
+automatizaciones/airtable-import/.env.example
+automatizaciones/airtable-import/main.py
+automatizaciones/airtable-import/requirements.txt
+automatizaciones/airtable-import/TASK.md
