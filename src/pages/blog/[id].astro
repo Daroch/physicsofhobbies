@@ -49,9 +49,17 @@ const { Content } = await render(post);
       
       {post.data.amazonUrl && (
         <div class="amazon-cta">
+          {(post.data.imageProductUrl && (
+            <img
+              src={(post.data as any).imageProductUrl}
+              alt={post.data.title}
+              class="amazon-image"
+            />
+          )}
           <div class="amazon-cta-text">
             <span class="amazon-label">Producto recomendado en este artículo</span>
           </div>
+
           <a href={post.data.amazonUrl} target="_blank" rel="nofollow sponsored" class="amazon-button">
             Ver en Amazon →
           </a>
@@ -160,6 +168,12 @@ const { Content } = await render(post);
     transition: background 0.2s;
   }
   .amazon-button:hover { background: #ea580c; }
+
+  .amazon-image {
+    max-width: 150px;
+    border-radius: 8px;
+    margin-right: 1rem;
+  }
 
   /* Estilo para la tarjeta de ArXiv */
   .arxiv-card {

@@ -25,10 +25,7 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 CLAUDE.md
+CLAUDE_borrar.md
 .claude/
 notas/
-automatizaciones/README.md
-automatizaciones/airtable-import/.env.example
-automatizaciones/airtable-import/main.py
-automatizaciones/airtable-import/requirements.txt
-automatizaciones/airtable-import/TASK.md
+automatizaciones/
