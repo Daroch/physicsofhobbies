@@ -49,7 +49,7 @@ const { Content } = await render(post);
       
       {post.data.amazonUrl && (
         <div class="amazon-cta">
-          {(post.data.imageProductUrl && (
+          {post.data.imageProductUrl && (
             <img
               src={(post.data as any).imageProductUrl}
               alt={post.data.title}
