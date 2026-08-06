@@ -2,7 +2,6 @@
 title: "Vatios, no grados: la física real de una punta que suelda bien"
 pubDate: 2026-08-05
 description: "Tocas un cable grueso con el soldador y la punta se enfría de golpe: eso no es un problema de temperatura, es un problema de potencia."
-referenceUrl: "https://www.amazon.es/dp/B096X6SG13?tag=physicshobbie-21"
 category: "electrónica"
 image: "/images/blog/2026-08-05-vatios-no-grados-la-fisica-real-de-una-punta-que-suelda-bien.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]

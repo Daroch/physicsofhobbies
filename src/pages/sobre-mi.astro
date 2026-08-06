@@ -4,13 +4,13 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Sobre el Proyecto">
   <article class="prose prose-slate mx-auto py-12 px-4 text-center">
     <div class="mb-8">
-      <span class="text-6xl">🔬</span>
+      <span class="page-mark">P·H</span>
     </div>
     <h1>Sobre el Laboratorio del Físico Maker</h1>
     <p class="lead">
       Este proyecto nace de la curiosidad por entender los principios físicos que rigen nuestras pasiones y aficiones cotidianas.
     </p>
-    <div class="text-left bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+    <div class="info-card text-left">
       <h3>Nuestra Finalidad</h3>
       <p>
         Buscamos realizar divulgación científica accesible. Desde el origami hasta la acústica de un taller, creemos que todo hobby tiene una base física fascinante esperando ser descubierta.
@@ -22,3 +22,23 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </article>
 </Layout>
+
+<style>
+  .page-mark {
+    display: inline-flex;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.08em;
+    color: var(--signal-ink);
+    border: 1px solid color-mix(in srgb, var(--signal) 40%, transparent);
+    border-radius: 6px;
+    padding: 0.4rem 0.9rem;
+  }
+  .info-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 2rem;
+  }
+</style>

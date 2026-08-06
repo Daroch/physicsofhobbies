@@ -1,2 +1,83 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
+:root {
+  --ink: #12181f;
+  --ink-soft: #1c242d;
+  --paper: #f2f3ef;
+  --panel: #ffffff;
+  --line: #dde0da;
+  --muted: #5b6570;
+  --muted-soft: #8b95a0;
+  --signal: #ff5a1f;
+  --signal-ink: #b8430a;
+  --signal-soft: #ffe4d6;
+  --amazon: #ff9900;
+  --amazon-ink: #c96f00;
+
+  --cat-acustica: #7c5cff;
+  --cat-materiales: #b4592d;
+  --cat-electronica: #ff5a1f;
+  --cat-optica: #0ea5a0;
+  --cat-mecanica: #3d5a80;
+  --cat-robotica: #2e9e5b;
+  --cat-general: #5b6570;
+
+  --font-display: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.grid-paper {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.grid-paper-light {
+  background-image:
+    linear-gradient(rgba(18, 24, 31, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18, 24, 31, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.trace-rule {
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, var(--signal) 50%, transparent 100%);
+  border: none;
+  opacity: 0.9;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.eyebrow .dot {
+  width: 6px;
+  height: 6px;
+  flex: none;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 18%, transparent);
+}
+
+/* Categoría → color de acento */
+[data-cat="acústica"], [data-cat="acustica"] { color: var(--cat-acustica); }
+[data-cat="materiales"] { color: var(--cat-materiales); }
+[data-cat="electrónica"], [data-cat="electronica"] { color: var(--cat-electronica); }
+[data-cat="óptica"], [data-cat="optica"] { color: var(--cat-optica); }
+[data-cat="mecánica"], [data-cat="mecanica"] { color: var(--cat-mecanica); }
+[data-cat="robótica"], [data-cat="robotica"] { color: var(--cat-robotica); }
+[data-cat="general"] { color: var(--cat-general); }

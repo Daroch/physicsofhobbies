@@ -2,7 +2,6 @@
 title: "Decibelios y presión sonora: cómo medir el ruido que te rodea"
 pubDate: 2026-08-05
 description: "El vecino de arriba, la sierra de mesa, la oficina abierta: aquí tienes cómo poner un número real a ese ruido que te está sacando de quicio."
-referenceUrl: "https://www.amazon.es/dp/B0D9835CLV?tag=physicshobbie-21"
 category: "acústica"
 image: "/images/blog/2026-08-05-decibelios-y-presion-sonora-como-medir-el-ruido-que-te-rodea.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]

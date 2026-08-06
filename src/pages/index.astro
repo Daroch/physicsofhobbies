@@ -2,20 +2,29 @@
 import Layout from '../layouts/Layout.astro';
 import PostCard from '../components/PostCard.astro';
 import { getCollection } from 'astro:content';
-const allPosts = await getCollection('blog');
+const allPosts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
 
-// Extraemos categorías únicas y eliminamos duplicados
 const categories = [...new Set(allPosts.map((post) => post.data.category || 'General'))];
 ---
-<Layout title="Bienvenido a Physics Maker">
-  <h1>Que investigar hoy...</h1>
-  <nav class="category-nav">
-    <div class="container">
-      <a href="/" class="cat-link active">Todos</a>
-      {categories.map(cat => (
-        <a href={`/categoria/${cat.toLowerCase()}`} class="cat-link">{cat}</a>
-      ))}
+<Layout title="Physics of Hobbies — el porqué de las cosas">
+  <section class="hero grid-paper">
+    <div class="hero-inner">
+      <span class="eyebrow hero-eyebrow"><span class="dot"></span>Blog de física aplicada</span>
+      <h1>Qué investigar hoy</h1>
+      <p>La física detrás de las herramientas que usas en el taller: cómo funcionan, qué miden de verdad y cómo sacarles el máximo partido.</p>
     </div>
+    <div class="trace-rule"></div>
+  </section>
+
+  <nav class="category-nav">
+    <a href="/" class="cat-link active">Todos</a>
+    {categories.map(cat => (
+      <a href={`/categoria/${cat.toLowerCase()}`} class="cat-link" data-cat={cat.toLowerCase()}>
+        <span class="dot"></span>{cat}
+      </a>
+    ))}
   </nav>
 
   <section class="grid">
@@ -24,46 +33,72 @@ const categories = [...new Set(allPosts.map((post) => post.data.category || 'Gen
 </Layout>
 
 <style>
-.grid {
-  display: grid;
-  /* Crea 3 columnas si hay espacio, si no, se ajusta */
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.text-center {
-  text-align: center;
-  margin-top: 2rem;
-}
-  .category-nav {
-    background: white;
-    border-bottom: 1px solid #e2e8f0;
-    padding: 0.75rem 0;
-    margin-bottom: 2rem;
+  .hero {
+    background: var(--ink);
+    color: #fff;
+    margin: -2rem calc(-50vw + 50%) 0;
+    padding: 3.5rem 1.5rem 0;
   }
-  .container {
-    max-width: 1200px;
+  .hero-inner {
+    max-width: 720px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding-bottom: 3rem;
+  }
+  .hero-eyebrow { color: var(--signal); margin-bottom: 1rem; }
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    margin: 0 0 0.85rem;
+    line-height: 1.1;
+  }
+  .hero p {
+    color: #b7c0c9;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    max-width: 56ch;
+    margin: 0;
+  }
+
+  .category-nav {
     display: flex;
-    gap: 1.5rem;
-    overflow-x: auto; /* Por si crecen mucho en el futuro */
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 2rem auto 2.5rem;
+    padding: 0 0.5rem;
   }
   .cat-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
     text-decoration: none;
-    color: #64748b;
-    font-size: 0.9rem;
-    font-weight: 500;
-    white-space: nowrap;
-    transition: color 0.2s;
+    color: var(--muted);
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 100px;
+    padding: 0.4rem 0.9rem;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .cat-link .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: currentColor; flex: none;
   }
   .cat-link:hover, .cat-link.active {
-    color: #4338ca;
+    color: var(--signal-ink);
+    border-color: color-mix(in srgb, var(--signal) 45%, var(--line));
   }
-  .cat-link.active {
-    border-bottom: 2px solid #4338ca;
-    padding-bottom: 0.5rem;
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.75rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0.5rem 2rem;
   }
 </style>

@@ -16,33 +16,82 @@ const { title } = Astro.props;
 		<title>{title}</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
 	</head>
-	<body class="bg-slate-50 text-slate-900">
+	<body>
 		<Header />
 		<main>
 			<slot />
 		</main>
-		<footer class="py-12 text-center text-slate-400 text-sm">
-			<div class="mb-4 flex justify-center gap-6">
-				<a href="/privacidad" class="hover:text-slate-600">Privacidad</a>
-				<a href="/sobre-mi" class="hover:text-slate-600">Sobre el proyecto</a>
+		<footer class="site-footer">
+			<div class="trace-rule"></div>
+			<div class="footer-inner">
+				<span class="footer-mark">P·H</span>
+				<div class="footer-links">
+					<a href="/privacidad">Privacidad</a>
+					<a href="/sobre-mi">Sobre el proyecto</a>
+				</div>
+				<p class="footer-copy">© {new Date().getFullYear()} Physics of Hobbies</p>
 			</div>
-			<p>© {new Date().getFullYear()} - El laboratorio del Físico Maker</p>
 		</footer>
 	</body>
 </html>
 
 <style is:global>
   body {
-    background-color: #f1f5f9;
+    background-color: var(--paper);
+    color: var(--ink);
     margin: 0;
-    font-family: 'Roboto', sans-serif; /* Aplicamos Roboto globalmente */
+    font-family: var(--font-body);
   }
   main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
+  }
+</style>
+
+<style>
+  .site-footer {
+    margin-top: 4rem;
+    background: var(--ink);
+    color: var(--muted-soft);
+  }
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+  .footer-mark {
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    color: var(--signal);
+    border: 1px solid color-mix(in srgb, var(--signal) 40%, transparent);
+    border-radius: 4px;
+    padding: 0.15rem 0.5rem;
+  }
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .footer-links a {
+    color: #cbd2d9;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: var(--font-mono);
+  }
+  .footer-links a:hover { color: var(--signal); }
+  .footer-copy {
+    font-size: 0.8rem;
+    color: #6b7580;
+    margin: 0;
   }
 </style>

@@ -1,83 +1,66 @@
 ---
-// 1. Importamos 'render' explícitamente desde astro:content
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
   return posts.map(post => ({
-    params: { id: post.id }, 
+    params: { id: post.id },
     props: { post },
   }));
 }
 
 const { post } = Astro.props;
+const cat = (post.data.category || 'general').toLowerCase();
 
-// 2. CORRECCIÓN: Usamos render(post) en lugar de post.render()
 const { Content } = await render(post);
 ---
 
 <Layout title={post.data.title}>
-  <div class="post-hero">
-    <div class="hero-overlay"></div>
-    <div class="container mx-auto px-4 relative z-10">
-      <div class="max-w-3xl mx-auto">
-        <span class="category-badge">{post.data.category || 'Física'}</span>
+  <div class="post-hero grid-paper">
+    <div class="container">
+      <div class="hero-content">
+        <span class="eyebrow" data-cat={cat}><span class="dot"></span>{post.data.category || 'Física'}</span>
         <h1 class="post-title">{post.data.title}</h1>
         <div class="post-meta">
           <time>{post.data.pubDate ? post.data.pubDate.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }) : 'Fecha no disponible'}</time>
-          <span class="separator">•</span>
+          <span class="tick"></span>
           <span>Lectura de 5 min</span>
         </div>
       </div>
     </div>
+    <div class="trace-rule"></div>
   </div>
 
-  <main class="max-w-3xl mx-auto py-8 px-4">
-    <article class="prose prose-slate prose-lg lg:prose-xl mx-auto prose-headings:font-bold prose-a:text-indigo-600 prose-img:rounded-3xl prose-img:shadow-2xl">
-      
+  <main class="post-main">
+    <article class="prose prose-slate lg:prose-lg mx-auto prose-headings:font-bold prose-a:text-[color:var(--signal-ink)] prose-img:rounded-lg">
+
       {post.data.image && (
-        <div class="main-image-container">
-          <img 
-            src={post.data.image} 
-            alt={post.data.title} 
-          />
+        <div class="image-panel grid-paper-light">
+          <img src={post.data.image} alt={post.data.title} />
         </div>
       )}
 
       <Content />
-      
+
       {post.data.amazonUrl && (
         <div class="amazon-cta">
-          {post.data.imageProductUrl && (
+          <a href={post.data.amazonUrl} target="_blank" rel="nofollow sponsored" class="amazon-image-link grid-paper-light">
             <img
-              src={(post.data as any).imageProductUrl}
+              src={post.data.image}
               alt={post.data.title}
-              class="amazon-image"
             />
-          )}
-          <div class="amazon-cta-text">
-            <span class="amazon-label">Producto recomendado en este artículo</span>
-          </div>
-
-          <a href={post.data.amazonUrl} target="_blank" rel="nofollow sponsored" class="amazon-button">
-            Ver en Amazon →
           </a>
-        </div>
-      )}
-
-      {post.data.referenceUrl && (
-        <div class="arxiv-card">
-          <div class="arxiv-icon">📄</div>
-          <div class="arxiv-content">
-            <h4>Fuentes y Referencias</h4>
-            <p>Este artículo se basa en investigaciones publicadas en ArXiv.</p>
-            <a href={post.data.referenceUrl} target="_blank">
-              Ver Paper Original <span>→</span>
+          <div class="amazon-cta-body">
+            <span class="eyebrow amazon-eyebrow"><span class="dot"></span>Producto recomendado en este artículo</span>
+            <p class="amazon-title">{post.data.title}</p>
+            <a href={post.data.amazonUrl} target="_blank" rel="nofollow sponsored" class="amazon-button">
+              Ver en Amazon →
             </a>
           </div>
         </div>
       )}
+
       <footer class="affiliate-footer">
         <p>
         Participo en el Programa de Afiliados de Amazon. Algunos enlaces en este artículo son de afiliado, lo que significa que recibo una pequeña comisión por las compras realizadas sin coste adicional para ti. Esto ayuda a mantener el laboratorio activo.
@@ -88,129 +71,136 @@ const { Content } = await render(post);
 </Layout>
 
 <style>
-  /* Estilos específicos para la página de lectura */
   .post-hero {
-    background: #0f172a; /* Mismo color que el header oscuro */
-    padding: 4rem 0;
-    position: relative;
+    background: var(--ink);
+    padding: 3rem 0 2.5rem;
     color: white;
-    text-align: center;
   }
-  .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at 70% 30%, rgba(99, 102, 241, 0.15) 0%, transparent 60%);
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
   }
-  .category-badge {
-    background: #4338ca;
-    padding: 0.3rem 1rem;
-    border-radius: 50px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
+  .hero-content { text-align: center; }
   .post-title {
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-family: var(--font-display);
+    font-size: clamp(1.9rem, 4.5vw, 3rem);
     font-weight: 800;
-    line-height: 1.1;
-    margin: 1.5rem 0;
+    line-height: 1.15;
+    margin: 1.25rem 0 1rem;
     color: white;
   }
   .post-meta {
-    color: #94a3b8;
-    font-size: 0.95rem;
+    font-family: var(--font-mono);
+    color: #9aa5b1;
+    font-size: 0.85rem;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.85rem;
     align-items: center;
   }
-  .main-image-container {
-    margin: -3rem 0 3rem 0; /* Efecto de solapado con el hero */
-    position: relative;
-    z-index: 20;
-  }
-  .main-image-container img {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    border-radius: 24px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  .post-meta .tick {
+    width: 14px;
+    height: 1px;
+    background: var(--signal);
   }
 
-  /* Botón CTA de Amazon */
+  .post-main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 3rem;
+  }
+
+  .image-panel {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--paper);
+    padding: 1.5rem;
+    margin: 0 0 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-panel img {
+    max-height: 380px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0;
+  }
+
+  /* Bloque CTA de Amazon */
   .amazon-cta {
     margin-top: 3rem;
-    background: #fff8f0;
-    border: 1px solid #fed7aa;
-    border-radius: 16px;
-    padding: 1.5rem 2rem;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.5rem;
     display: flex;
-    justify-content: space-between;
+    gap: 1.5rem;
     align-items: center;
-    gap: 1rem;
     flex-wrap: wrap;
   }
-  .amazon-label {
-    font-size: 0.9rem;
+  .amazon-image-link {
+    flex: none;
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .amazon-image-link img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    padding: 0.5rem;
+    margin: 0;
+  }
+  .amazon-cta-body {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .amazon-eyebrow { color: var(--amazon-ink); }
+  .amazon-title {
+    margin: 0;
+    font-family: var(--font-display);
     font-weight: 600;
-    color: #92400e;
+    font-size: 0.95rem;
+    color: var(--ink);
+    line-height: 1.4;
   }
   .amazon-button {
-    background: #f97316;
-    color: white;
+    align-self: flex-start;
+    background: var(--amazon);
+    color: #1a1200;
     font-weight: 700;
-    font-size: 0.95rem;
-    padding: 0.65rem 1.5rem;
-    border-radius: 50px;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 100px;
     text-decoration: none;
     white-space: nowrap;
     transition: background 0.2s;
   }
-  .amazon-button:hover { background: #ea580c; }
+  .amazon-button:hover { background: var(--amazon-ink); color: white; }
 
-  .amazon-image {
-    max-width: 150px;
-    border-radius: 8px;
-    margin-right: 1rem;
-  }
-
-  /* Estilo para la tarjeta de ArXiv */
-  .arxiv-card {
-    margin-top: 4rem;
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 16px;
-    padding: 2rem;
-    display: flex;
-    gap: 1.5rem;
-    align-items: flex-start;
-  }
-  .arxiv-icon { font-size: 2.5rem; }
-  .arxiv-content h4 { margin: 0 0 0.5rem 0; color: #1e293b; }
-  .arxiv-content p { margin: 0 0 1rem 0; font-size: 0.9rem; color: #64748b; }
-  .arxiv-content a {
-    color: #4338ca;
-    font-weight: 700;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
   .affiliate-footer {
     margin-top: 3rem;
     padding-top: 1.5rem;
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid var(--line);
   }
-  
+
   .affiliate-footer p {
-    font-family: system-ui, -apple-system, sans-serif; /* Fuente neutra */
-    font-size: 0.75rem; /* Tamaño muy pequeño */
-    line-height: 1.4;
-    color: #94a3b8; /* Gris suave (Slate 400) */
-    text-align: justify;
-    max-width: 600px;
-    margin: 0 auto;
-    font-style: italic;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    line-height: 1.5;
+    color: var(--muted-soft);
+    text-align: left;
+    margin: 0;
   }
 </style>

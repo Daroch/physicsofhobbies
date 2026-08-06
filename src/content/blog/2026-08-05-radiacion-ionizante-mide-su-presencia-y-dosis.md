@@ -2,10 +2,10 @@
 title: "Radiación ionizante: mide su presencia y dosis"
 pubDate: 2026-08-05
 description: "Aprenderá cómo los contadores Geiger detectan la radiación ionizante, su funcionamiento electrónico y cómo interpretar correctamente sus mediciones."
-referenceUrl: "https://www.amazon.es/dp/B0B541D433"
 category: "electrónica"
-image: "/images/default-physics.png"
+image: "/images/blog/2026-08-05-radiacion-ionizante-mide-su-presencia-y-dosis.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
+amazonUrl: "https://www.amazon.es/dp/B0B541D433?tag=physicshobbie-21"
 ---
 
 Cuando trabajas con materiales antiguos, restauras un objeto vintage o simplemente tienes curiosidad por los niveles de energía que te rodean, es posible que te preguntes si hay radiación. Algunos componentes electrónicos viejos, esmaltes cerámicos o incluso ciertas rocas pueden emitir partículas ionizantes. Saber si un material es radiactivo y en qué medida es clave para operar con seguridad.

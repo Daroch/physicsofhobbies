@@ -1,66 +1,78 @@
-<header class="navbar">
-  <div class="header-visual-bg"></div> <div class="container">
-    <div class="brand">
-      <a href="/">
-        <span class="icon">⚛️</span>
-        <div class="text">
-          <strong class="text-white">Physics of Hobbies</strong>
-          <small class="text-slate-300">El porqué de las cosas</small>
-        </div>
-      </a>
-    </div>
-    
+<header class="navbar grid-paper">
+  <div class="container">
+    <a href="/" class="brand">
+      <span class="mark">P·H</span>
+      <div class="text">
+        <strong>Physics of Hobbies</strong>
+        <small>el porqué de las cosas</small>
+      </div>
+    </a>
+
     <nav class="menu">
       <a href="/" class="nav-link">Inicio</a>
-      <a href="/sobre-mi" class="nav-link">Sobre el Proyecto</a>
+      <a href="/sobre-mi" class="nav-link">Sobre el proyecto</a>
       <a href="/privacidad" class="nav-link">Privacidad</a>
     </nav>
   </div>
+  <div class="trace-rule"></div>
 </header>
 
 <style>
   .navbar {
-    background: #0f172a; /* Azul muy oscuro (Slate 900) */
-    position: relative;
-    border-bottom: 1px solid #1e293b;
+    background: var(--ink);
     padding: 1.5rem 0;
-    overflow: hidden;
-  }
-  /* Imagen decorativa de fondo similar a la de las tarjetas */
-  .header-visual-bg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40%;
-    height: 100%;
-    background: radial-gradient(circle at center, rgba(67, 56, 202, 0.2) 0%, transparent 70%),
-                url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
-    opacity: 0.5;
-    pointer-events: none;
   }
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    z-index: 10;
+    gap: 1rem;
   }
-  .brand a { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
-  .text { display: flex; flex-direction: column; }
-  .text-white { color: #ffffff; font-size: 1.25rem; }
-  .text-slate-300 { color: #cbd5e1; font-size: 0.8rem; }
-  .icon { font-size: 2rem; filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.8)); }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    text-decoration: none;
+  }
+  .mark {
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    color: var(--signal);
+    border: 1px solid color-mix(in srgb, var(--signal) 45%, transparent);
+    border-radius: 4px;
+    padding: 0.3rem 0.55rem;
+  }
+  .text { display: flex; flex-direction: column; line-height: 1.25; }
+  .text strong {
+    color: #ffffff;
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 700;
+  }
+  .text small {
+    font-family: var(--font-mono);
+    color: #8b95a0;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+  }
 
   .menu { display: flex; gap: 2rem; }
   .nav-link {
-    color: #e2e8f0;
+    font-family: var(--font-mono);
+    color: #cbd2d9;
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     font-weight: 500;
-    transition: all 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
   }
-  .nav-link:hover { color: #818cf8; transform: translateY(-1px); }
+  .nav-link:hover { color: var(--signal); border-color: var(--signal); }
 </style>
