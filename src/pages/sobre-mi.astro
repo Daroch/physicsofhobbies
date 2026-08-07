@@ -1,44 +1,95 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="Sobre el Proyecto">
-  <article class="prose prose-slate mx-auto py-12 px-4 text-center">
-    <div class="mb-8">
-      <span class="page-mark">P·H</span>
+<Layout title="Sobre el proyecto — Physics of Hobbies">
+  <section class="about-hero">
+    <img class="avatar" src="/images/avatar-physics-of-hobbies-512.png" alt="Avatar de Álvaro" width="128" height="128" />
+    <div>
+      <span class="eyebrow"><span class="dot"></span>Autor de Physics of Hobbies</span>
+      <h1>Álvaro</h1>
     </div>
-    <h1>Sobre el Laboratorio del Físico Maker</h1>
-    <p class="lead">
-      Este proyecto nace de la curiosidad por entender los principios físicos que rigen nuestras pasiones y aficiones cotidianas.
-    </p>
-    <div class="info-card text-left">
-      <h3>Nuestra Finalidad</h3>
-      <p>
-        Buscamos realizar divulgación científica accesible. Desde el origami hasta la acústica de un taller, creemos que todo hobby tiene una base física fascinante esperando ser descubierta.
-      </p>
-      <h3>Sostenibilidad</h3>
-      <p>
-        Para mantener este portal libre de publicidad invasiva (banners y pop-ups), participamos en programas de afiliación que nos permiten recibir una pequeña compensación por recomendar herramientas y materiales que realmente aportan valor a los entusiastas del "hacer".
-      </p>
-    </div>
+  </section>
+  <div class="trace-rule"></div>
+
+  <article class="about-body">
+    <section>
+      <h2>Quién soy</h2>
+      <p>Me llamo Álvaro. Soy graduado en Física y me dedico profesionalmente al desarrollo de software. Este proyecto es mi forma de aplicar esa formación a algo concreto: cada vez que veo una herramienta de taller que me llama la atención, me pregunto qué principio físico hace que funcione — y eso es lo que intento explicar aquí.</p>
+    </section>
+
+    <section>
+      <h2>Cómo elijo lo que recomiendo</h2>
+      <p>Cada producto que aparece en el sitio pasa un filtro objetivo: valoración mínima de 4/5 estrellas y al menos 50 reseñas verificadas en Amazon. No es una prueba de producto en mano, es un criterio basado en datos agregados de compradores reales — te lo digo tal cual, sin dar a entender más de lo que hay.</p>
+    </section>
+
+    <section>
+      <h2>Cómo se escribe esto</h2>
+      <p>La selección de productos y el enfoque de cada artículo son decisión mía. La redacción se apoya en IA y yo la reviso y edito antes de publicar. Prefiero decírtelo ya. Creo que la transparencia sobre este proceso forma parte de la calidad del sitio.</p>
+    </section>
+
+    <section class="sustain">
+      <h2>Sostenibilidad</h2>
+      <p>Para mantener esto libre de banners y publicidad invasiva, participo en el Programa de Afiliados de Amazon. Si compras algo a través de un enlace del sitio, recibo una pequeña comisión sin coste adicional para ti.</p>
+    </section>
   </article>
 </Layout>
 
 <style>
-  .page-mark {
-    display: inline-flex;
-    font-family: var(--font-mono);
-    font-weight: 600;
-    font-size: 1.1rem;
-    letter-spacing: 0.08em;
-    color: var(--signal-ink);
-    border: 1px solid color-mix(in srgb, var(--signal) 40%, transparent);
-    border-radius: 6px;
-    padding: 0.4rem 0.9rem;
+  .about-hero {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 640px;
+    margin: 1rem auto 0;
+    padding: 0 1rem;
   }
-  .info-card {
+  .avatar {
+    flex: none;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    background: var(--ink);
+  }
+  .about-hero .eyebrow { color: var(--signal-ink); margin-bottom: 0.4rem; }
+  .about-hero h1 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  .trace-rule {
+    max-width: 640px;
+    margin: 2rem auto;
+  }
+
+  .about-body {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .about-body h2 {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0 0 0.6rem;
+  }
+  .about-body p {
+    color: var(--muted);
+    line-height: 1.7;
+    margin: 0;
+  }
+  .about-body .sustain {
     background: var(--panel);
     border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 2rem;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
   }
+  .about-body .sustain h2 { font-size: 0.95rem; }
 </style>

@@ -1,0 +1,33 @@
+<svg viewBox="30 40 300 300" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Avatar Physics of Hobbies</title>
+<defs>
+<pattern id="grid3" width="16" height="16" patternUnits="userSpaceOnUse">
+<path d="M16 0 L0 0 L0 16" fill="none" stroke="#3a3a3d" stroke-width="0.5"/>
+</pattern>
+</defs>
+
+<circle cx="180" cy="180" r="120" fill="#2b2b2e"/>
+<circle cx="180" cy="180" r="120" fill="url(#grid3)" opacity="0.5"/>
+<circle cx="180" cy="180" r="120" fill="none" stroke="#ff5a1f" stroke-width="1.5"/>
+
+<path d="M100 300 Q100 234 180 234 Q260 234 260 300 L260 320 L100 320 Z" fill="none" stroke="#ff5a1f" stroke-width="2" stroke-linejoin="round"/>
+<path d="M158 234 L180 262 L202 234" fill="none" stroke="#ff5a1f" stroke-width="1.5" stroke-linejoin="round"/>
+
+<circle cx="180" cy="164" r="52" fill="none" stroke="#ff5a1f" stroke-width="2"/>
+
+<path d="M124 152 Q118 104 172 96 Q216 92 232 122 Q238 136 228 150 Q232 126 210 112 Q222 132 214 148 Q214 120 188 108 Q198 130 190 146 Q182 116 160 110 Q166 132 158 148 Q150 120 136 122 Q126 132 124 152 Z" fill="#ff5a1f" stroke="#ff5a1f" stroke-width="1" stroke-linejoin="round"/>
+
+<path d="M128 148 Q124 176 138 196" fill="none" stroke="#ff5a1f" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M232 148 Q236 176 222 196" fill="none" stroke="#ff5a1f" stroke-width="1.5" stroke-linecap="round"/>
+
+<rect x="146" y="158" width="26" height="20" rx="3" fill="none" stroke="#ff5a1f" stroke-width="1.5"/>
+<rect x="188" y="158" width="26" height="20" rx="3" fill="none" stroke="#ff5a1f" stroke-width="1.5"/>
+<line x1="172" y1="168" x2="188" y2="168" stroke="#ff5a1f" stroke-width="1.5"/>
+<line x1="146" y1="166" x2="136" y2="162" stroke="#ff5a1f" stroke-width="1.5"/>
+<line x1="214" y1="166" x2="224" y2="162" stroke="#ff5a1f" stroke-width="1.5"/>
+
+<path d="M170 200 Q180 206 190 200" fill="none" stroke="#ff5a1f" stroke-width="1.5" stroke-linecap="round"/>
+
+<rect x="244" y="284" width="34" height="24" rx="3" fill="#2b2b2e" stroke="#ff5a1f" stroke-width="1.5"/>
+<text x="261" y="301" font-family="IBM Plex Mono, monospace" font-size="14" fill="#ff5a1f" text-anchor="middle">PH</text>
+</svg>
