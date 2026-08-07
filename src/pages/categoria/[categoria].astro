@@ -23,7 +23,10 @@ export async function getStaticPaths() {
 const { posts, categoryName } = Astro.props;
 ---
 
-<Layout title={`Explorando ${categoryName}`}>
+<Layout
+  title={`${categoryName.charAt(0).toUpperCase()}${categoryName.slice(1)} — Physics of Hobbies`}
+  description={`Artículos y experimentos de física relacionados con ${categoryName} en Physics of Hobbies.`}
+>
   <header class="cat-header">
     <a href="/" class="back-link">← Volver al inicio</a>
     <h1 data-cat={categoryName}>{categoryName}</h1>

@@ -3,6 +3,7 @@ import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite"; // Usaremos solo esto
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
   markdown: {
@@ -14,5 +15,5 @@ export default defineConfig({
   },
   site: "https://physicshobbies.daroch.ovh",
   base: "/",
-  // ELIMINAMOS la línea de integrations: [tailwind()]
+  integrations: [sitemap()],
 });

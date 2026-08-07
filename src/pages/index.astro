@@ -8,7 +8,10 @@ const allPosts = (await getCollection('blog')).sort(
 
 const categories = [...new Set(allPosts.map((post) => post.data.category || 'General'))];
 ---
-<Layout title="Physics of Hobbies — el porqué de las cosas">
+<Layout
+  title="Physics of Hobbies — el porqué de las cosas"
+  description="La física detrás de las herramientas que usas en el taller: cómo funcionan, qué miden de verdad y cómo sacarles el máximo partido."
+>
   <section class="hero grid-paper">
     <div class="hero-inner">
       <span class="eyebrow hero-eyebrow"><span class="dot"></span>Blog de física aplicada</span>
