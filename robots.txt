@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-# Indica dónde está tu mapa del sitio (Astro lo genera si usas el plugin @astrojs/sitemap)
-Sitemap: https://physicshobbies.daroch.ovh/sitemap-index.xml

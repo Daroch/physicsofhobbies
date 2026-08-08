@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://physicshobbies.daroch.ovh/sitemap-index.xml
+Sitemap: https://physicsofhobbies.com/sitemap-index.xml
