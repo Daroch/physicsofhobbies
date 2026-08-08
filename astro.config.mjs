@@ -13,7 +13,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: "https://physicshobbies.daroch.ovh",
+  site: "https://physicsofhobbies.com",
   base: "/",
   integrations: [sitemap()],
 });

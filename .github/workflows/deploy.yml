@@ -58,4 +58,4 @@ jobs:
           message: |
             🚀 ¡Nuevo post publicado en Physics of Hobbies!
             "${{ github.event.head_commit.message }}"
-            Míralo aquí: https://physicshobbies.daroch.ovh/
+            Míralo aquí: https://physicsofhobbies.com/
