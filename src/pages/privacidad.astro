@@ -2,20 +2,88 @@
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout
-  title="Política de Privacidad — Physics of Hobbies"
-  description="Política de privacidad, cookies y afiliación de Amazon de Physics of Hobbies."
+  title="Privacidad — Physics of Hobbies"
+  description="Qué datos recoge Physics of Hobbies, qué cookies instala Amazon al hacer clic en un enlace, y qué recursos externos carga el sitio."
 >
-  <article class="prose prose-slate mx-auto py-12 px-4">
-    <h1>Política de Privacidad</h1>
-    <p>En <strong>Physics of Hobbies</strong>, la privacidad de nuestros visitantes es de extrema importancia.</p>
-    
-    <h2>Cookies y Enlaces de Terceros</h2>
-    <p>Este sitio utiliza cookies para mejorar la experiencia de usuario. Al utilizar enlaces de afiliado a Amazon.es, Amazon puede instalar cookies en su navegador para realizar el seguimiento de las ventas y atribuir las comisiones correspondientes.</p>
-    
-    <h2>Programa de Afiliados de Amazon</h2>
-    <p>Physics of Hobbies participa en el Programa de Afiliados de Amazon de la UE, un programa de publicidad para afiliados diseñado para ofrecer a sitios web un modo de obtener comisiones por publicidad, publicitando e incluyendo enlaces a Amazon.es.</p>
+  <section class="page-hero">
+    <span class="eyebrow"><span class="dot"></span>Última actualización: 9 de agosto de 2026</span>
+    <h1>Privacidad</h1>
+    <p class="lead">Esto es exactamente lo que pasa con tus datos cuando visitas este sitio.</p>
+  </section>
+  <div class="trace-rule"></div>
 
-    <h2>Datos Personales</h2>
-    <p>Este blog no recopila, almacena ni procesa datos personales de los usuarios (como nombres o correos electrónicos) a menos que se indique explícitamente en un formulario de contacto futuro.</p>
+  <article class="page-body">
+    <section>
+      <h2>Cookies</h2>
+      <p>Este sitio no instala ninguna cookie propia — no hay analítica ni sistemas de seguimiento activos. Si haces clic en un enlace de afiliado y llegas a Amazon.es, es Amazon quien puede instalar sus propias cookies para atribuirme la venta, no yo.</p>
+    </section>
+
+    <section>
+      <h2>Programa de Afiliados de Amazon</h2>
+      <p>Physics of Hobbies participa en el Programa de Afiliados de Amazon EU. Cuando compras algo a través de un enlace del sitio, Amazon me paga una pequeña comisión, sin coste adicional para ti.</p>
+    </section>
+
+    <section>
+      <h2>Datos personales</h2>
+      <p>Este sitio no recopila, guarda ni procesa ningún dato personal — no hay formularios, cuentas ni analítica instalada a día de hoy. Si eso cambia, esta página se actualizará antes de que ocurra.</p>
+    </section>
+
+    <section>
+      <h2>Contacto</h2>
+      <p>Para cualquier duda sobre privacidad, escribe a <a href="mailto:hola@physicsofhobbies.com">hola@physicsofhobbies.com</a>.</p>
+    </section>
   </article>
 </Layout>
+
+<style>
+  .page-hero {
+    max-width: 640px;
+    margin: 1rem auto 0;
+    padding: 0 1rem;
+  }
+  .page-hero .eyebrow { color: var(--signal-ink); margin-bottom: 0.75rem; }
+  .page-hero h1 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--ink);
+    margin: 0 0 0.75rem;
+  }
+  .page-hero .lead {
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .trace-rule {
+    max-width: 640px;
+    margin: 2rem auto;
+  }
+
+  .page-body {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .page-body h2 {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0 0 0.6rem;
+  }
+  .page-body p {
+    color: var(--muted);
+    line-height: 1.7;
+    margin: 0;
+  }
+  .page-body a {
+    color: var(--signal-ink);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+</style>
