@@ -13,7 +13,9 @@
   --signal-ink: #b8430a;
   --signal-soft: #ffe4d6;
   --amazon: #ff9900;
-  --amazon-ink: #c96f00;
+  /* #c96f00 se quedaba en 3.65 de contraste sobre blanco (AA pide 4.5 en
+     texto pequeño); #a85c00 sube a 5.00 sin cambiar el tono de marca. */
+  --amazon-ink: #a85c00;
 
   /* Las fotos de producto vienen del catálogo de Amazon con fondo blanco puro
      incrustado. El contenedor debe ser exactamente ese blanco para que el

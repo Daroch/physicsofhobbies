@@ -48,6 +48,7 @@ const articleStructuredData = {
 {isRoundup ? (
   <RoundupLayout
     title={`${post.data.title} — Physics of Hobbies`}
+    heading={post.data.title}
     description={post.data.description}
     image={fallbackImage}
     category={post.data.category}
@@ -234,7 +235,9 @@ const articleStructuredData = {
     font-family: var(--font-mono);
     font-size: 0.72rem;
     line-height: 1.5;
-    color: var(--muted-soft);
+    /* --muted-soft daba 2.73 de contraste sobre el papel: por debajo de AA, y
+       es justo el aviso legal de afiliación, que debe leerse. --muted da 5.32. */
+    color: var(--muted);
     text-align: left;
     margin: 0;
   }

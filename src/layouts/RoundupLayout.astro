@@ -14,7 +14,10 @@ interface Product {
 }
 
 interface Props {
+  /** Título de la pestaña/SEO, con sufijo del sitio. */
   title: string;
+  /** Titular visible del post, sin sufijo. */
+  heading: string;
   description: string;
   image?: string;
   category?: string;
@@ -23,7 +26,7 @@ interface Props {
   structuredData?: Record<string, unknown>;
 }
 
-const { title, description, image, category, pubDate, products, structuredData } = Astro.props;
+const { title, heading, description, image, category, pubDate, products, structuredData } = Astro.props;
 const cat = (category || 'general').toLowerCase();
 ---
 
@@ -32,7 +35,7 @@ const cat = (category || 'general').toLowerCase();
     <div class="container">
       <div class="hero-content">
         <span class="eyebrow" data-cat={cat}><span class="dot"></span>Comparativa · {category || 'Física'}</span>
-        <h1 class="post-title"><slot name="title">{title}</slot></h1>
+        <h1 class="post-title">{heading}</h1>
         <div class="post-meta">
           <time>{pubDate.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}</time>
           <span class="tick"></span>
@@ -208,7 +211,7 @@ const cat = (category || 'general').toLowerCase();
     font-family: var(--font-mono);
     font-size: 0.72rem;
     line-height: 1.5;
-    color: var(--muted-soft);
+    color: var(--muted);
     text-align: left;
     margin: 0;
   }

@@ -2,7 +2,7 @@
 title: "La galga extensométrica: cómo una balanza pesa hasta 0.01g"
 pubDate: 2026-08-10
 description: "Pesar polvo de resina o gramos de plata sin margen de error empieza por entender qué hay dentro de la báscula, no solo qué número muestra."
-category: "electronica"
+category: "electrónica"
 image: "/images/blog/2026-08-10-la-galga-extensometrica-como-una-balanza-pesa-hasta-0-01g.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
 amazonUrl: "https://www.amazon.es/dp/B083NQJJ3G?tag=physicshobbie-21"

@@ -6,7 +6,15 @@ const allPosts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
-const categories = [...new Set(allPosts.map((post) => post.data.category || 'General'))];
+// Se agrupa por la versión en minúsculas: Physics v3 escribe la categoría desde
+// n8n y no siempre respeta las mayúsculas, así que "Mecánica" y "mecánica" no
+// deben generar dos chips distintos apuntando a la misma página.
+const categories = [...new Map(
+  allPosts.map((post) => {
+    const name = post.data.category || 'General';
+    return [name.toLowerCase().trim(), name];
+  })
+).values()];
 ---
 <Layout
   title="Physics of Hobbies — el porqué de las cosas"
