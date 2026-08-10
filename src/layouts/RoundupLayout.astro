@@ -1,0 +1,219 @@
+---
+// src/layouts/RoundupLayout.astro
+import Layout from './Layout.astro';
+
+interface Product {
+  name: string;
+  tier?: string;
+  image: string;
+  amazonUrl: string;
+  price?: number;
+  rating?: number;
+  reviews?: number;
+  highlight: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  category?: string;
+  pubDate: Date;
+  products: Product[];
+  structuredData?: Record<string, unknown>;
+}
+
+const { title, description, image, category, pubDate, products, structuredData } = Astro.props;
+const cat = (category || 'general').toLowerCase();
+---
+
+<Layout title={title} description={description} image={image} type="article" structuredData={structuredData}>
+  <div class="post-hero grid-paper">
+    <div class="container">
+      <div class="hero-content">
+        <span class="eyebrow" data-cat={cat}><span class="dot"></span>Comparativa · {category || 'Física'}</span>
+        <h1 class="post-title"><slot name="title">{title}</slot></h1>
+        <div class="post-meta">
+          <time>{pubDate.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}</time>
+          <span class="tick"></span>
+          <span>Lectura de 6 min</span>
+        </div>
+      </div>
+    </div>
+    <div class="trace-rule"></div>
+  </div>
+
+  <main class="post-main">
+    <article class="prose prose-slate lg:prose-lg mx-auto prose-headings:font-bold prose-a:text-[color:var(--signal-ink)] prose-img:rounded-lg">
+      <slot />
+    </article>
+
+    <section class="compare-grid">
+      {products.map((product) => (
+        <article class="compare-card">
+          {product.tier && <span class="eyebrow tier-eyebrow" data-cat={cat}><span class="dot"></span>{product.tier}</span>}
+          <a href={product.amazonUrl} target="_blank" rel="nofollow sponsored" class="compare-image-link grid-paper-light">
+            <img src={product.image} alt={product.name} loading="lazy" />
+          </a>
+          <h3 class="compare-name">{product.name}</h3>
+          <div class="compare-stats">
+            {product.rating && <span>★ {product.rating}</span>}
+            {product.reviews && <span>{product.reviews} reseñas</span>}
+            {product.price && <span class="compare-price">{product.price.toFixed(2).replace('.', ',')} €</span>}
+          </div>
+          <p class="compare-highlight">{product.highlight}</p>
+          <a href={product.amazonUrl} target="_blank" rel="nofollow sponsored" class="amazon-button">
+            Ver en Amazon →
+          </a>
+        </article>
+      ))}
+    </section>
+
+    <footer class="affiliate-footer">
+      <p>
+        Participo en el Programa de Afiliados de Amazon. Algunos enlaces en este artículo son de afiliado, lo que significa que recibo una pequeña comisión por las compras realizadas sin coste adicional para ti. Esto ayuda a mantener el laboratorio activo.
+      </p>
+    </footer>
+  </main>
+</Layout>
+
+<style>
+  .post-hero {
+    background: var(--ink);
+    padding: 3rem 0 2.5rem;
+    color: white;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  .hero-content { text-align: center; }
+  .post-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.9rem, 4.5vw, 3rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 1.25rem 0 1rem;
+    color: white;
+  }
+  .post-meta {
+    font-family: var(--font-mono);
+    color: #9aa5b1;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.85rem;
+    align-items: center;
+  }
+  .post-meta .tick {
+    width: 14px;
+    height: 1px;
+    background: var(--signal);
+  }
+
+  .post-main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 3rem;
+  }
+
+  .post-main .prose {
+    max-width: 720px;
+    margin: 0 auto 2.5rem;
+  }
+
+  .compare-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin: 0 0 3rem;
+  }
+
+  .compare-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .tier-eyebrow { margin-bottom: 0.2rem; }
+
+  .compare-image-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+  .compare-image-link img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    padding: 0.75rem;
+  }
+
+  .compare-name {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0;
+    line-height: 1.35;
+  }
+
+  .compare-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+  .compare-price {
+    color: var(--signal-ink);
+    font-weight: 600;
+  }
+
+  .compare-highlight {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.55;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .amazon-button {
+    align-self: flex-start;
+    background: var(--amazon);
+    color: #1a1200;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.55rem 1.2rem;
+    border-radius: 100px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s;
+  }
+  .amazon-button:hover { background: var(--amazon-ink); color: white; }
+
+  .affiliate-footer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+  }
+  .affiliate-footer p {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    line-height: 1.5;
+    color: var(--muted-soft);
+    text-align: left;
+    margin: 0;
+  }
+</style>

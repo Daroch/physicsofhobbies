@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import RoundupLayout from '../../layouts/RoundupLayout.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -14,13 +15,15 @@ const { post } = Astro.props;
 const cat = (post.data.category || 'general').toLowerCase();
 
 const { Content } = await render(post);
+const isRoundup = post.data.type === 'roundup';
+const fallbackImage = post.data.image || post.data.products?.[0]?.image || '/images/default-physics.png';
 
 const articleStructuredData = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: post.data.title,
   description: post.data.description,
-  image: new URL(post.data.image || '/images/default-physics.png', Astro.site).toString(),
+  image: new URL(fallbackImage, Astro.site).toString(),
   datePublished: post.data.pubDate.toISOString(),
   author: {
     '@type': 'Person',
@@ -42,6 +45,19 @@ const articleStructuredData = {
 };
 ---
 
+{isRoundup ? (
+  <RoundupLayout
+    title={`${post.data.title} — Physics of Hobbies`}
+    description={post.data.description}
+    image={fallbackImage}
+    category={post.data.category}
+    pubDate={post.data.pubDate}
+    products={post.data.products ?? []}
+    structuredData={articleStructuredData}
+  >
+    <Content />
+  </RoundupLayout>
+) : (
 <Layout
   title={`${post.data.title} — Physics of Hobbies`}
   description={post.data.description}
@@ -101,6 +117,7 @@ const articleStructuredData = {
     </article>
   </main>
 </Layout>
+)}
 
 <style>
   .post-hero {
