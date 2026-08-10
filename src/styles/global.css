@@ -15,6 +15,11 @@
   --amazon: #ff9900;
   --amazon-ink: #c96f00;
 
+  /* Las fotos de producto vienen del catálogo de Amazon con fondo blanco puro
+     incrustado. El contenedor debe ser exactamente ese blanco para que el
+     recorte de la foto sea invisible, independientemente de su proporción. */
+  --photo: #ffffff;
+
   --cat-acustica: #7c5cff;
   --cat-materiales: #b4592d;
   --cat-electronica: #ff5a1f;
@@ -51,6 +56,34 @@
   background: linear-gradient(90deg, transparent 0%, var(--signal) 50%, transparent 100%);
   border: none;
   opacity: 0.9;
+}
+
+/* Limita el contenido dentro de un `main` que va a sangre. */
+.wrap {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+@media (max-width: 720px) {
+  .wrap { padding-inline: 1.25rem; }
+}
+
+/* Marco de foto de producto.
+   Fondo blanco puro (nunca rejilla: las líneas revelarían el rectángulo de la
+   foto como un hueco) + caja de proporción fija para que todas las fichas
+   midan lo mismo aunque las fotos vayan de 0.46 a 1.58 de proporción. */
+.photo-surface {
+  background: var(--photo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.photo-surface img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .eyebrow {

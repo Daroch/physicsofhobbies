@@ -39,7 +39,6 @@ const categories = [...new Set(allPosts.map((post) => post.data.category || 'Gen
   .hero {
     background: var(--ink);
     color: #fff;
-    margin: -2rem calc(-50vw + 50%) 0;
     padding: 3.5rem 1.5rem 0;
   }
   .hero-inner {
@@ -69,7 +68,7 @@ const categories = [...new Set(allPosts.map((post) => post.data.category || 'Gen
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 2rem auto 2.5rem;
-    padding: 0 0.5rem;
+    padding: 0 1.5rem;
   }
   .cat-link {
     display: inline-flex;
@@ -98,10 +97,20 @@ const categories = [...new Set(allPosts.map((post) => post.data.category || 'Gen
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* minmax(300px,…) desbordaba en pantallas de 320px; min() lo acota al
+       ancho disponible real. */
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
     gap: 1.75rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 0.5rem 2rem;
+    padding: 0 1.5rem 3rem;
+  }
+
+  @media (max-width: 720px) {
+    .hero { padding: 2.5rem 1.25rem 0; }
+    .hero-inner { padding-bottom: 2.25rem; }
+    .hero p { font-size: 1rem; }
+    .category-nav { margin: 1.5rem auto 1.75rem; padding: 0 1.25rem; gap: 0.5rem; }
+    .grid { gap: 1.25rem; padding: 0 1.25rem 2.5rem; }
   }
 </style>

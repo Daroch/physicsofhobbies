@@ -27,21 +27,21 @@ const { posts, categoryName } = Astro.props;
   title={`${categoryName.charAt(0).toUpperCase()}${categoryName.slice(1)} — Physics of Hobbies`}
   description={`Artículos y experimentos de física relacionados con ${categoryName} en Physics of Hobbies.`}
 >
-  <header class="cat-header">
+  <header class="cat-header wrap">
     <a href="/" class="back-link">← Volver al inicio</a>
     <h1 data-cat={categoryName}>{categoryName}</h1>
     <p>Artículos y experimentos de física relacionados con <strong data-cat={categoryName}>{categoryName}</strong>.</p>
     <div class="trace-rule"></div>
   </header>
 
-  <div class="grid">
+  <div class="grid wrap">
     {posts.map((post) => (
       <PostCard post={post} />
     ))}
   </div>
 
   {posts.length === 0 && (
-    <div class="empty-state grid-paper-light">
+    <div class="empty-state grid-paper-light wrap">
       <p>Todavía no hay artículos publicados en esta categoría.</p>
     </div>
   )}
@@ -50,6 +50,7 @@ const { posts, categoryName } = Astro.props;
 <style>
   .cat-header {
     margin-bottom: 2.5rem;
+    padding-top: 2.5rem;
     padding-bottom: 1.5rem;
   }
   .back-link {
@@ -78,8 +79,9 @@ const { posts, categoryName } = Astro.props;
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
     gap: 1.75rem;
+    padding-bottom: 3rem;
   }
 
   .empty-state {
@@ -89,4 +91,10 @@ const { posts, categoryName } = Astro.props;
     border-radius: 10px;
   }
   .empty-state p { color: var(--muted); margin: 0; }
+
+  @media (max-width: 720px) {
+    .cat-header { padding-top: 1.75rem; margin-bottom: 1.75rem; }
+    .cat-header h1 { font-size: 2rem; }
+    .grid { gap: 1.25rem; padding-bottom: 2.5rem; }
+  }
 </style>

@@ -8,7 +8,7 @@ type: "roundup"
 image: "/images/blog/roundup-llave-38.jpg"
 products:
   - name: "Amazon Basics Llave de trinquete dinamométrica de 1/4 pulgadas, 3.95-22.5 Nm"
-    tier: "1/4\" — par bajo, precisión fina"
+    tier: "1/4\" · par bajo"
     image: "/images/blog/roundup-llave-14.jpg"
     amazonUrl: "https://www.amazon.es/dp/B07SZVW98Z?tag=physicshobbie-21"
     price: 15.49
@@ -16,7 +16,7 @@ products:
     reviews: 4060
     highlight: "El vaso pequeño da más resolución en pares bajos. Para tornillería de bicicleta, componentes electrónicos y cualquier pieza donde pasarte de rosca la rompe antes que aflojarla."
   - name: "VANPO Llave Dinamométrica 3/8'', 5-60 Nm"
-    tier: "3/8\" — uso general"
+    tier: "3/8\" · uso general"
     image: "/images/blog/roundup-llave-38.jpg"
     amazonUrl: "https://www.amazon.es/dp/B0CXDNQYT2?tag=physicshobbie-21"
     price: 30.38
@@ -24,7 +24,7 @@ products:
     reviews: 1161
     highlight: "El tamaño intermedio cubre la mayoría de mantenimiento de moto y bicicleta de gama alta: bujías, cazoletas, componentes de suspensión."
   - name: "Llave Dinamometrica 1/2\", 20-220Nm"
-    tier: "1/2\" — par alto"
+    tier: "1/2\" · par alto"
     image: "/images/blog/roundup-llave-12.jpg"
     amazonUrl: "https://www.amazon.es/dp/B0DNQ8CJ3H?tag=physicshobbie-21"
     price: 28.29

@@ -38,8 +38,8 @@ import Layout from '../layouts/Layout.astro';
 <style>
   .page-hero {
     max-width: 640px;
-    margin: 1rem auto 0;
-    padding: 0 1rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 0;
   }
   .page-hero .eyebrow { color: var(--signal-ink); margin-bottom: 0.75rem; }
   .page-hero h1 {
@@ -64,7 +64,7 @@ import Layout from '../layouts/Layout.astro';
   .page-body {
     max-width: 640px;
     margin: 0 auto;
-    padding: 0 1rem 3rem;
+    padding: 0 1.5rem 4rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -85,5 +85,14 @@ import Layout from '../layouts/Layout.astro';
     color: var(--signal-ink);
     text-decoration: underline;
     text-underline-offset: 2px;
+    /* Las direcciones de correo largas desbordaban en pantallas estrechas. */
+    overflow-wrap: anywhere;
+  }
+
+  @media (max-width: 720px) {
+    .page-hero { padding: 2.25rem 1.25rem 0; }
+    .page-hero h1 { font-size: 1.7rem; }
+    .trace-rule { margin: 1.5rem auto; }
+    .page-body { padding: 0 1.25rem 3rem; gap: 1.6rem; }
   }
 </style>

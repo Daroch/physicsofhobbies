@@ -76,10 +76,12 @@ const ogImageURL = new URL(image, Astro.site);
     margin: 0;
     font-family: var(--font-body);
   }
+  /* `main` va a sangre completa para que las bandas oscuras (hero de portada y
+     de post) continúen visualmente el navbar y el footer. Cada sección se
+     autolimita con `.wrap` o con su propio max-width; así ninguna necesita el
+     truco `calc(-50vw + 50%)`, que desbordaba el ancho de la barra de scroll. */
   main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
+    width: 100%;
   }
 </style>
 

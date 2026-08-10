@@ -44,8 +44,8 @@ import Layout from '../layouts/Layout.astro';
     align-items: center;
     gap: 1.5rem;
     max-width: 640px;
-    margin: 1rem auto 0;
-    padding: 0 1rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 0;
   }
   .avatar {
     flex: none;
@@ -72,7 +72,7 @@ import Layout from '../layouts/Layout.astro';
   .about-body {
     max-width: 640px;
     margin: 0 auto;
-    padding: 0 1rem 3rem;
+    padding: 0 1.5rem 4rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -96,4 +96,19 @@ import Layout from '../layouts/Layout.astro';
     padding: 1.25rem 1.5rem;
   }
   .about-body .sustain h2 { font-size: 0.95rem; }
+
+  @media (max-width: 720px) {
+    /* El avatar y el texto en fila dejaban el titular en una columna muy
+       estrecha; apilados se lee mejor. */
+    .about-hero {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 2.25rem 1.25rem 0;
+    }
+    .avatar { width: 76px; height: 76px; }
+    .about-hero h1 { font-size: 1.7rem; }
+    .trace-rule { margin: 1.5rem auto; }
+    .about-body { padding: 0 1.25rem 3rem; gap: 1.6rem; }
+  }
 </style>
