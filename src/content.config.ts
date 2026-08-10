@@ -24,6 +24,9 @@ const blog = defineCollection({
     tags: z.array(z.string()).default([]),
     image: z.string().optional(),
     amazonUrl: z.string().url().optional(),
+    // Nombre corto del producto para el bloque "Ver en Amazon". Sin él, el CTA
+    // repetía el titular del artículo y no decía qué se estaba comprando.
+    productName: z.string().optional(),
     type: z.enum(["single", "roundup"]).default("single"),
     products: z.array(roundupProduct).optional(),
   }),

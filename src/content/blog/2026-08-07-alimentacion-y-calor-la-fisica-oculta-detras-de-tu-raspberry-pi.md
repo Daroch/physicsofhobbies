@@ -6,6 +6,7 @@ category: "electrónica"
 image: "/images/blog/2026-08-07-alimentacion-y-calor-la-fisica-oculta-detras-de-tu-raspberry-pi.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
 amazonUrl: "https://www.amazon.es/dp/B0D3FNL84M?tag=physicshobbie-21"
+productName: "db-tronic Raspberry Pi 3 B+ Starter Kit"
 ---
 
 Montas tu Raspberry Pi 3 B+ para correr Home Assistant, todo funciona bien la primera semana, y de repente empiezas a ver reinicios aleatorios o respuestas lentas en el dashboard. Revisas logs, actualizas software, cambias de tarjeta SD, y el problema persiste. Casi siempre la causa no está en el código: está en cómo llega la corriente al chip y cómo sale el calor de él.

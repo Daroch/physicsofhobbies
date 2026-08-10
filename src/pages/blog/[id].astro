@@ -97,12 +97,12 @@ const articleStructuredData = {
           <a href={post.data.amazonUrl} target="_blank" rel="nofollow sponsored" class="amazon-image-link photo-surface">
             <img
               src={post.data.image}
-              alt={post.data.title}
+              alt={post.data.productName ?? post.data.title}
             />
           </a>
           <div class="amazon-cta-body">
             <span class="eyebrow amazon-eyebrow"><span class="dot"></span>Producto recomendado en este artículo</span>
-            <p class="amazon-title">{post.data.title}</p>
+            <p class="amazon-title">{post.data.productName ?? post.data.title}</p>
             <a href={post.data.amazonUrl} target="_blank" rel="nofollow sponsored" class="amazon-button">
               Ver en Amazon →
             </a>

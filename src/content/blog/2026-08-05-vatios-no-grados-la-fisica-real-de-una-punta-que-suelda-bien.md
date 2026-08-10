@@ -6,6 +6,7 @@ category: "electrónica"
 image: "/images/blog/2026-08-05-vatios-no-grados-la-fisica-real-de-una-punta-que-suelda-bien.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
 amazonUrl: "https://www.amazon.es/dp/B096X6SG13?tag=physicshobbie-21"
+productName: "PINECIL Soldador portátil USB-C"
 ---
 
 Sueldas un conector USB y la punta llega rápido a temperatura, pero en cuanto tocas un terminal grueso o un plano de tierra grande, el estaño no funde y tienes que esperar eternamente. Cambias el ajuste de temperatura pensando que el problema es ese, subes a 380°C, y sigue sin ir. El problema no está en los grados que marca la pantalla, está en cuánta energía puede entregar la punta por segundo mientras esa energía se escapa hacia la pieza que estás soldando.

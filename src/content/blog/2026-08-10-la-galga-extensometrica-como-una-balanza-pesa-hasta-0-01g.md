@@ -6,6 +6,7 @@ category: "electrónica"
 image: "/images/blog/2026-08-10-la-galga-extensometrica-como-una-balanza-pesa-hasta-0-01g.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
 amazonUrl: "https://www.amazon.es/dp/B083NQJJ3G?tag=physicshobbie-21"
+productName: "Bonvoisin Balanza de laboratorio 5000 g / 0,01 g"
 ---
 
 Preparas una mezcla de resina epóxica con una proporción exacta 2:1, o pesas gemas y metal para una pieza de joyería, y la báscula de cocina que tienes te da el mismo número aunque muevas el objeto medio centímetro hacia la izquierda. Ese margen de error de un par de gramos puede arruinar una mezcla química, hacer que una pieza no calce en su molde o que factures mal un metal precioso. El problema no es tu técnica, es la resolución del instrumento.

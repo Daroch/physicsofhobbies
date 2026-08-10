@@ -6,6 +6,7 @@ category: "acústica"
 image: "/images/blog/2026-08-05-decibelios-y-presion-sonora-como-medir-el-ruido-que-te-rodea.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
 amazonUrl: "https://www.amazon.es/dp/B0D9835CLV?tag=physicshobbie-21"
+productName: "Sonómetro digital 30-130 dB"
 ---
 
 Llevas semanas discutiendo con el vecino de arriba sobre si sus fiestas son 'normales' o 'insoportables', y la conversación siempre acaba en percepciones subjetivas. Lo mismo pasa en el taller: sospechas que la sierra de banco o el compresor están por encima de lo que tu oído debería aguantar ocho horas seguidas, pero 'sospechar' no es lo mismo que saber. Un sonómetro convierte esa sensación en un número, y ese número es el que necesitas para reclamar, para protegerte o simplemente para entender tu entorno.

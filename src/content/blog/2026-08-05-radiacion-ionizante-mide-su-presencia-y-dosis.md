@@ -6,6 +6,7 @@ category: "electrónica"
 image: "/images/blog/2026-08-05-radiacion-ionizante-mide-su-presencia-y-dosis.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
 amazonUrl: "https://www.amazon.es/dp/B0B541D433?tag=physicshobbie-21"
+productName: "GQ GMC-300S Contador Geiger"
 ---
 
 Cuando trabajas con materiales antiguos, restauras un objeto vintage o simplemente tienes curiosidad por los niveles de energía que te rodean, es posible que te preguntes si hay radiación. Algunos componentes electrónicos viejos, esmaltes cerámicos o incluso ciertas rocas pueden emitir partículas ionizantes. Saber si un material es radiactivo y en qué medida es clave para operar con seguridad.
