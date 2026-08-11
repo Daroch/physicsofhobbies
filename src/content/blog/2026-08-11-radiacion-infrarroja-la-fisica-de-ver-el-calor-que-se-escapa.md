@@ -6,6 +6,7 @@ category: "óptica"
 image: "/images/blog/2026-08-11-radiacion-infrarroja-la-fisica-de-ver-el-calor-que-se-escapa.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
 amazonUrl: "https://www.amazon.es/dp/B0DJQ91653?tag=physicshobbie-21"
+productName: "TOPDON Camara Termica TC004 Mini"
 ---
 
 Tienes un cuadro eléctrico que hace ruido raro, una pared que en invierno siempre está más fría de lo normal, o un motor que sospechas se calienta más de lo debido. El problema es que no puedes ver el calor a simple vista, y desmontar todo para buscar el punto caliente con un termómetro de contacto es lento y a veces peligroso. Necesitas una forma de mapear temperaturas en tiempo real, sin tocar lo que estás midiendo.

@@ -4,10 +4,13 @@
 // divergir.
 
 export const AUTHOR = {
-  /** Nombre completo: tiene que coincidir con el perfil de LinkedIn para que
-   *  Google pueda resolver autor y perfil como la misma entidad. */
-  name: 'Álvaro Larrínaga Jáuregui',
-  shortName: 'Álvaro',
+  /**
+   * Solo el nombre de pila, por decisión del autor (2026-08-11): el apellido no
+   * se publica en el sitio. La reconciliación de entidad con Google se apoya en
+   * `sameAs` → LinkedIn, que es una declaración explícita y no depende de que
+   * el nombre coincida literalmente.
+   */
+  name: 'Álvaro',
   /** Titular corto. Solo credenciales reales y verificables (ver notas/bio). */
   role: 'Licenciado en Ciencias Físicas e Ingeniería Electrónica',
   bio: 'Dos licenciaturas por la UPV/EHU y veinte años desarrollando software. Analizo especificaciones técnicas de herramientas de taller y explico qué significan en la práctica.',
