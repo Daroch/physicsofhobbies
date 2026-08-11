@@ -4,23 +4,36 @@
 // divergir.
 
 export const AUTHOR = {
-  name: 'Álvaro',
-  /** Titular corto. Solo credenciales reales y verificables. */
-  role: 'Graduado en Física y desarrollador de software',
-  bio: 'Analizo especificaciones técnicas de herramientas de taller y explico qué significan en la práctica.',
+  /** Nombre completo: tiene que coincidir con el perfil de LinkedIn para que
+   *  Google pueda resolver autor y perfil como la misma entidad. */
+  name: 'Álvaro Larrínaga Jáuregui',
+  shortName: 'Álvaro',
+  /** Titular corto. Solo credenciales reales y verificables (ver notas/bio). */
+  role: 'Licenciado en Ciencias Físicas e Ingeniería Electrónica',
+  bio: 'Dos licenciaturas por la UPV/EHU y veinte años desarrollando software. Analizo especificaciones técnicas de herramientas de taller y explico qué significan en la práctica.',
   avatar: '/images/avatar-physics-of-hobbies-512.png',
   /** Página de la entidad autor dentro del sitio. */
   page: '/sobre-mi',
+  /** Titulaciones, para `alumniOf` del JSON-LD. */
+  degrees: [
+    'Licenciado en Ciencias Físicas (Especialidad Electrónica y Automática), UPV/EHU',
+    'Licenciado en Ingeniería Electrónica (Itinerario Automática), UPV/EHU',
+  ],
+  university: 'Universidad del País Vasco (UPV/EHU)',
+  knowsAbout: [
+    'Física',
+    'Ingeniería electrónica',
+    'Instrumentación y metrología',
+    'Automática',
+    'Electrónica de medida',
+  ],
   /**
    * Perfiles públicos que acreditan a la misma persona. Alimentan `sameAs` del
    * JSON-LD, que es lo que permite a Google enlazar el autor con una entidad
    * real fuera del sitio.
-   * PENDIENTE: añadir la URL de LinkedIn. Mientras esté vacío no se emite
-   * `sameAs` ni se pinta el enlace — es preferible no declarar nada a declarar
-   * un perfil que no existe.
    */
   profiles: {
-    linkedin: '',
+    linkedin: 'https://www.linkedin.com/in/alvaro-larrinaga-jauregui-663512236/',
     github: '',
   },
 } as const;
@@ -50,6 +63,12 @@ export function authorSchema(siteUrl: URL | string | undefined) {
     name: AUTHOR.name,
     description: AUTHOR.role,
     url: new URL(AUTHOR.page, siteUrl).toString(),
+    image: new URL(AUTHOR.avatar, siteUrl).toString(),
+    alumniOf: {
+      '@type': 'CollegeOrUniversity',
+      name: AUTHOR.university,
+    },
+    knowsAbout: [...AUTHOR.knowsAbout],
     ...(authorSameAs.length > 0 ? { sameAs: authorSameAs } : {}),
   };
 }
