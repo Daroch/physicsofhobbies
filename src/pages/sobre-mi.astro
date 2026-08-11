@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { AUTHOR, CRITERIA, authorSchema } from '../config/site';
+import { AUTHOR, authorSchema } from '../config/site';
 
 // JSON-LD de entidad: esta es la página que representa a la persona, así que
 // declara explícitamente que va "sobre" el autor.
@@ -43,34 +43,14 @@ const github = AUTHOR.profiles.github;
     </section>
 
     <section>
-      <h2>Qué hago aquí exactamente</h2>
-      <p>Interpreto especificaciones. Cuando una ficha dice «precisión ±3%», «rango 20-220 Nm» o «resolución 0,01 g», mi trabajo es contarte qué significa eso físicamente, para qué uso es relevante y cuándo es un dato de marketing sin consecuencia práctica.</p>
-      <p><strong>No pruebo los productos de los que escribo.</strong> No los compro ni los recibo, así que aquí nunca leerás «lo he probado» ni una medición mía sobre un producto concreto: sería falso. Lo que aporto es formación para leer los datos que ya están publicados. La diferencia está explicada al detalle en la <a href="/metodologia">metodología</a>.</p>
-    </section>
-
-    <section>
-      <h2>Y sí, también trasteo</h2>
-      <p>Fuera del trabajo construyo cosas. Me monté una impresora 3D casera con Arduino, hago carpintería y tengo la costumbre de abrir cualquier aparato que se estropea antes de tirarlo, para entender cómo funciona y ver si tiene arreglo.</p>
-      <p>Eso no me convierte en alguien que ha probado el sonómetro concreto del que hablo en un artículo, y no lo voy a presentar como tal. Pero sí explica por qué me interesa esto y por qué sé qué preguntas se hace alguien que está a punto de comprar una herramienta para su taller.</p>
-    </section>
-
-    <section>
-      <h2>Cómo elijo lo que aparece</h2>
-      <p>Los productos pasan un filtro objetivo antes de que yo los mire: valoración mínima de {CRITERIA.minRating}/5 estrellas y al menos {CRITERIA.minReviews} reseñas en Amazon. Eso no mide calidad, mide que haya suficientes compradores como para que la valoración signifique algo. Qué entra y cómo se cuenta lo decido yo.</p>
-    </section>
-
-    <section>
-      <h2>Cómo se escribe esto</h2>
-      <p>La selección de productos y el enfoque de cada artículo son decisión mía. La redacción se apoya en IA y yo la reviso y edito antes de publicar. Creo que la transparencia sobre este proceso forma parte de la calidad del sitio.</p>
+      <h2>Por qué existe este sitio</h2>
+      <p>Fuera del trabajo construyo cosas: me monté una impresora 3D casera con Arduino, hago carpintería y tengo la costumbre de abrir cualquier aparato que se estropea antes de tirarlo, para entender cómo funciona y ver si tiene arreglo.</p>
+      <p>Comprando herramientas para eso me encontraba siempre con lo mismo: fichas técnicas llenas de números sin contexto y comparativas que no explican cuál de esos números importa. Sé leer esas fichas, así que escribo lo que me habría gustado encontrar.</p>
     </section>
 
     <section class="sustain">
-      <h2>Sostenibilidad</h2>
-      <p>Para mantener esto libre de banners y publicidad invasiva, participo en el Programa de Afiliados de Amazon. Si compras algo a través de un enlace del sitio, recibo una pequeña comisión sin coste adicional para ti.</p>
-    </section>
-
-    <section>
-      <h2>Contacto</h2>
+      <h2>Cómo funciona esto</h2>
+      <p>Interpreto las especificaciones publicadas; <strong>no pruebo los productos de los que escribo</strong>, así que aquí nunca leerás «lo he probado». El criterio de selección, el origen de los datos, el papel de la IA en la redacción y cómo se financia el sitio están detallados en la <a href="/metodologia">metodología</a>.</p>
       <p>Si ves un dato mal o quieres proponer un tema, escríbeme a <a href="mailto:hola@physicsofhobbies.com">hola@physicsofhobbies.com</a>.</p>
     </section>
   </article>
