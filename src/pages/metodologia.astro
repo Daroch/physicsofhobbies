@@ -1,0 +1,157 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { AUTHOR, CRITERIA } from '../config/site';
+
+const updated = '11 de agosto de 2026';
+---
+<Layout
+  title="Metodología — Physics of Hobbies"
+  description="Cómo se eligen los productos de Physics of Hobbies, qué tipo de análisis encontrarás (interpretación de especificaciones, no pruebas de laboratorio) y qué no vas a encontrar."
+>
+  <section class="page-hero">
+    <span class="eyebrow"><span class="dot"></span>Última actualización: {updated}</span>
+    <h1>Metodología</h1>
+    <p class="lead">Qué tipo de análisis hago, con qué datos, y dónde están sus límites.</p>
+  </section>
+  <div class="trace-rule"></div>
+
+  <article class="page-body">
+    <section>
+      <h2>Qué es este sitio</h2>
+      <p>Physics of Hobbies analiza <strong>especificaciones técnicas</strong> de herramientas e instrumentos de taller y explica qué significan en la práctica: qué mide de verdad un número de la ficha, cuál importa para tu caso y cuál es puro reclamo comercial.</p>
+      <p>Mi formación es en Física, y ese es exactamente el trabajo que hago aquí: interpretar magnitudes, unidades y márgenes de error. No soy un canal de reseñas ni un comparador automático.</p>
+    </section>
+
+    <section class="highlight">
+      <h2>Lo más importante: no pruebo los productos</h2>
+      <p>No compro, no recibo muestras y <strong>no tengo estos productos en las manos</strong>. Por lo tanto nunca vas a leer aquí «lo he probado», «en mis pruebas» ni una medición hecha por mí, porque sería mentira.</p>
+      <p>Lo que sí hago es leer la ficha técnica con criterio: detectar cuándo un rango de medida es irrelevante para el uso real, cuándo una precisión declarada no significa lo que parece, o cuándo dos productos que parecen iguales no lo son. Eso es interpretación experta de datos publicados, y tiene un valor real — pero es distinto de un test de laboratorio, y quiero que sepas cuál de las dos cosas estás leyendo.</p>
+    </section>
+
+    <section>
+      <h2>Cómo selecciono los productos</h2>
+      <p>Los candidatos salen de búsquedas en el catálogo de Amazon.es y pasan un filtro objetivo antes de que yo los mire siquiera:</p>
+      <ul>
+        <li>Valoración mínima de <strong>{CRITERIA.minRating}/5 estrellas</strong>.</li>
+        <li>Al menos <strong>{CRITERIA.minReviews} reseñas</strong>.</li>
+        <li>Se descartan duplicados del mismo concepto, para que una comparativa no sean cinco variantes del mismo aparato.</li>
+      </ul>
+      <p>Ese filtro no mide calidad: mide que haya suficiente gente que ya lo ha comprado como para que las valoraciones signifiquen algo. La decisión de qué producto entra y con qué enfoque se cuenta es mía.</p>
+    </section>
+
+    <section>
+      <h2>De dónde salen los datos</h2>
+      <p>Los precios, valoraciones, número de reseñas y especificaciones proceden de la ficha del producto en Amazon en el momento de escribir el artículo. <strong>Los precios cambian constantemente</strong>: el que veas aquí es orientativo y el bueno siempre es el de Amazon al abrir el enlace.</p>
+      <p>Cuando un dato no aparece en la ficha, lo digo. Prefiero un «no disponible» a rellenar un hueco con una cifra plausible.</p>
+    </section>
+
+    <section>
+      <h2>Cómo se escribe</h2>
+      <p>La selección de temas, el enfoque de cada artículo y el criterio técnico son míos. La redacción se apoya en inteligencia artificial y yo la reviso y edito antes de publicar, con atención especial a la parte de análisis: si un párrafo afirma algo sobre física o sobre una spec, o lo respaldo o no sale.</p>
+      <p>Lo cuento porque creo que forma parte de la calidad del sitio saber cómo está hecho.</p>
+    </section>
+
+    <section>
+      <h2>Cómo se financia</h2>
+      <p>Participo en el Programa de Afiliados de Amazon: si compras a través de un enlace del sitio, recibo una pequeña comisión sin coste adicional para ti. Eso mantiene el sitio sin banners ni publicidad invasiva.</p>
+      <p>La comisión es la misma sea cual sea el producto que elijas dentro de un artículo, así que no tengo ningún incentivo para empujarte hacia uno concreto. Los enlaces de afiliado van marcados y solo existen dentro del sitio.</p>
+    </section>
+
+    <section>
+      <h2>Errores y correcciones</h2>
+      <p>Si encuentras un dato mal, un razonamiento que no se sostiene o una spec mal interpretada, escríbeme a <a href="mailto:hola@physicsofhobbies.com">hola@physicsofhobbies.com</a> y lo corrijo. Los artículos llevan fecha visible para que sepas cómo de reciente es lo que estás leyendo.</p>
+    </section>
+
+    <p class="signature">— {AUTHOR.name}, <a href={AUTHOR.page}>sobre el autor</a></p>
+  </article>
+</Layout>
+
+<style>
+  .page-hero {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 0;
+  }
+  .page-hero .eyebrow { color: var(--signal-ink); margin-bottom: 0.75rem; }
+  .page-hero h1 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--ink);
+    margin: 0 0 0.75rem;
+  }
+  .page-hero .lead {
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .trace-rule {
+    max-width: 640px;
+    margin: 2rem auto;
+  }
+
+  .page-body {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .page-body h2 {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0 0 0.6rem;
+  }
+  .page-body p {
+    color: var(--muted);
+    line-height: 1.7;
+    margin: 0 0 0.75rem;
+  }
+  .page-body p:last-child { margin-bottom: 0; }
+  .page-body ul {
+    color: var(--muted);
+    line-height: 1.7;
+    margin: 0 0 0.75rem;
+    padding-left: 1.1rem;
+  }
+  .page-body li { margin-bottom: 0.3rem; }
+  .page-body strong { color: var(--ink); }
+  .page-body a {
+    color: var(--signal-ink);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    overflow-wrap: anywhere;
+  }
+
+  /* El bloque de "no pruebo los productos" es la declaración que más
+     condiciona cómo hay que leer el resto del sitio: va destacado. */
+  .highlight {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--signal);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .signature {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin: 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+  }
+
+  @media (max-width: 720px) {
+    .page-hero { padding: 2.25rem 1.25rem 0; }
+    .page-hero h1 { font-size: 1.7rem; }
+    .trace-rule { margin: 1.5rem auto; }
+    .page-body { padding: 0 1.25rem 3rem; gap: 1.6rem; }
+    .highlight { padding: 1.1rem 1.25rem; }
+  }
+</style>

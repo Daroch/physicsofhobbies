@@ -2,6 +2,8 @@
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import RoundupLayout from '../../layouts/RoundupLayout.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import { SITE, authorSchema } from '../../config/site';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -25,17 +27,13 @@ const articleStructuredData = {
   description: post.data.description,
   image: new URL(fallbackImage, Astro.site).toString(),
   datePublished: post.data.pubDate.toISOString(),
-  author: {
-    '@type': 'Person',
-    name: 'Álvaro',
-    url: new URL('/sobre-mi', Astro.site).toString(),
-  },
+  author: authorSchema(Astro.site),
   publisher: {
     '@type': 'Organization',
-    name: 'Physics of Hobbies',
+    name: SITE.name,
     logo: {
       '@type': 'ImageObject',
-      url: new URL('/images/favicon-32x32.png', Astro.site).toString(),
+      url: new URL(SITE.logo, Astro.site).toString(),
     },
   },
   mainEntityOfPage: {
@@ -110,9 +108,11 @@ const articleStructuredData = {
         </div>
       )}
 
+      <AuthorBox />
+
       <footer class="affiliate-footer">
         <p>
-        Participo en el Programa de Afiliados de Amazon. Algunos enlaces en este artículo son de afiliado, lo que significa que recibo una pequeña comisión por las compras realizadas sin coste adicional para ti. Esto ayuda a mantener el laboratorio activo.
+        Participo en el Programa de Afiliados de Amazon. Algunos enlaces en este artículo son de afiliado, lo que significa que recibo una pequeña comisión por las compras realizadas sin coste adicional para ti. Los productos se eligen con un <a href="/metodologia">criterio publicado</a> y no los pruebo en mano.
         </p>
       </footer>
     </article>
@@ -240,6 +240,11 @@ const articleStructuredData = {
     color: var(--muted);
     text-align: left;
     margin: 0;
+  }
+  .affiliate-footer a {
+    color: var(--signal-ink);
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 
   @media (max-width: 720px) {

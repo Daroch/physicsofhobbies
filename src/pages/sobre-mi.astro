@@ -1,16 +1,36 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { AUTHOR, CRITERIA, authorSchema } from '../config/site';
+
+// JSON-LD de entidad: esta es la página que representa a la persona, así que
+// declara explícitamente que va "sobre" el autor.
+const profileSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  mainEntity: authorSchema(Astro.site),
+};
+
+const linkedin = AUTHOR.profiles.linkedin;
+const github = AUTHOR.profiles.github;
 ---
 <Layout
-  title="Sobre el proyecto — Physics of Hobbies"
-  description="Quién escribe Physics of Hobbies, cómo se eligen los productos recomendados y cómo se financia el proyecto."
-  image="/images/avatar-physics-of-hobbies-512.png"
+  title="Sobre el autor — Physics of Hobbies"
+  description="Quién escribe Physics of Hobbies: formación, qué tipo de análisis hace y qué no, y cómo se financia el proyecto."
+  image={AUTHOR.avatar}
+  structuredData={profileSchema}
 >
   <section class="about-hero">
-    <img class="avatar" src="/images/avatar-physics-of-hobbies-512.png" alt="Avatar de Álvaro" width="128" height="128" />
+    <img class="avatar" src={AUTHOR.avatar} alt={`Avatar de ${AUTHOR.name}`} width="128" height="128" />
     <div>
       <span class="eyebrow"><span class="dot"></span>Autor de Physics of Hobbies</span>
-      <h1>Físico y Developer</h1>
+      <h1>{AUTHOR.name}</h1>
+      <p class="role">{AUTHOR.role}</p>
+      {(linkedin || github) && (
+        <div class="profile-links">
+          {linkedin && <a href={linkedin} target="_blank" rel="me noopener">LinkedIn</a>}
+          {github && <a href={github} target="_blank" rel="me noopener">GitHub</a>}
+        </div>
+      )}
     </div>
   </section>
   <div class="trace-rule"></div>
@@ -18,12 +38,18 @@ import Layout from '../layouts/Layout.astro';
   <article class="about-body">
     <section>
       <h2>Quién soy</h2>
-      <p>Me llamo Álvaro. Soy graduado en Física y me dedico profesionalmente al desarrollo de software. Este proyecto es mi forma de aplicar esa formación a algo concreto: cada vez que veo una herramienta de taller que me llama la atención, me pregunto qué principio físico hace que funcione — y eso es lo que intento explicar aquí.</p>
+      <p>Me llamo Álvaro. Soy graduado en Física y me dedico profesionalmente al desarrollo de software. Monté Physics of Hobbies porque me encontraba una y otra vez con el mismo problema al comprar herramientas de taller: fichas técnicas llenas de números sin contexto y comparativas que no explican cuál de esos números importa.</p>
     </section>
 
     <section>
-      <h2>Cómo elijo lo que recomiendo</h2>
-      <p>Cada producto que aparece en el sitio pasa un filtro objetivo: valoración mínima de 4/5 estrellas y al menos 50 reseñas verificadas en Amazon. No es una prueba de producto en mano, es un criterio basado en datos agregados de compradores reales — te lo digo tal cual, sin dar a entender más de lo que hay.</p>
+      <h2>Qué hago aquí exactamente</h2>
+      <p>Interpreto especificaciones. Cuando una ficha dice «precisión ±3%», «rango 20-220 Nm» o «resolución 0,01 g», mi trabajo es contarte qué significa eso físicamente, para qué uso es relevante y cuándo es un dato de marketing sin consecuencia práctica.</p>
+      <p><strong>No pruebo los productos.</strong> No los compro ni los recibo, así que aquí nunca leerás «lo he probado» ni una medición mía: sería falso. Lo que aporto es criterio para leer los datos que ya están publicados. La diferencia está explicada al detalle en la <a href="/metodologia">metodología</a>.</p>
+    </section>
+
+    <section>
+      <h2>Cómo elijo lo que aparece</h2>
+      <p>Los productos pasan un filtro objetivo antes de que yo los mire: valoración mínima de {CRITERIA.minRating}/5 estrellas y al menos {CRITERIA.minReviews} reseñas en Amazon. Eso no mide calidad, mide que haya suficientes compradores como para que la valoración signifique algo. Qué entra y cómo se cuenta lo decido yo.</p>
     </section>
 
     <section>
@@ -34,6 +60,11 @@ import Layout from '../layouts/Layout.astro';
     <section class="sustain">
       <h2>Sostenibilidad</h2>
       <p>Para mantener esto libre de banners y publicidad invasiva, participo en el Programa de Afiliados de Amazon. Si compras algo a través de un enlace del sitio, recibo una pequeña comisión sin coste adicional para ti.</p>
+    </section>
+
+    <section>
+      <h2>Contacto</h2>
+      <p>Si ves un dato mal o quieres proponer un tema, escríbeme a <a href="mailto:hola@physicsofhobbies.com">hola@physicsofhobbies.com</a>.</p>
     </section>
   </article>
 </Layout>
@@ -63,6 +94,28 @@ import Layout from '../layouts/Layout.astro';
     color: var(--ink);
     margin: 0;
   }
+  .about-hero .role {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin: 0.35rem 0 0;
+  }
+  .profile-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.6rem;
+  }
+  .profile-links a {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--signal-ink);
+    text-decoration: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--signal) 40%, transparent);
+    padding-bottom: 1px;
+  }
+  .profile-links a:hover { border-bottom-color: var(--signal); }
 
   .trace-rule {
     max-width: 640px;
@@ -87,7 +140,15 @@ import Layout from '../layouts/Layout.astro';
   .about-body p {
     color: var(--muted);
     line-height: 1.7;
-    margin: 0;
+    margin: 0 0 0.75rem;
+  }
+  .about-body p:last-child { margin-bottom: 0; }
+  .about-body strong { color: var(--ink); }
+  .about-body a {
+    color: var(--signal-ink);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    overflow-wrap: anywhere;
   }
   .about-body .sustain {
     background: var(--panel);

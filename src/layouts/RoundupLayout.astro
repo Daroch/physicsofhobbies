@@ -1,6 +1,7 @@
 ---
 // src/layouts/RoundupLayout.astro
 import Layout from './Layout.astro';
+import AuthorBox from '../components/AuthorBox.astro';
 
 interface Product {
   name: string;
@@ -72,9 +73,13 @@ const cat = (category || 'general').toLowerCase();
       ))}
     </section>
 
+    <div class="author-slot">
+      <AuthorBox />
+    </div>
+
     <footer class="affiliate-footer">
       <p>
-        Participo en el Programa de Afiliados de Amazon. Algunos enlaces en este artículo son de afiliado, lo que significa que recibo una pequeña comisión por las compras realizadas sin coste adicional para ti. Esto ayuda a mantener el laboratorio activo.
+        Participo en el Programa de Afiliados de Amazon. Algunos enlaces en este artículo son de afiliado, lo que significa que recibo una pequeña comisión por las compras realizadas sin coste adicional para ti. Los productos se eligen con un <a href="/metodologia">criterio publicado</a> y no los pruebo en mano.
       </p>
     </footer>
   </main>
@@ -201,11 +206,22 @@ const cat = (category || 'general').toLowerCase();
   }
   .amazon-button:hover { background: var(--amazon-ink); color: white; }
 
+  /* La rejilla de comparativa es más ancha que el texto; el autor y el aviso
+     vuelven a la columna de lectura. */
+  .author-slot {
+    max-width: 720px;
+    margin: 0 auto;
+  }
   .affiliate-footer {
     max-width: 720px;
     margin: 0 auto;
     padding-top: 1.5rem;
     border-top: 1px solid var(--line);
+  }
+  .affiliate-footer a {
+    color: var(--signal-ink);
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
   .affiliate-footer p {
     font-family: var(--font-mono);
