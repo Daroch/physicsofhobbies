@@ -9,6 +9,16 @@ permissions:
   pages: write
   id-token: write
 
+# n8n publica cada mañana dos commits con segundos de diferencia (imagen y
+# post), lo que lanzaba dos despliegues a la vez. GitHub Pages solo admite uno
+# activo, así que uno de los dos fallaba a diario y llegó a dejar un post sin
+# publicar. Con esto el segundo espera en cola en vez de chocar.
+# No se cancela el que está en curso: es un despliegue a producción y se le
+# deja terminar.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
