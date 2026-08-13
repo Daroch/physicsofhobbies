@@ -2,7 +2,7 @@
 title: "Termómetro infrarrojo: qué rango y qué emisividad necesitas"
 pubDate: 2026-08-13
 description: "Ninguna de las cinco fichas declara precisión en °C ni ratio distancia:punto, los datos reales que sí varían son rango de temperatura y emisividad ajustable."
-category: "electrónica"
+category: "óptica"
 tags: ["comparativa", "ciencia", "hobbies"]
 type: "roundup"
 image: "/images/blog/2026-08-13-termometro-infrarrojo-que-rango-y-que-emisividad-necesitas-1.jpg"
@@ -14,10 +14,8 @@ specsThatMatter:
     why: "Define qué puedes medir sin que el sensor sature. Un rango de -50°C~500°C cubre cocina y frigoríficos; para hornos industriales, motores o fundición necesitas los 800°C que declara Tilswall. Si tu uso es doméstico, un rango mayor no aporta nada y solo sube el precio."
   - spec: "Emisividad ajustable"
     why: "La emisividad es la fracción de radiación que emite una superficie respecto a un cuerpo negro ideal. Metales pulidos o superficies reflectantes dan lecturas erróneas si el emisor está fijo en un valor genérico (normalmente 0,95). Poder ajustarla corrige ese error; el Eventek de 500°C no la menciona en su ficha."
-  - spec: "Precisión declarada (±°C o ±%)"
-    why: "Ninguno de los cinco productos incluye este dato en la información proporcionada. Es la spec que determina si el número que ves en pantalla es fiable o solo orientativo. Ante su ausencia, no puedes comparar exactitud real entre modelos, solo rango y funciones."
-  - spec: "Ratio distancia:punto (D:S)"
-    why: "No disponible en ninguna ficha. Este ratio indica el tamaño del área medida según la distancia al objeto: a mayor distancia, el punto de medición crece y puede mezclar temperaturas de zonas distintas. Sin este dato no sabes a qué distancia puedes confiar en la lectura."
+  - spec: "Lo que ninguna de las cinco fichas te dice: precisión y ratio distancia:punto"
+    why: "Faltan las dos specs que determinan si puedes fiarte de la lectura. La precisión (±°C o ±%) dice cuánto se desvía el número de la realidad. El ratio distancia:punto (D:S) dice qué superficie estás midiendo en realidad: a mayor distancia el área crece, y si abarca zonas a distinta temperatura la lectura es un promedio, no un punto. Sin ninguno de los dos, estos cinco solo se pueden comparar por rango y funciones, no por exactitud."
   - spec: "Sonda de contacto tipo K incluida"
     why: "Solo Tilswall la incluye según su ficha. Permite verificar por contacto directo en líquidos o mezclas donde la medición IR sin contacto no es fiable por reflejos o transparencia del medio, complementando al láser."
 
@@ -32,8 +30,8 @@ chooseBy:
     priority: "precio de entrada, el rango de 500-600°C ya cubre el uso"
 
 comparison:
-  columns: ["Rango mínimo (°C)", "Rango máximo (°C)", "Emisividad ajustable", "Precio (€)", "Coste por 100°C de rango (€)"]
-  derivedNote: "La última columna es un cálculo propio: precio dividido entre la amplitud total del rango (máximo menos mínimo) y multiplicado por 100. Indica cuánto pagas por cada 100°C de capacidad de medición declarada; no aparece en ninguna ficha y no se puede calcular para el ThermoPro TP30 porque su rango no está disponible."
+  columns: ["Rango (°C)", "Emisividad ajustable", "Sonda K", "Precio (€)", "Uso más exigente que cubre"]
+  derivedNote: "La última columna no es un dato de la ficha: es mi lectura de hasta dónde llega cada modelo, cruzando rango declarado, emisividad ajustable y sonda de contacto. Deliberadamente no incluyo un «coste por grado de rango»: la amplitud no es un bien proporcional —nadie mide de forma uniforme entre -50 y 800 °C— y premiar los grados por euro empujaría justo a la compra equivocada."
 
 products:
   - name: "EventekTermómetro Infrarrojo -50°C~500°C (-58°F~932°F), Digital Laser IR Sin Contacto, Pistola de Temperatura, No se puede medir la fiebre, Rojo/Negro【Uso no corporal】"
@@ -44,7 +42,7 @@ products:
     price: 18.99
     rating: 4.4
     reviews: 7420
-    specs: ["-50", "500", "no disponible", "18.99", "3.45"]
+    specs: ["-50 a 500", "no disponible", "no disponible", "18.99", "Cocina y refrigeración"]
     highlight: "Según su ficha es el rango más bajo del grupo y no menciona emisividad ajustable, lo que lo deja fuera de superficies muy reflectantes. Adecuado para cocina y verificación de temperatura en frigoríficos, no para uso corporal según su propia etiqueta."
   - name: "Eventek Termometro Cocina, -50 ℃~600 ℃(-58~1112 ℉) Termometro Infrarrojos con LCD, Termometro Laser Pistola de Temperatura, termómetro infrarrojo digital cocina Sin Contacto Emisividad Ajustable BBQ"
     shortName: "Eventek IR -50/600°C"
@@ -54,8 +52,8 @@ products:
     price: 19.99
     rating: 4.4
     reviews: 4981
-    specs: ["-50", "600", "sí", "19.99", "3.07"]
-    highlight: "Amplía el rango respecto al modelo anterior y añade emisividad ajustable según su ficha, con coste por 100°C de rango el más bajo del grupo. Pensado para BBQ y cocina donde puede haber superficies con distinta reflectividad."
+    specs: ["-50 a 600", "sí", "no disponible", "19.99", "Cocina, BBQ y superficies reflectantes"]
+    highlight: "Amplía el rango respecto al modelo anterior y añade emisividad ajustable según su ficha, al mismo precio que el ERICKHILL de idénticas prestaciones declaradas. Pensado para BBQ y cocina donde puede haber superficies con distinta reflectividad."
   - name: "Tilswall Termómetro Infrarrojo (-50°C~800°C (-58°F~1472°F) Termometro laser sin Contacto con Emisividad Ajustable, para Cocina, industrial, BBQ y Congelador, Incluye sonda K, Usto No Humano（Azul）W300"
     shortName: "Tilswall W300 -50/800°C"
     tier: "Rango alto + sonda de contacto"
@@ -64,7 +62,7 @@ products:
     price: 26.99
     rating: 4.3
     reviews: 3060
-    specs: ["-50", "800", "sí", "26.99", "3.18"]
+    specs: ["-50 a 800", "sí", "sí", "26.99", "Taller y procesos por encima de 600 °C"]
     highlight: "El único con rango hasta 800°C y sonda tipo K incluida según su ficha, lo que permite medición por contacto además de IR. Es el más caro del grupo, coherente con ser el de mayor capacidad declarada."
   - name: "ERICKHILL Termómetro infrarrojo -50 ℃ ~ 600 ℃ Tamaño compacto Termómetro láser sin contacto Pistola LCD Pantalla retroiluminada Emisividad ajustable - para reparación de vehículos/cocina/comida"
     shortName: "ERICKHILL IR compacto"
@@ -74,7 +72,7 @@ products:
     price: 19.99
     rating: 4.5
     reviews: 2742
-    specs: ["-50", "600", "sí", "19.99", "3.07"]
+    specs: ["-50 a 600", "sí", "no disponible", "19.99", "Cocina, BBQ y superficies reflectantes"]
     highlight: "Mismo rango y emisividad ajustable que el Eventek de 600°C, con pantalla LCD retroiluminada según su ficha. Es el de mejor valoración del listado (4.5), aunque con menos reseñas acumuladas que los Eventek."
   - name: "ThermoPro TP30 Termómetro Infrarrojo Industrial, Termómetro Láser Digital con Emisividad Ajustable, Termómetro Láser Profesional de Alta Precisión (No para Uso Corporal)"
     shortName: "ThermoPro TP30"
@@ -84,7 +82,7 @@ products:
     price: 18.99
     rating: 4.5
     reviews: 1396
-    specs: ["no disponible", "no disponible", "sí", "18.99", "no disponible"]
+    specs: ["no disponible", "sí", "no disponible", "18.99", "no disponible"]
     highlight: "Su ficha no incluye el rango de temperatura, un dato clave para decidir si sirve para tu uso; solo confirma emisividad ajustable. Sin ese número no se puede comparar su capacidad real frente al resto del grupo."
 
 pitfalls:
@@ -103,7 +101,7 @@ verdicts:
     why: "Rango suficiente para hornos y frigoríficos domésticos, precio más bajo del grupo. No necesitas emisividad ajustable para uso alimentario habitual."
   - profile: "BBQ y superficies con distinta reflectividad"
     pick: "ERICKHILL o Eventek 600°C"
-    why: "Ambos declaran emisividad ajustable y mismo rango, con coste por 100°C de rango idéntico según el cálculo derivado."
+    why: "Ambos declaran emisividad ajustable, el mismo rango y el mismo precio; según ficha son intercambiables y la decisión baja a preferencia de formato."
   - profile: "Taller, automoción o procesos con temperaturas altas"
     pick: "Tilswall W300 (B08Z7941ZP)"
     why: "Único con 800°C de rango y sonda tipo K incluida para verificar por contacto, según su ficha."
