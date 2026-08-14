@@ -50,6 +50,18 @@ export const SITE = {
   contact: "hola@physicsofhobbies.com",
 } as const;
 
+/**
+ * Analítica autoalojada (Umami en el Oracle, ver notas/umami-despliegue.md).
+ * Sin cookies y sin terceros: el script se sirve desde un subdominio propio.
+ * `script` no es `/script.js` a propósito, para no chocar con las reglas de
+ * bloqueo más genéricas.
+ */
+export const ANALYTICS = {
+  host: "https://stats.physicsofhobbies.com",
+  script: "/u.js",
+  websiteId: "499441fe-5423-4c87-816e-f2a635470022",
+} as const;
+
 /** Criterio de selección de producto. Debe cuadrar con el filtro del workflow. */
 export const CRITERIA = {
   minRating: 4,

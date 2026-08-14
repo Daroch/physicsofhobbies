@@ -19,6 +19,8 @@ interface Product {
 interface Props {
   /** Título de la pestaña/SEO, con sufijo del sitio. */
   title: string;
+  /** Slug del post. Solo para etiquetar los eventos de clic a Amazon. */
+  postId: string;
   /** Titular visible del post, sin sufijo. */
   heading: string;
   description: string;
@@ -36,7 +38,7 @@ interface Props {
 }
 
 const {
-  title, heading, description, image, category, pubDate, products, structuredData,
+  title, postId, heading, description, image, category, pubDate, products, structuredData,
   audience, specsThatMatter, chooseBy, comparison, pitfalls, verdicts,
 } = Astro.props;
 const cat = (category || 'general').toLowerCase();
@@ -135,7 +137,16 @@ const hasTable = !!comparison?.columns?.length && products.some((p) => p.specs?.
       {products.map((product) => (
         <article class="compare-card">
           {product.tier && <span class="eyebrow tier-eyebrow" data-cat={cat}><span class="dot"></span>{product.tier}</span>}
-          <a href={product.amazonUrl} target="_blank" rel="nofollow sponsored" class="compare-image-link photo-surface">
+          <a
+            href={product.amazonUrl}
+            target="_blank"
+            rel="nofollow sponsored"
+            class="compare-image-link photo-surface"
+            data-umami-event="amazon-click-imagen"
+            data-umami-event-post={postId}
+            data-umami-event-producto={product.shortName ?? product.name}
+            data-umami-event-tier={product.tier ?? 'sin-tier'}
+          >
             <img src={product.image} alt={product.name} loading="lazy" />
           </a>
           <h3 class="compare-name">{product.name}</h3>
@@ -145,7 +156,16 @@ const hasTable = !!comparison?.columns?.length && products.some((p) => p.specs?.
             {product.price && <span class="compare-price">{product.price.toFixed(2).replace('.', ',')} €</span>}
           </div>
           <p class="compare-highlight">{product.highlight}</p>
-          <a href={product.amazonUrl} target="_blank" rel="nofollow sponsored" class="amazon-button">
+          <a
+            href={product.amazonUrl}
+            target="_blank"
+            rel="nofollow sponsored"
+            class="amazon-button"
+            data-umami-event="amazon-click"
+            data-umami-event-post={postId}
+            data-umami-event-producto={product.shortName ?? product.name}
+            data-umami-event-tier={product.tier ?? 'sin-tier'}
+          >
             Ver en Amazon →
           </a>
         </article>
