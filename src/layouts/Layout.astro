@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Header from '../components/Header.astro';
+import { ANALYTICS } from '../config/site';
 import '@fontsource/ibm-plex-sans/400.css';
 import '@fontsource/ibm-plex-sans/500.css';
 import '@fontsource/ibm-plex-sans/600.css';
@@ -16,7 +17,9 @@ interface Props {
 	type?: 'website' | 'article';
 	structuredData?: Record<string, unknown>;
 }
-const { title, description, image = '/images/default-physics.png', type = 'website', structuredData } = Astro.props;
+// og-default.png es la tarjeta de marca 1200x630; default-physics.png (1200x800)
+// se queda como relleno dentro de la página, donde el recorte 1.91:1 no aplica.
+const { title, description, image = '/images/og-default.png', type = 'website', structuredData } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogImageURL = new URL(image, Astro.site);
@@ -49,6 +52,17 @@ const ogImageURL = new URL(image, Astro.site);
 		)}
 
 		<link rel="stylesheet" href="/katex/katex.min.css" />
+
+		{/* Umami autoalojado. Solo en producción, para no contaminar las métricas
+		    con `npm run dev`. `is:inline` evita que Astro procese el script. */}
+		{import.meta.env.PROD && (
+			<script
+				is:inline
+				defer
+				src={`${ANALYTICS.host}${ANALYTICS.script}`}
+				data-website-id={ANALYTICS.websiteId}
+			/>
+		)}
 	</head>
 	<body>
 		<Header />

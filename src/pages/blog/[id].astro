@@ -46,6 +46,7 @@ const articleStructuredData = {
 {isRoundup ? (
   <RoundupLayout
     title={`${post.data.title} — Physics of Hobbies`}
+    postId={post.id}
     heading={post.data.title}
     description={post.data.description}
     image={fallbackImage}
@@ -98,7 +99,15 @@ const articleStructuredData = {
 
       {post.data.amazonUrl && (
         <div class="amazon-cta">
-          <a href={post.data.amazonUrl} target="_blank" rel="nofollow sponsored" class="amazon-image-link photo-surface">
+          <a
+            href={post.data.amazonUrl}
+            target="_blank"
+            rel="nofollow sponsored"
+            class="amazon-image-link photo-surface"
+            data-umami-event="amazon-click-imagen"
+            data-umami-event-post={post.id}
+            data-umami-event-producto={post.data.productName ?? post.data.title}
+          >
             <img
               src={post.data.image}
               alt={post.data.productName ?? post.data.title}
@@ -107,7 +116,15 @@ const articleStructuredData = {
           <div class="amazon-cta-body">
             <span class="eyebrow amazon-eyebrow"><span class="dot"></span>Producto recomendado en este artículo</span>
             <p class="amazon-title">{post.data.productName ?? post.data.title}</p>
-            <a href={post.data.amazonUrl} target="_blank" rel="nofollow sponsored" class="amazon-button">
+            <a
+              href={post.data.amazonUrl}
+              target="_blank"
+              rel="nofollow sponsored"
+              class="amazon-button"
+              data-umami-event="amazon-click"
+              data-umami-event-post={post.id}
+              data-umami-event-producto={post.data.productName ?? post.data.title}
+            >
               Ver en Amazon →
             </a>
           </div>
@@ -116,11 +133,13 @@ const articleStructuredData = {
 
       <AuthorBox />
 
-      <footer class="affiliate-footer">
-        <p>
-        Participo en el Programa de Afiliados de Amazon. Algunos enlaces en este artículo son de afiliado, lo que significa que recibo una pequeña comisión por las compras realizadas sin coste adicional para ti. Los productos se eligen con un <a href="/metodologia">criterio publicado</a> y no los pruebo en mano.
-        </p>
-      </footer>
+      {post.data.amazonUrl && (
+        <footer class="affiliate-footer">
+          <p>
+          Participo en el Programa de Afiliados de Amazon. Algunos enlaces en este artículo son de afiliado, lo que significa que recibo una pequeña comisión por las compras realizadas sin coste adicional para ti. Los productos se eligen con un <a href="/metodologia">criterio publicado</a> y no los pruebo en mano.
+          </p>
+        </footer>
+      )}
     </article>
   </main>
 </Layout>

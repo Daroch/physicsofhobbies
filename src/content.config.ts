@@ -27,7 +27,11 @@ const blogBase = {
   title: z.string(),
   pubDate: z.coerce.date(),
   description: z.string(),
-  category: z.string().default("General"),
+  // Lista cerrada: antes era texto libre y n8n generó "electronica" y
+  // "electrónica" como categorías distintas (dos páginas /categoria/, una 404).
+  category: z
+    .enum(["acústica", "materiales", "electrónica", "óptica", "mecánica", "robótica", "general"])
+    .default("general"),
   tags: z.array(z.string()).default([]),
   image: z.string().optional(),
   amazonUrl: z.string().url().optional(),

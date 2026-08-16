@@ -2,7 +2,7 @@
 title: "Qué llave dinamométrica necesitas según el par que aprietes"
 pubDate: 2026-08-10
 description: "El error de una llave dinamométrica se mide en porcentaje de la lectura, así que la misma precisión declarada significa cosas muy distintas según el par al que aprietes. Comparamos tres cuadradillos."
-category: "Mecánica"
+category: "mecánica"
 tags: ["mecánica", "par de apriete", "herramientas", "torque"]
 type: "roundup"
 image: "/images/blog/roundup-llave-38.jpg"
