@@ -11,9 +11,20 @@ export const AUTHOR = {
    * el nombre coincida literalmente.
    */
   name: "Álvaro",
-  /** Titular corto. Solo credenciales reales y verificables (ver notas/bio). */
+  /**
+   * Titular corto. Solo credenciales reales y verificables (ver notas/bio).
+   * Lo consumen el JSON-LD (`description` del Person) y la cabecera de
+   * /sobre-mi — deliberadamente NO la caja al pie de cada post: repetir las
+   * titulaciones en los 14 artículos suena a currículum, y la señal de
+   * autoridad ya viaja en los datos estructurados.
+   */
   role: "Licenciado en Ciencias Físicas e Ingeniería Electrónica",
-  bio: "Dos licenciaturas por la UPV/EHU y veinte años desarrollando software. Analizo especificaciones técnicas de herramientas de taller y explico qué significan en la práctica.",
+  /**
+   * Una línea para la caja de autor. Dice de qué va el sitio, no quién es el
+   * autor: para eso está el enlace a /sobre-mi.
+   */
+  shortBio:
+    "Escribo sobre la física de los instrumentos de medida y sobre qué dicen —y qué callan— sus fichas técnicas.",
   avatar: "/images/avatar-physics-of-hobbies-512.png",
   /** Página de la entidad autor dentro del sitio. */
   page: "/sobre-mi",

@@ -1,6 +1,9 @@
 ---
 // Caja de autor al pie de cada artículo. Da a la persona una presencia visible
 // y enlazable en todas las páginas de contenido, no solo en /sobre-mi.
+// Deliberadamente breve: las titulaciones no se repiten aquí (sonaban a
+// currículum en cada post). Viven en /sobre-mi y en el JSON-LD `Person`, que es
+// lo que lee Google — así que acortar esto no debilita la señal de autoría.
 import { AUTHOR } from '../config/site';
 
 const linkedin = AUTHOR.profiles.linkedin;
@@ -9,10 +12,8 @@ const github = AUTHOR.profiles.github;
 <aside class="author-box">
   <img class="author-avatar" src={AUTHOR.avatar} alt={`Avatar de ${AUTHOR.name}`} width="112" height="112" loading="lazy" />
   <div class="author-body">
-    <span class="eyebrow author-eyebrow"><span class="dot"></span>Escrito por</span>
-    <p class="author-name">{AUTHOR.name}</p>
-    <p class="author-role">{AUTHOR.role}</p>
-    <p class="author-bio">{AUTHOR.bio}</p>
+    <span class="eyebrow author-eyebrow"><span class="dot"></span>Escrito por {AUTHOR.name}</span>
+    <p class="author-bio">{AUTHOR.shortBio}</p>
     <div class="author-links">
       <a href={AUTHOR.page}>Sobre el autor</a>
       <a href="/metodologia">Metodología</a>
@@ -35,8 +36,8 @@ const github = AUTHOR.profiles.github;
   }
   .author-avatar {
     flex: none;
-    width: 72px;
-    height: 72px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     border: 1px solid var(--line);
     background: var(--ink);
@@ -47,31 +48,18 @@ const github = AUTHOR.profiles.github;
     gap: 0.3rem;
     min-width: 0;
   }
-  .author-eyebrow { color: var(--signal-ink); margin-bottom: 0.15rem; }
-  .author-name {
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 1.05rem;
-    color: var(--ink);
-    margin: 0;
-  }
-  .author-role {
-    font-family: var(--font-mono);
-    font-size: 0.78rem;
-    color: var(--muted);
-    margin: 0;
-  }
+  .author-eyebrow { color: var(--signal-ink); }
   .author-bio {
     color: var(--muted);
     font-size: 0.92rem;
     line-height: 1.6;
-    margin: 0.35rem 0 0;
+    margin: 0.4rem 0 0;
   }
   .author-links {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 0.6rem;
+    margin-top: 0.7rem;
   }
   .author-links a {
     font-family: var(--font-mono);
@@ -86,7 +74,7 @@ const github = AUTHOR.profiles.github;
   .author-links a:hover { border-bottom-color: var(--signal); }
 
   @media (max-width: 720px) {
-    .author-box { flex-direction: column; gap: 1rem; padding: 1.25rem; }
-    .author-avatar { width: 60px; height: 60px; }
+    .author-box { gap: 1rem; padding: 1.25rem; }
+    .author-avatar { width: 48px; height: 48px; }
   }
 </style>
