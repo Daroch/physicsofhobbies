@@ -32,7 +32,7 @@ const categories = [...new Map(
   <nav class="category-nav">
     <a href="/" class="cat-link active">Todos</a>
     {categories.map(cat => (
-      <a href={`/categoria/${cat.toLowerCase()}`} class="cat-link" data-cat={cat.toLowerCase()}>
+      <a href={`/categoria/${cat.toLowerCase()}/`} class="cat-link" data-cat={cat.toLowerCase()}>
         <span class="dot"></span>{cat}
       </a>
     ))}

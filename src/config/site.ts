@@ -26,8 +26,9 @@ export const AUTHOR = {
   shortBio:
     "Escribo sobre la física de los instrumentos de medida y sobre qué dicen —y qué callan— sus fichas técnicas.",
   avatar: "/images/avatar-physics-of-hobbies-512.png",
-  /** Página de la entidad autor dentro del sitio. */
-  page: "/sobre-mi",
+  /** Página de la entidad autor dentro del sitio. Con barra final: es la URL
+   *  canónica, y el `url` del JSON-LD debe coincidir con ella exactamente. */
+  page: "/sobre-mi/",
   /** Titulaciones, para `alumniOf` del JSON-LD. */
   degrees: [
     "Licenciado en Ciencias Físicas (Especialidad Electrónica y Automática), UPV/EHU",
