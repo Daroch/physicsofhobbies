@@ -8,18 +8,27 @@ import rehypeKatex from "rehype-katex";
 import sitemap from "@astrojs/sitemap";
 
 // `lastmod` por post para el sitemap. No se puede usar `astro:content` desde
-// aquí, así que se lee el `pubDate` del frontmatter a pelo. Sin esta señal
-// Google no tiene forma de saber qué ha cambiado y difiere el rastreo — que es
-// justo lo que Search Console reporta como "Descubierta: actualmente sin indexar".
+// aquí, así que se lee el frontmatter a pelo. Sin esta señal Google no tiene
+// forma de saber qué ha cambiado y difiere el rastreo — que es justo lo que
+// Search Console reporta como "Descubierta: actualmente sin indexar".
+//
+// Se prefiere `updatedDate` sobre `pubDate`, pero nunca la fecha de build ni el
+// `mtime` del archivo: en CI ese `mtime` es la hora del checkout, así que todos
+// los posts parecerían modificados cada día. Google ignora el `lastmod` de un
+// sitio entero cuando lo detecta poco fiable, y perder la señal es peor que no
+// haberla dado.
 const BLOG_DIR = "./src/content/blog";
+const FECHA = (frontmatter, campo) =>
+  frontmatter.match(new RegExp(`^${campo}:\\s*['"]?(\\d{4}-\\d{2}-\\d{2})`, "m"))?.[1];
+
 const lastmodPorSlug = new Map(
   fs
     .readdirSync(BLOG_DIR)
     .filter((f) => /\.mdx?$/.test(f) && !f.startsWith("_"))
     .map((f) => {
       const frontmatter = fs.readFileSync(path.join(BLOG_DIR, f), "utf8");
-      const fecha = frontmatter.match(/^pubDate:\s*['"]?(\d{4}-\d{2}-\d{2})/m);
-      return [f.replace(/\.mdx?$/, ""), fecha?.[1]];
+      const fecha = FECHA(frontmatter, "updatedDate") ?? FECHA(frontmatter, "pubDate");
+      return [f.replace(/\.mdx?$/, ""), fecha];
     })
     .filter(([, fecha]) => fecha)
 );

@@ -27,6 +27,9 @@ const articleStructuredData = {
   description: post.data.description,
   image: new URL(fallbackImage, Astro.site).toString(),
   datePublished: post.data.pubDate.toISOString(),
+  // Solo si hubo revisión real. Emitir `dateModified` igual a `datePublished`
+  // en todos los posts es ruido que no dice nada.
+  ...(post.data.updatedDate && { dateModified: post.data.updatedDate.toISOString() }),
   author: authorSchema(Astro.site),
   publisher: {
     '@type': 'Organization',
@@ -52,6 +55,7 @@ const articleStructuredData = {
     image={fallbackImage}
     category={post.data.category}
     pubDate={post.data.pubDate}
+    updatedDate={post.data.updatedDate}
     products={post.data.products ?? []}
     audience={post.data.audience}
     specsThatMatter={post.data.specsThatMatter}
@@ -78,6 +82,12 @@ const articleStructuredData = {
         <h1 class="post-title">{post.data.title}</h1>
         <div class="post-meta">
           <time>{post.data.pubDate ? post.data.pubDate.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }) : 'Fecha no disponible'}</time>
+          {post.data.updatedDate && (
+            <>
+              <span class="tick"></span>
+              <span>Revisado el <time>{post.data.updatedDate.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}</time></span>
+            </>
+          )}
           <span class="tick"></span>
           <span>Lectura de 5 min</span>
         </div>

@@ -27,6 +27,7 @@ interface Props {
   image?: string;
   category?: string;
   pubDate: Date;
+  updatedDate?: Date;
   products: Product[];
   structuredData?: Record<string, unknown>;
   audience?: string;
@@ -38,7 +39,7 @@ interface Props {
 }
 
 const {
-  title, postId, heading, description, image, category, pubDate, products, structuredData,
+  title, postId, heading, description, image, category, pubDate, updatedDate, products, structuredData,
   audience, specsThatMatter, chooseBy, comparison, pitfalls, verdicts,
 } = Astro.props;
 const cat = (category || 'general').toLowerCase();
@@ -55,6 +56,12 @@ const hasTable = !!comparison?.columns?.length && products.some((p) => p.specs?.
         <h1 class="post-title">{heading}</h1>
         <div class="post-meta">
           <time>{pubDate.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}</time>
+          {updatedDate && (
+            <>
+              <span class="tick"></span>
+              <span>Revisado el <time>{updatedDate.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}</time></span>
+            </>
+          )}
           <span class="tick"></span>
           <span>Lectura de 6 min</span>
         </div>
