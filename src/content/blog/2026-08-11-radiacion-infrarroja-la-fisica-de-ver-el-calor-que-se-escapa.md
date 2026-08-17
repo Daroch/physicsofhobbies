@@ -21,4 +21,6 @@ Aquí está el error que comete casi todo el mundo: apuntar la cámara a metal p
 3. Coloca un trozo de papel de aluminio pegado a la superficie y vuelve a medir el mismo punto.
 4. Compara: la lectura sobre el aluminio será notablemente distinta, aunque la temperatura real no haya cambiado. Eso es la emisividad jugándote una mala pasada.
 
+Si estás dudando entre una cámara como esta y un termómetro infrarrojo de pistola, que cuesta ocho veces menos, la diferencia real no es la precisión sino cuántas veces mide cada uno: está desarrollada en [qué mide cada uno](/blog/2026-08-17-termometro-infrarrojo-o-camara-termica-que-mide-cada-uno/).
+
 La TC004 Mini ofrece una resolución de 240x240 píxeles térmicos, modesta si la comparas con equipos profesionales de 640x480, pero suficiente para localizar puntos calientes en instalaciones domésticas o revisar placas electrónicas. Su rango de -20°C a 450°C cubre la mayoría de aplicaciones de bricolaje y mantenimiento, y los 25 Hz de refresco evitan el efecto de imagen entrecortada al mover la cámara. Ten en cuenta que es un accesorio para smartphone Android con USB-C, no un dispositivo autónomo con pantalla propia, así que necesitas tu móvil compatible para poder usarla.
