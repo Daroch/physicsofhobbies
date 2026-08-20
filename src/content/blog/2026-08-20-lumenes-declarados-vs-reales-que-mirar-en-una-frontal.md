@@ -16,6 +16,8 @@ specsThatMatter:
     why: "Determina la autonomía real, algo que casi nunca aparece en estas fichas. Solo POKISEED declara 5000 mAh; el resto no publica esta cifra, así que no puedes calcular cuánto dura la luz en cada modo antes de comprar."
   - spec: "Índice de protección IP"
     why: "IPX4 protege solo contra salpicaduras; IPX6 resiste chorros de agua más intensos. Si vas a usarla bajo lluvia sostenida o en actividades acuáticas, la diferencia entre ambos códigos decide si el aparato sobrevive a la sesión."
+  - spec: "Intensidad en candelas y alcance en metros"
+    why: "El lumen mide la luz total que sale del foco en todas las direcciones; lo que determina a cuántos metros distingues algo es la intensidad en candelas, y de ella sale el alcance. La norma ANSI/PLATO FL1 lo define como la distancia a la que quedan 0,25 lux, la claridad de la luna llena. Dos frontales con los mismos lúmenes rinden de forma opuesta según concentren o dispersen el haz, y ninguna de estas cinco fichas declara candelas ni alcance."
   - spec: "Modos de iluminación y luz roja"
     why: "Más modos no siempre son mejor si no controlas la intensidad exacta de cada uno; la ficha no da lúmenes por modo. La luz roja sí es relevante porque preserva la visión nocturna sin deslumbrar a otros."
 
@@ -53,7 +55,7 @@ products:
     rating: 4.5
     reviews: 3063
     specs: ["2000 lm", "16", "no disponible", "no disponible", "19.99"]
-    highlight: "Viene en pack de dos unidades con control individual y sensor inteligente, según su ficha. No especifica código IP concreto (solo dice 'impermeable') ni capacidad de batería, así que no puedes verificar ni resistencia al agua ni autonomía."
+    highlight: "Ojo al comparar su precio: los 19,99 € son por DOS unidades, así que la columna de precio no es equiparable a la del resto. Cálculo propio: sale a 10,00 € por linterna, el coste unitario más bajo del grupo. No especifica código IP concreto (solo dice 'impermeable') ni capacidad de batería, así que no puedes verificar ni resistencia al agua ni autonomía."
   - name: "POKISEED Linterna Frontal LED Recargable 1500 Lúmenes, Linterna Cabeza USB-C 5000 mAh, Haz Ancho 230°, 3 Modos, IPX6 Impermeable, Ligera, Clips para Casco, para Correr, Camping, Caza, Pesca y Trabajo"
     shortName: "POKISEED USB-C 5000mAh"
     tier: "única con batería declarada"
@@ -66,7 +68,7 @@ products:
     highlight: "Es la única de esta comparativa que declara capacidad de batería (5000 mAh) y el índice de protección más alto (IPX6), según su ficha. Es también la más cara del grupo; su haz de 230° es un dato de ángulo, no de intensidad lumínica."
   - name: "flintronic Linterna Frontal Recargable, 3 Modos (sin Batería) | 1500 Lúmenes, Brillo Ajustable, Rotación de 90°, Recargable, Carga USB-C, para Camping Correr Pesca Ciclismo"
     shortName: "flintronic Frontal USB-C"
-    tier: "más barata, sin batería incluida"
+    tier: "sin batería incluida"
     image: "/images/blog/2026-08-20-lumenes-declarados-vs-reales-que-mirar-en-una-frontal-4.jpg"
     amazonUrl: "https://www.amazon.es/dp/B0816C6MQ2?tag=physicshobbie-21"
     price: 15.99
@@ -111,4 +113,4 @@ Una linterna frontal LED convierte energía eléctrica en luz mediante un semico
 
 Lo que sí puedes comparar con algo de rigor son los datos que dependen de componentes físicos verificables: la capacidad de batería en mAh (que limita la autonomía real) y el código de protección IP (que define qué tipo de agua o polvo tolera el aparato). En este grupo de productos, solo uno declara su batería y no todos especifican su índice IP, así que la decisión de compra debe apoyarse en esos huecos de información tanto como en los datos presentes.
 
-Por eso, antes de fijarte en el número de lúmenes de la portada, conviene revisar qué otros datos técnicos acompañan a esa cifra y cuáles simplemente no aparecen.
+Y queda un hueco mayor que todos los anteriores: el lumen mide luz total emitida, no alcance. Lo que decide a qué distancia ves algo es la intensidad del haz en candelas, un dato que la norma ANSI/PLATO FL1 estandariza y que no aparece en ninguna de estas cinco fichas. Por eso la cifra de la portada no solo está sin verificar: además mide otra cosa distinta de la que te importa cuando alumbras un sendero.
