@@ -53,10 +53,10 @@ products:
     rating: 4.4
     reviews: 6332
     specs: ["10x", "50", "Porro", "no disponible", "75.06", "5.0"]
-    highlight: "El fabricante declara prisma Porro y gran angular, con pupila de salida calculada de 5 mm, la máxima de este grupo. Es el segundo más caro y su ficha no especifica tratamiento de lentes."
+    highlight: "El fabricante declara prisma Porro y gran angular, con pupila de salida calculada de 5 mm, la máxima de este grupo. Es el más caro de los cuatro que declaran precio y su ficha no especifica tratamiento de lentes."
   - name: "Celestron 71256 UpClose G2 10 x 50 Porro Binocular, Black"
     shortName: "Celestron UpClose G2"
-    tier: "gran angular, prisma porro"
+    tier: "Porro, 10x50"
     image: "/images/blog/2026-08-20-que-pupila-de-salida-necesitas-segun-cuando-uses-los-prismaticos-3.jpg"
     amazonUrl: "https://www.amazon.es/dp/B006ZN4TZS?tag=physicshobbie-21"
     price: 66.91
@@ -76,10 +76,9 @@ products:
     highlight: "Combina el mayor diámetro de objetivo (50 mm) con 12x de aumento, dando una pupila de salida intermedia de 4.2 mm. Incluye adaptador para teléfono y trípode según su ficha, algo que suma valor fuera de la óptica pura."
   - name: "Nikon Aculon A211 10X50 - Binoculares (ampliación 10x, objetivo 50 mm), color negro"
     shortName: "Nikon Aculon A211 10x50"
-    tier: "gran angular, valoración alta"
+    tier: "10x50, ficha incompleta"
     image: "/images/blog/2026-08-20-que-pupila-de-salida-necesitas-segun-cuando-uses-los-prismaticos-5.jpg"
     amazonUrl: "https://www.amazon.es/dp/B00BF8G5CS?tag=physicshobbie-21"
-    price: 0
     rating: 4.5
     reviews: 1128
     specs: ["10x", "50", "no disponible", "no disponible", "no disponible", "5.0"]
@@ -99,17 +98,19 @@ verdicts:
   - profile: "observación de aves al amanecer o atardecer"
     pick: "Bushnell Falcon 10x50"
     why: "Pupila de salida calculada de 5 mm, la máxima del grupo, con diseño Porro declarado y precio y valoración conocidos."
-  - profile: "viajes y senderismo con espacio limitado"
+  - profile: "mochila ligera o presupuesto ajustado, y uso a pleno día"
     pick: "Kylietech 12x42"
-    why: "Menor diámetro de objetivo, precio más bajo con dato disponible y adaptador para smartphone incluido según ficha."
-  - profile: "presupuesto como prioridad absoluta"
-    pick: "Kylietech 12x42"
-    why: "Es el único con precio de ficha por debajo de 40 €, aunque su pupila de salida sea la más baja del grupo."
-  - profile: "buscar la valoración más alta sin importar el precio exacto"
-    pick: "Nikon Aculon A211 10x50"
-    why: "Valoración de 4.5, la mayor del grupo, aunque su ficha no incluye precio ni tratamiento de lentes."
+    why: "El objetivo más pequeño y el único por debajo de 40 €, a cambio de la pupila de salida más baja del grupo: 3.5 mm."
+  - profile: "ya tienes decidido que quieres un 10x50"
+    pick: "Bushnell, Celestron o Nikon, indistintamente"
+    why: "Los tres declaran 10x50 y por tanto la misma pupila de 5 mm. Lo que los separaría no está en ninguna de las tres fichas."
+  - profile: "quieres comparar calidad óptica, no configuración"
+    pick: "Ninguna de estas cinco fichas te lo permite"
+    why: "Ninguna declara transmisión de luz en %, campo de visión ni grado IPX. Solo puedes calcular la pupila de salida, y no distingue entre los tres 10x50."
 ---
 
 Todo prismático reduce su rendimiento a una relación entre dos números: el aumento y el diámetro del objetivo. Esa relación fija la pupila de salida, el haz de luz que sale hacia tu ojo, y determina si el instrumento sirve bien con poca luz o solo a pleno día. Un 12x42 y un 10x50 pueden parecer similares en una ficha, pero esa diferencia de pupila de salida —3.5 mm frente a 5 mm— es la que notas al amanecer o en un bosque cerrado.
 
 Por eso comparar estos modelos solo por aumento o solo por precio deja fuera la variable que más cambia la experiencia real: cuánta luz les llega en condiciones difíciles. Las fichas de este grupo tampoco dan datos de transmisión de luz en porcentaje ni grado de estanqueidad verificado, así que el criterio que sí puedes calcular con los números disponibles —aumento y diámetro— es el que debe guiar la elección según el uso que le vayas a dar.
+
+De dónde sale ese límite, por qué el aumento se puede inflar sin añadir información y qué le ocurre a la imagen cuando la pupila de salida baja demasiado está desarrollado en [aumentos vacíos](/blog/2026-08-21-aumentos-vacios-por-que-525x-en-un-telescopio-de-60-mm-es-imposible/). Aquí esa física se da por sabida y se aplica a las cinco fichas.
