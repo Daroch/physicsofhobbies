@@ -1,5 +1,5 @@
 ---
-title: "Cámara termográfica: qué mirar detrás del pixel anunciado"
+title: "Mejor cámara termográfica: la resolución real de 5 fichas"
 pubDate: 2026-08-17
 description: "El pixel final que anuncian (SuperIR/TISR) no es el sensor real: qué declara cada ficha, y qué se calla, es lo que decide la compra."
 category: "óptica"

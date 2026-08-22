@@ -1,7 +1,7 @@
 ---
-title: "Termómetro infrarrojo: qué rango y qué emisividad necesitas"
+title: "Mejor termómetro infrarrojo: qué rango y emisividad necesitas"
 pubDate: 2026-08-13
-description: "Ninguna de las cinco fichas declara precisión en °C ni ratio distancia:punto, los datos reales que sí varían son rango de temperatura y emisividad ajustable."
+description: "Ninguna de las cinco fichas declara precisión en °C ni ratio distancia:punto. Lo que sí varía, y decide la compra, es el rango y la emisividad ajustable."
 category: "óptica"
 tags: ["comparativa", "ciencia", "hobbies"]
 type: "roundup"
