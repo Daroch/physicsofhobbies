@@ -82,4 +82,4 @@ Esos píxeles inventados suavizan la imagen y quedan bien en la pantalla, pero n
 
 Si ya has decidido que lo tuyo es el instrumento puntual, en [qué rango y qué emisividad necesitas](/blog/2026-08-13-termometro-infrarrojo-que-rango-y-que-emisividad-necesitas/) comparo cinco modelos — con el hallazgo incómodo de que ninguna de las cinco fichas declara ni precisión ni ratio D:S.
 
-Y si te inclinas por la cámara, la pregunta que decide no es cuántos píxeles anuncia, sino **cuántos milímetros cubre cada píxel a la distancia a la que vas a trabajar de verdad**. Con la fórmula de arriba y dos datos de la ficha —resolución del sensor y campo de visión— lo tienes en una cuenta.
+Y si te inclinas por la cámara, la pregunta que decide no es cuántos píxeles anuncia, sino **cuántos milímetros cubre cada píxel a la distancia a la que vas a trabajar de verdad**. Con la fórmula de arriba y dos datos de la ficha —resolución del sensor y campo de visión— lo tienes en una cuenta. Esa cuenta, hecha sobre cinco fichas reales, está en [la resolución real detrás del pixel anunciado](/blog/2026-08-17-camara-termografica-que-mirar-detras-del-pixel-anunciado/).

@@ -118,7 +118,7 @@ verdicts:
     why: "Ninguna ficha declara error de medición en °C o %. Sirven para ver dónde está el punto caliente, no para afirmar a cuántos grados está."
 ---
 
-Toda cámara termográfica de este grupo funciona igual en el fondo: un sensor microbolométrico convierte radiación infrarroja en una matriz de temperaturas, punto por punto. El número de esos puntos —la resolución nativa del sensor— es lo que de verdad limita el detalle térmico que puedes ver, no el número de píxeles que aparece en la pantalla final.
+Toda cámara termográfica de este grupo funciona igual en el fondo: un sensor microbolométrico convierte radiación infrarroja en una matriz de temperaturas, punto por punto. El número de esos puntos —la resolución nativa del sensor— es lo que de verdad limita el detalle térmico que puedes ver, no el número de píxeles que aparece en la pantalla final. La distinción entre sensibilidad y exactitud, que es donde estas fichas más confunden, está desarrollada en [termómetro infrarrojo o cámara térmica](/blog/2026-08-17-termometro-infrarrojo-o-camara-termica-que-mide-cada-uno/).
 
 Aquí está la trampa técnica de esta categoría: TOPDON (TISR), AMPBANK (también TISR) y HIKMICRO (SuperIR) usan interpolación por software para mostrar imágenes de 240x240 o 512x384 partiendo de sensores más pequeños. Ese proceso suaviza la imagen, pero no añade información térmica que el sensor no captó. Y la asimetría interesante está en quién lo dice: HIKMICRO publica las dos cifras por separado y AMPBANK nombra su TISR, mientras que la ficha del TC004 Mini anuncia 240x240 sin aclarar de dónde salen. Comparar solo el número anunciado te puede llevar a pagar de más sin ganar detalle real.
 
