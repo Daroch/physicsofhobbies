@@ -15,7 +15,7 @@ Montas un brazo robótico, le pones una pinza en la punta, cargas un objeto pequ
 
 ## La física detrás
 
-Un brazo articulado es, en esencia, una cadena de palancas. Cada servo debe generar un torque suficiente para sostener no solo el peso que sujeta la pinza, sino el peso de todos los eslabones y servos que tiene por delante. El torque necesario es $\tau = F \cdot d$, donde $F$ es el peso que cuelga en el extremo y $d$ es la distancia horizontal desde el eje del servo hasta ese peso. Si duplicas la longitud del brazo, duplicas el torque exigido aunque el peso no cambie. Por eso el servo de la base de un brazo 5-DOF siempre necesita más torque que el de la muñeca: acumula el peso de todo lo que viene después.
+Un brazo articulado es, en esencia, una cadena de palancas. Cada servo debe generar un torque suficiente para sostener no solo el peso que sujeta la pinza, sino el peso de todos los eslabones y servos que tiene por delante. El torque necesario es $\tau = F \cdot d$, donde $F$ es el peso que cuelga en el extremo y $d$ es la distancia horizontal desde el eje del servo hasta ese peso. Si duplicas la longitud del brazo, duplicas el torque exigido aunque el peso no cambie. Por eso el servo de la base de un brazo 5-DOF siempre necesita más torque que el de la muñeca: acumula el peso de todo lo que viene después. Es la misma relación entre fuerza y brazo de palanca que decide [con cuánta precisión aprietas un tornillo](/blog/2026-08-17-torque-y-palanca-la-fisica-de-apretar-tornillos-con-precision/), solo que allí la palanca la pones tú y aquí la impone la geometría del brazo.
 
 ## Cómo usarlo bien
 

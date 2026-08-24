@@ -5,6 +5,7 @@ description: "El rango de temperatura y la fuente de alimentación separan un so
 category: "electrónica"
 tags: ["comparativa", "ciencia", "hobbies"]
 type: "roundup"
+grupoBusqueda: "pinecil-v2-soldador-2026-08-05"
 image: "/images/blog/2026-08-22-mejor-soldador-de-estano-portatil-o-de-banco-segun-la-ficha-1.jpg"
 
 audience: "Esto es para quien va a comprar un soldador de estaño para electrónica DIY, reparación de placas o hobby y quiere saber qué spec del anuncio realmente cambia el resultado. No es para quien necesita soldadura industrial certificada con perfil térmico trazable: ninguna de estas fichas declara tolerancia de temperatura."

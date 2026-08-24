@@ -58,6 +58,22 @@ const blog = defineCollection({
     // Así el criterio va por delante de la recomendación, que es lo que separa
     // esto de una lista de afiliados.
 
+    /**
+     * `Grupo búsqueda` de Airtable del que salió esta comparativa.
+     *
+     * No se muestra en ninguna parte: existe para poder responder "¿qué roundup
+     * cubre este grupo?" leyendo el repo. Sin él, el mapa que usa el nodo `Code`
+     * de Physics v3 para enlazar cada post con su comparativa hay que mantenerlo
+     * a mano, y el primer mapa hubo que derivarlo cruzando ASIN contra Airtable.
+     *
+     * Lo escribe el nodo `Construir markdown`; los 7 roundups anteriores al
+     * 2026-08-22 se rellenaron a posteriori. Opcional a propósito: un roundup
+     * escrito a mano no tiene por qué venir de un grupo.
+     *
+     * Genera el mapa con: `venv/bin/python scripts/mapa_roundups.py`
+     */
+    grupoBusqueda: z.string().optional(),
+
     /** 1. A quién va dirigido. */
     audience: z.string().optional(),
 

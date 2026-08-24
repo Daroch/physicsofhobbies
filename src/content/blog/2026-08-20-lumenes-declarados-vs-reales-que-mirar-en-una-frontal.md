@@ -5,6 +5,7 @@ description: "Los lúmenes de la caja no están verificados; solo la capacidad d
 category: "óptica"
 tags: ["comparativa", "ciencia", "hobbies"]
 type: "roundup"
+grupoBusqueda: "linterna-frontal-recargable-lumenes-2026-08-20"
 image: "/images/blog/2026-08-20-lumenes-declarados-vs-reales-que-mirar-en-una-frontal-1.jpg"
 
 audience: "Esto es para quien va a comprar una linterna frontal para correr, acampar o trabajar de noche y quiere saber qué dato de la ficha es fiable y cuál es marketing. No es para quien necesita una certificación de lúmenes medida en laboratorio (rescate, profesional), porque ninguna de estas fichas la aporta."

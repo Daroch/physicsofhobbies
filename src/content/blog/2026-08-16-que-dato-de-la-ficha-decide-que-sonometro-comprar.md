@@ -5,6 +5,7 @@ description: "Todos declaran 30-130 dB y ponderación A/C, pero ninguna ficha es
 category: "acústica"
 tags: ["comparativa", "ciencia", "hobbies"]
 type: "roundup"
+grupoBusqueda: "sonometro-medidor-decibelios-2026-08-05"
 image: "/images/blog/2026-08-16-que-dato-de-la-ficha-decide-que-sonometro-comprar-1.jpg"
 
 audience: "Esto te sirve si necesitas una idea aproximada del nivel de ruido en casa, aula, taller o para discutir con un vecino. No lo necesitas si tienes que presentar una medición ante un organismo laboral o legal, porque ninguna de estas fichas declara clase de precisión ni calibración trazable."

@@ -5,6 +5,7 @@ description: "El error se mide en porcentaje de la lectura, así que la misma pr
 category: "mecánica"
 tags: ["mecánica", "par de apriete", "herramientas", "torque"]
 type: "roundup"
+grupoBusqueda: "llave-dinamometrica-precision-2026-08-09"
 image: "/images/blog/roundup-llave-38.jpg"
 
 audience: "Vas a apretar tornillería con un par especificado — bicicleta, moto, coche o impresora 3D — y no sabes si comprar una llave de 1/4\", 3/8\" o 1/2\". Si solo necesitas aflojar, no necesitas una llave dinamométrica."
@@ -87,7 +88,7 @@ verdicts:
     why: "Es la única que llega al par que pide una tuerca de rueda. No la compres esperando usarla también para la bicicleta."
 ---
 
-El par de apriete es fuerza por distancia al eje de giro: $\tau = F \times r$. Es la razón por la que aflojas una tuerca agarrotada con una barra larga en vez de con los dedos, y también la razón por la que no existe una sola llave dinamométrica que sirva para todo.
+El par de apriete es fuerza por distancia al eje de giro: $\tau = F \times r$. Es la razón por la que aflojas una tuerca agarrotada con una barra larga en vez de con los dedos, y también la razón por la que no existe una sola llave dinamométrica que sirva para todo. El desarrollo de por qué ese par acaba convertido en tensión dentro del vástago del tornillo está en [torque y palanca](/blog/2026-08-17-torque-y-palanca-la-fisica-de-apretar-tornillos-con-precision/); aquí damos por sabido ese terreno.
 
 Dentro de una llave de clic hay un resorte precargado que cede cuando el par alcanza el valor que has fijado. Ese mecanismo tiene un punto de trabajo óptimo, y su error se especifica casi siempre como **porcentaje de la lectura**. Ahí está la consecuencia que casi nadie explica: con la misma precisión declarada del ±3%, apretar a 10 Nm te da un margen de ±0,3 Nm, mientras que apretar a 200 Nm te da ±6 Nm. Veinte veces más.
 

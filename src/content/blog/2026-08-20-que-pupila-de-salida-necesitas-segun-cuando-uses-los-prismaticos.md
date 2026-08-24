@@ -5,6 +5,7 @@ description: "La pupila de salida (diámetro objetivo entre aumento) va de 3.5 a
 category: "óptica"
 tags: ["comparativa", "ciencia", "hobbies"]
 type: "roundup"
+grupoBusqueda: "prismaticos-10x50-2026-08-20"
 image: "/images/blog/2026-08-20-que-pupila-de-salida-necesitas-segun-cuando-uses-los-prismaticos-1.jpg"
 
 audience: "Esta comparativa sirve si buscas prismáticos generalistas para aves, senderismo o naturaleza y dudas entre aumento y diámetro de objetivo. No es para quien necesita astronomía o teleobjetivo de largo alcance: aquí faltan datos de transmisión de luz y campo angular que esas fichas no aportan."
