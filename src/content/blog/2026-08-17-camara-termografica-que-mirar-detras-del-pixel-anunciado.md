@@ -5,6 +5,7 @@ description: "El pixel final que anuncian (SuperIR/TISR) no es el sensor real: q
 category: "óptica"
 tags: ["comparativa", "ciencia", "hobbies"]
 type: "roundup"
+grupoBusqueda: "camara-termografica-2026-08-09"
 image: "/images/blog/2026-08-17-camara-termografica-que-mirar-detras-del-pixel-anunciado-1.jpg"
 
 audience: "Esto es para quien necesita localizar fugas térmicas, puntos calientes eléctricos o defectos de aislamiento en HVAC. No es para quien necesita medición de temperatura certificada o con trazabilidad, porque ninguna ficha de este grupo declara un error de precisión en °C o %."

@@ -5,6 +5,7 @@ description: "Ninguna de las cinco fichas declara precisión en °C ni ratio dis
 category: "óptica"
 tags: ["comparativa", "ciencia", "hobbies"]
 type: "roundup"
+grupoBusqueda: "termometro-infrarrojo-digital-2026-08-09"
 image: "/images/blog/2026-08-13-termometro-infrarrojo-que-rango-y-que-emisividad-necesitas-1.jpg"
 
 audience: "Interesa a quien va a medir temperaturas de superficie sin contacto en cocina, taller o mantenimiento y necesita saber qué rango y qué ajustes trae cada modelo. No lo necesita quien busca medir fiebre corporal: todos los fabricantes lo excluyen explícitamente en sus fichas."

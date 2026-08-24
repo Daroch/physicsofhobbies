@@ -5,6 +5,7 @@ description: "El error se mide en porcentaje de la lectura, así que la misma pr
 category: "mecánica"
 tags: ["mecánica", "par de apriete", "herramientas", "torque"]
 type: "roundup"
+grupoBusqueda: "llave-dinamometrica-precision-2026-08-09"
 image: "/images/blog/roundup-llave-38.jpg"
 
 audience: "Vas a apretar tornillería con un par especificado — bicicleta, moto, coche o impresora 3D — y no sabes si comprar una llave de 1/4\", 3/8\" o 1/2\". Si solo necesitas aflojar, no necesitas una llave dinamométrica."
