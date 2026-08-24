@@ -1,7 +1,7 @@
 ---
-title: "Termómetro infrarrojo: qué rango y qué emisividad necesitas"
+title: "Mejor termómetro infrarrojo: qué rango y emisividad necesitas"
 pubDate: 2026-08-13
-description: "Ninguna de las cinco fichas declara precisión en °C ni ratio distancia:punto, los datos reales que sí varían son rango de temperatura y emisividad ajustable."
+description: "Ninguna de las cinco fichas declara precisión en °C ni ratio distancia:punto. Lo que sí varía, y decide la compra, es el rango y la emisividad ajustable."
 category: "óptica"
 tags: ["comparativa", "ciencia", "hobbies"]
 type: "roundup"
@@ -115,3 +115,5 @@ Un termómetro infrarrojo no mide temperatura directamente: capta la radiación 
 Esa diferencia, junto con el rango de temperatura que soporta el sensor, es lo que separa a un modelo pensado para cocina doméstica de uno pensado para talleres o procesos industriales. En los cinco productos de este listado, precio y rango van de la mano: pagar más suele corresponder a más grados de rango declarado, no a más precisión, porque ese dato simplemente no aparece en ninguna ficha.
 
 Por eso la decisión de compra aquí no pasa por buscar 'el más preciso', sino por hacer coincidir el rango y la emisividad ajustable con la superficie y el rango de temperatura que realmente vas a medir.
+
+Y antes de eso conviene una comprobación previa: que el instrumento puntual sea el correcto para tu caso. Si lo que necesitas es *encontrar* un punto caliente en vez de comprobar uno que ya has localizado, ninguno de estos cinco es la herramienta adecuada. La diferencia entre ambos usos, con los números, está en [termómetro infrarrojo o cámara térmica: qué mide cada uno](/blog/2026-08-17-termometro-infrarrojo-o-camara-termica-que-mide-cada-uno/).

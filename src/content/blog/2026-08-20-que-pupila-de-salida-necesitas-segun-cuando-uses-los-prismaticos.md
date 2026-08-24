@@ -1,7 +1,7 @@
 ---
-title: "Qué pupila de salida necesitas según cuándo uses los prismáticos"
+title: "Mejores prismáticos calidad-precio: pupila de salida y aumentos"
 pubDate: 2026-08-20
-description: "La pupila de salida (diámetro objetivo entre aumento) va de 3.5 a 5 mm en este grupo y marca el rendimiento con poca luz."
+description: "La pupila de salida (diámetro objetivo entre aumento) va de 3.5 a 5 mm en estos binoculares y marca el rendimiento con poca luz."
 category: "óptica"
 tags: ["comparativa", "ciencia", "hobbies"]
 type: "roundup"

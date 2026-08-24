@@ -1,7 +1,7 @@
 ---
-title: "Qué dato de la ficha decide qué sonómetro comprar"
+title: "Mejor medidor de decibelios: 5 sonómetros comparados por ficha"
 pubDate: 2026-08-16
-description: "Todos declaran 30-130 dB y ponderación A/C, pero ninguna ficha especifica precisión ni certificación IEC 61672."
+description: "Todos declaran 30-130 dB y ponderación A/C, pero ninguna ficha especifica precisión ni certificación IEC 61672. Qué significa eso al elegir."
 category: "acústica"
 tags: ["comparativa", "ciencia", "hobbies"]
 type: "roundup"

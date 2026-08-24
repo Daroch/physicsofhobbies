@@ -26,6 +26,11 @@ const roundupProduct = z.object({
 const blogBase = {
   title: z.string(),
   pubDate: z.coerce.date(),
+  // Solo para revisiones de fondo, y se rellena a mano. Alimenta el `lastmod`
+  // del sitemap y el `dateModified` del JSON-LD. Google ignora el `lastmod` de
+  // un sitio entero si detecta que las fechas se mueven sin que cambie el
+  // contenido, así que una fecha de más cuesta más que una de menos.
+  updatedDate: z.coerce.date().optional(),
   description: z.string(),
   // Lista cerrada: antes era texto libre y n8n generó "electronica" y
   // "electrónica" como categorías distintas (dos páginas /categoria/, una 404).

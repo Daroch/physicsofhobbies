@@ -1,5 +1,5 @@
 ---
-title: "Lúmenes declarados vs reales: qué mirar en una frontal"
+title: "Mejor linterna frontal recargable: lúmenes declarados vs reales"
 pubDate: 2026-08-20
 description: "Los lúmenes de la caja no están verificados; solo la capacidad de batería y el código IP son datos comprobables en estas fichas."
 category: "óptica"

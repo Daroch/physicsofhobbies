@@ -27,6 +27,7 @@ interface Props {
   image?: string;
   category?: string;
   pubDate: Date;
+  updatedDate?: Date;
   products: Product[];
   structuredData?: Record<string, unknown>;
   audience?: string;
@@ -38,7 +39,7 @@ interface Props {
 }
 
 const {
-  title, postId, heading, description, image, category, pubDate, products, structuredData,
+  title, postId, heading, description, image, category, pubDate, updatedDate, products, structuredData,
   audience, specsThatMatter, chooseBy, comparison, pitfalls, verdicts,
 } = Astro.props;
 const cat = (category || 'general').toLowerCase();
@@ -74,6 +75,12 @@ const hayResenasCompartidas = products.some(esCompartida);
         <h1 class="post-title">{heading}</h1>
         <div class="post-meta">
           <time>{pubDate.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}</time>
+          {updatedDate && (
+            <>
+              <span class="tick"></span>
+              <span>Revisado el <time>{updatedDate.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}</time></span>
+            </>
+          )}
           <span class="tick"></span>
           <span>Lectura de 6 min</span>
         </div>
@@ -239,7 +246,7 @@ const hayResenasCompartidas = products.some(esCompartida);
     <section class="block methodology">
       <h2>Cómo se ha hecho esta comparativa</h2>
       <p>Los datos de esta página (precios, valoraciones y especificaciones) provienen de la ficha de cada producto en Amazon en la fecha de publicación, y los precios cambian a menudo. <strong>No he probado estos productos</strong>: lo que aporto aquí es la interpretación de sus specs, no una prueba de uso. Cuando un dato no aparece en la ficha, la tabla dice «no disponible» en vez de estimarlo.</p>
-      <p>El criterio de selección completo está en la <a href="/metodologia">metodología</a>.</p>
+      <p>El criterio de selección completo está en la <a href="/metodologia/">metodología</a>.</p>
     </section>
 
     <div class="author-slot">
@@ -248,7 +255,7 @@ const hayResenasCompartidas = products.some(esCompartida);
 
     <footer class="affiliate-footer">
       <p>
-        Participo en el Programa de Afiliados de Amazon. Algunos enlaces en este artículo son de afiliado, lo que significa que recibo una pequeña comisión por las compras realizadas sin coste adicional para ti. Los productos se eligen con un <a href="/metodologia">criterio publicado</a> y no los pruebo en mano.
+        Participo en el Programa de Afiliados de Amazon. Algunos enlaces en este artículo son de afiliado, lo que significa que recibo una pequeña comisión por las compras realizadas sin coste adicional para ti. Los productos se eligen con un <a href="/metodologia/">criterio publicado</a> y no los pruebo en mano.
       </p>
     </footer>
   </main>
