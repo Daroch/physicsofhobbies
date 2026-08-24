@@ -53,8 +53,11 @@ const hasTable = !!comparison?.columns?.length && products.some((p) => p.specs?.
 // tarjetas contiguas parece un error de nuestros datos, y peor aún, invita a
 // leer la cifra como si validara cada producto por separado. No lo hace.
 // No se oculta el dato —está en la ficha— pero se marca para que no engañe.
+// Truthy y no `!= null`: un 0 significa "sin dato", igual que en el resto de la
+// plantilla. Con `!= null`, dos productos sin valoración ni reseñas compartirían
+// la firma `0|0` y saldrían marcados como si Amazon repitiera contador entre ellos.
 const firmaResenas = (p: Product) =>
-  p.rating != null && p.reviews != null ? `${p.rating}|${p.reviews}` : null;
+  p.rating && p.reviews ? `${p.rating}|${p.reviews}` : null;
 const vecesPorFirma = new Map<string, number>();
 for (const p of products) {
   const f = firmaResenas(p);
