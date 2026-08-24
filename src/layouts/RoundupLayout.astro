@@ -46,6 +46,25 @@ const cat = (category || 'general').toLowerCase();
 
 // La tabla solo se pinta si hay cabeceras y al menos un producto las rellena.
 const hasTable = !!comparison?.columns?.length && products.some((p) => p.specs?.length);
+
+// Amazon comparte un mismo contador de reseñas entre productos distintos del
+// mismo vendedor. Visto en soldadores (2026-08-22): dos Beizkna que no son el
+// mismo aparato mostraban ★4,4 y 8.915 reseñas cada uno. Repetido en dos
+// tarjetas contiguas parece un error de nuestros datos, y peor aún, invita a
+// leer la cifra como si validara cada producto por separado. No lo hace.
+// No se oculta el dato —está en la ficha— pero se marca para que no engañe.
+const firmaResenas = (p: Product) =>
+  p.rating != null && p.reviews != null ? `${p.rating}|${p.reviews}` : null;
+const vecesPorFirma = new Map<string, number>();
+for (const p of products) {
+  const f = firmaResenas(p);
+  if (f) vecesPorFirma.set(f, (vecesPorFirma.get(f) ?? 0) + 1);
+}
+const esCompartida = (p: Product) => {
+  const f = firmaResenas(p);
+  return !!f && (vecesPorFirma.get(f) ?? 0) > 1;
+};
+const hayResenasCompartidas = products.some(esCompartida);
 ---
 
 <Layout title={title} description={description} image={image} type="article" structuredData={structuredData}>
@@ -159,7 +178,14 @@ const hasTable = !!comparison?.columns?.length && products.some((p) => p.specs?.
           <h3 class="compare-name">{product.name}</h3>
           <div class="compare-stats">
             {product.rating && <span>★ {product.rating}</span>}
-            {product.reviews && <span>{product.reviews} reseñas</span>}
+            {product.reviews && (
+              <span
+                class={esCompartida(product) ? 'resenas-compartidas' : undefined}
+                aria-describedby={esCompartida(product) ? 'nota-resenas' : undefined}
+              >
+                {product.reviews} reseñas{esCompartida(product) && <sup aria-hidden="true">*</sup>}
+              </span>
+            )}
             {product.price && <span class="compare-price">{product.price.toFixed(2).replace('.', ',')} €</span>}
           </div>
           <p class="compare-highlight">{product.highlight}</p>
@@ -178,6 +204,14 @@ const hasTable = !!comparison?.columns?.length && products.some((p) => p.specs?.
         </article>
       ))}
     </section>
+
+    {hayResenasCompartidas && (
+      <p class="nota-resenas" id="nota-resenas">
+        <span aria-hidden="true">*</span> Amazon muestra el mismo contador de reseñas en
+        productos distintos de un mismo vendedor. Cuando esa cifra se repite aquí, no está
+        valorando cada aparato por separado: no la uses para compararlos entre sí.
+      </p>
+    )}
 
     {pitfalls && pitfalls.length > 0 && (
       <section class="block">
@@ -484,6 +518,19 @@ const hasTable = !!comparison?.columns?.length && products.some((p) => p.specs?.
     font-family: var(--font-mono);
     font-size: 0.78rem;
     color: var(--muted);
+  }
+  .resenas-compartidas {
+    text-decoration: underline dotted;
+    text-underline-offset: 0.2em;
+    text-decoration-color: color-mix(in srgb, var(--muted) 55%, transparent);
+  }
+  .resenas-compartidas sup { text-decoration: none; }
+  .nota-resenas {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin: 1.25rem 0 0;
+    padding-left: 0.85rem;
+    border-left: 2px solid color-mix(in srgb, var(--signal) 45%, transparent);
   }
   .compare-price {
     color: var(--signal-ink);
