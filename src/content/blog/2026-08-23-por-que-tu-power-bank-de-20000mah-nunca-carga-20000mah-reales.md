@@ -22,3 +22,5 @@ Aquí es donde entra la carga rápida PD3.0 y QC4.0 que trae este modelo. Estos 
 4. Si la diferencia ronda el 30-35%, tu power bank funciona dentro de lo normal para la física de conversión, no está defectuoso.
 
 Este modelo entrega 22.5W combinando PD3.0 y QC4.0, lo que cubre la mayoría de smartphones actuales sin necesitar un cargador rápido aparte. La pantalla LCD es su punto útil real: te evita adivinar cuánta carga queda, algo que los power banks con solo LEDs no resuelven bien. Como limitación, 22.5W no es suficiente para cargar rápido portátiles o tablets grandes, así que si buscas eso necesitas revisar la potencia máxima antes de comprar.
+
+Si esa limitación de 22.5 W es la que te frena, la potencia máxima es exactamente el dato por el que hay que empezar a comparar: en [power bank 20000mAh: potencia (W) o cable USB-C](/blog/2026-08-24-power-bank-20000mah-potencia-w-o-cable-usb-c/) contrasto lo que declara cada ficha y por qué el cable que viene en la caja puede anular la cifra del anuncio.

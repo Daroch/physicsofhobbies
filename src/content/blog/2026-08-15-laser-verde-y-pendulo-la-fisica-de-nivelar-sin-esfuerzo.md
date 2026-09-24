@@ -22,3 +22,5 @@ El error más común es forzar el nivel fuera de su rango de autonivelación esp
 4. Inclina ligeramente la base a mano: si el láser corrige solo hasta cierto punto y luego parpadea, has encontrado el límite real de su rango de autonivelación.
 
 Este modelo de Enventor apoya esa autonivelación con una base magnética de 360° que te permite fijarlo a superficies metálicas sin trípode, algo útil en obra o en estanterías metálicas. La batería de 2200 mAh con carga USB-C y unas 7 horas de autonomía es coherente con un uso de sesiones de trabajo, no de jornada completa continua, y la certificación IP54 cubre polvo y salpicaduras, no inmersión, así que en exterior conviene evitar la lluvia directa.
+
+Autonomía, número de líneas e IP54 son las tres cifras que separan un modelo de otro dentro de este rango de precio: en [nivel láser autonivelante: líneas, batería o IP54](/blog/2026-08-24-nivel-laser-autonivelante-lineas-bateria-o-ip54/) las comparo ficha a ficha para ver cuál aguanta una jornada y cuál está pensado para ratos sueltos.

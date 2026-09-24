@@ -1,7 +1,7 @@
 ---
 title: "Radiación ionizante: mide su presencia y dosis"
 pubDate: 2026-08-05
-description: "Aprenderá cómo los contadores Geiger detectan la radiación ionizante, su funcionamiento electrónico y cómo interpretar correctamente sus mediciones."
+description: "Cómo un tubo Geiger-Müller convierte una partícula en un clic, por qué los CPM y los µSv/h no miden lo mismo y qué mirar antes de fiarte de la lectura."
 category: "electrónica"
 image: "/images/blog/2026-08-05-radiacion-ionizante-mide-su-presencia-y-dosis.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
@@ -16,9 +16,11 @@ El corazón de un contador Geiger es el tubo Geiger-Müller (GM). Este tubo, sel
 Un error común es equiparar directamente el número de "clics" (CPM) con el riesgo de exposición. Aunque una mayor tasa de CPM indica más actividad radiactiva, el verdadero indicador de riesgo biológico es la tasa de dosis, medida en unidades como $\mu Sv/h$. Un buen dispositivo te mostrará ambas o permitirá la conversión. Recuerda la ley del inverso del cuadrado para fuentes puntuales: $I \propto 1/r^2$. Esto significa que la intensidad de la radiación (I) disminuye drásticamente con el cuadrado de la distancia (r) a la fuente. Mantener una distancia de seguridad es crucial. Además, siempre mide primero la radiación de fondo en tu entorno. Cualquier lectura significativamente por encima de este valor de referencia indica una fuente. La sensibilidad del tubo GM a diferentes tipos de radiación también varía: la mayoría detectan beta y gamma, pero para alfa se necesita una ventana especial muy fina, a menudo de mica. Asegúrate de que tu detector cubra el tipo de radiación que te interesa. Y conviene no confundir esto con lo que ocurre en el otro extremo del espectro electromagnético: [la radiación infrarroja no ioniza nada](/blog/2026-08-11-radiacion-infrarroja-la-fisica-de-ver-el-calor-que-se-escapa/), solo transporta calor.
 
 Prueba rápida:
-1.  Enciende el detector y déjalo estabilizar durante un minuto para obtener una lectura base de la radiación ambiental (fondo). Anota el valor en µSv/h.
+1.  Enciende el detector y déjalo estabilizar durante un minuto para obtener una lectura base de la radiación ambiental (fondo). Anota el valor en las unidades que muestre tu aparato, sean CPM o µSv/h.
 2.  Toma una muestra de sal de potasio (sustituto de sal común) y colócala a 1-2 cm del sensor del dispositivo.
 3.  Observa las lecturas. Deberías notar un aumento en los valores de µSv/h y/o CPM debido al isótopo radiactivo potasio-40.
 4.  Retira la sal y confirma que las lecturas vuelven al nivel de fondo.
 
-El GQ GMC-300S es un detector digital que proporciona lecturas en CPM y varias unidades de dosis, incluyendo µSv/h, lo cual es útil para una interpretación directa de la exposición. Su capacidad de registro de datos permite monitorear cambios a lo largo del tiempo, algo valioso para evaluar la seguridad de un entorno o material. Para el maker interesado en la seguridad de sus proyectos o en la curiosidad ambiental, este modelo ofrece una buena combinación de funcionalidades esenciales.
+El GQ GMC-300S se anuncia como detector digital y dosímetro, con 1252 reseñas y 4.6 de valoración a 89€. Conviene saber qué es lo que su ficha **no** dice, porque es justo lo que este artículo explica que importa: no declara en qué unidades muestra la lectura, ni el tipo de tubo, ni contra qué isótopo está calibrada la conversión a µSv/h. Es incluso el único de su grupo cuyo título no enumera qué tipos de radiación detecta. Nada de eso lo descarta, pero son preguntas para el vendedor antes de pagar, no después.
+
+Si estás comparando modelos, en [mejor contador Geiger: CPM, µSv/h y qué mide cada ficha](/blog/2026-08-24-contador-geiger-que-detecta-y-si-registra-datos/) contrasto siete fichas de este grupo y señalo cuál es la única que dice en qué unidades mide.

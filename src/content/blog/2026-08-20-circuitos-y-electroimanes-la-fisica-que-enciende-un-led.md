@@ -24,3 +24,5 @@ El error típico al montar estos circuitos no es de teoría, es de contacto fís
 4. Sustituye un cable por una bobina de alambre y acerca un clip metálico para comprobar si el electroimán improvisado lo atrae.
 
 Este kit de Teenii, con sus 50 piezas, está pensado para recorrer ese camino de forma progresiva: circuitos básicos con LED y motor, y luego experimentos de magnetismo con bobinas y brújulas. Los componentes son de plástico y pensados para manipulación infantil, así que no esperes la precisión de un kit de electrónica profesional ni mediciones con multímetro real; el valor está en la construcción física del circuito, no en la instrumentación. Para un chaval de 8 años o para un adulto que quiera repasar los fundamentos con las manos, cumple su función sin pretender ser más de lo que es.
+
+Cuando ese kit de plástico se queda corto y toca dar el salto a componentes reales con instrumentación de verdad, lo que decide la compra es qué placa y qué sensores trae cada caja: lo desgloso en [kit Arduino: qué placa y accesorios incluye decide](/blog/2026-08-24-kit-arduino-que-placa-y-accesorios-incluye-decide/).
