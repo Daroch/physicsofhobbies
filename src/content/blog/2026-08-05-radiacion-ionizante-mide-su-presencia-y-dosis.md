@@ -2,7 +2,7 @@
 title: "Radiación ionizante: mide su presencia y dosis"
 pubDate: 2026-08-05
 description: "Cómo un tubo Geiger-Müller convierte una partícula en un clic, por qué los CPM y los µSv/h no miden lo mismo y qué mirar antes de fiarte de la lectura."
-category: "electrónica"
+category: "óptica"
 image: "/images/blog/2026-08-05-radiacion-ionizante-mide-su-presencia-y-dosis.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
 amazonUrl: "https://www.amazon.es/dp/B0B541D433?tag=physicshobbie-21"
