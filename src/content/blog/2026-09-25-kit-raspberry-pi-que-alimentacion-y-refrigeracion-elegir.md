@@ -12,7 +12,7 @@ audience: "Esta comparativa sirve a quien va a montar un servidor doméstico, un
 
 specsThatMatter:
   - spec: "RAM (GB)"
-    why: "Determina cuántos procesos o contenedores puedes correr a la vez sin que el sistema empiece a usar swap en la tarjeta de almacenamiento, mucho más lenta que la RAM. Cuatro de los cinco kits llevan 8GB (Pi 5); el quinto, con Pi 4, se queda en 4GB, la mitad de margen para Home Assistant con muchos add-ons o para Docker."
+    why: "Determina cuántos procesos o contenedores puedes correr a la vez sin que el sistema empiece a usar swap en la tarjeta de almacenamiento, mucho más lenta que la RAM. Cuatro de las cinco fichas llevan 8GB (Pi 5); la quinta, con Pi 4, se queda en 4GB, la mitad de margen para Home Assistant con muchos add-ons o para Docker."
   - spec: "Alimentación (W)"
     why: "La Raspberry Pi 5 necesita una fuente de 27W (5V/5A) para no entrar en avisos de baja tensión cuando conectas periféricos USB o un HAT. Dos de los kits declaran 27W, uno declara 15W (pensado para Pi 4, insuficiente para una Pi 5) y en dos fichas no aparece el dato, así que hay que comprobarlo antes de comprar."
   - spec: "Almacenamiento incluido y tipo"
@@ -86,13 +86,15 @@ products:
     rating: 4.4
     reviews: 347
     specs: ["Raspberry Pi 4", "4", "64", "15", "Disipadores"]
-    highlight: "Kit db-tronic basado en Raspberry Pi 4 con 4GB de RAM y fuente de 15W según su ficha, la única placa de generación anterior del grupo. Precio más bajo, pero con menos RAM y CPU más antigua."
+    highlight: "Kit db-tronic basado en Raspberry Pi 4 con 4GB de RAM y fuente de 15W según su ficha, la única placa de generación anterior del grupo. El más barato de los cinco comparados, pero con menos RAM y CPU más antigua."
 
 pitfalls:
+  - claim: "Comprar solo la placa sale más a cuenta"
+    reality: "En este listado, no tanto como parece. La Raspberry Pi 5 de 8GB suelta está a 219,90€ y el kit db-tronic con la misma placa más 128GB, fuente de 27W y carcasa con ventilador está a 254,99€: 35€ de diferencia por todo el equipamiento. Es un cálculo directo sobre los precios de esta tabla, no un dato de ninguna ficha."
   - claim: "Kit completo listo para usar"
     reality: "No siempre incluye fuente de alimentación con potencia declarada: en uno de los kits la ficha no menciona los vatios del alimentador, un dato clave para que una Pi 5 arranque sin avisos de baja tensión."
   - claim: "Edición 128GB / 64GB"
-    reality: "La ficha no aclara si esa capacidad es una tarjeta microSD, eMMC u otro soporte en tres de los cinco kits; solo el kit NVMe especifica el tipo de almacenamiento, que condiciona la velocidad real de lectura/escritura."
+    reality: "La ficha no aclara si esa capacidad es una tarjeta microSD, eMMC u otro soporte en tres de los cuatro kits que traen almacenamiento; solo el kit NVMe especifica el tipo de almacenamiento, que condiciona la velocidad real de lectura/escritura."
   - claim: "Ideal para Home Assistant y el Smart Home"
     reality: "Es una recomendación de marketing del vendedor; la ficha no aporta temperaturas de operación, IOPS ni tiempos de arranque que permitan verificar esa idoneidad."
   - claim: "Refrigeración activa / carcasa con ventilador"
@@ -104,15 +106,15 @@ verdicts:
     why: "Es el único con SSD NVMe y refrigeración activa declarados en ficha, relevante para escritura continua de logs."
   - profile: "aprendizaje con presupuesto ajustado"
     pick: "db-tronic Raspberry Pi 4 4GB Starter Kit (B0D1N3V2FF)"
-    why: "Precio más bajo del grupo (154,99€), aunque con la mitad de RAM y una CPU de generación anterior."
+    why: "Es el más barato de los cinco comparados (154,99€), aunque con la mitad de RAM y una CPU de generación anterior. El grupo de Airtable tiene kits más económicos que no entraron en esta selección."
   - profile: "ya tienes fuente, carcasa y tarjeta de otro proyecto"
     pick: "Raspberry Pi 5 8GB sola (B0CK2FCG1K)"
-    why: "Evita pagar por accesorios duplicados que la ficha confirma que no trae ningún otro kit sin coste añadido."
+    why: "Evitas pagar de nuevo por fuente, carcasa y tarjeta. Ahora bien, echa la cuenta antes: la placa sola cuesta 219,90€ y el kit db-tronic de 128GB con fuente de 27W y carcasa con ventilador está en 254,99€, así que en este listado esos accesorios salen por 35€."
   - profile: "necesitas confirmar el tipo exacto de almacenamiento antes de comprar"
     pick: "no comprar ninguno de estos basándote solo en esta ficha"
-    why: "Tres de los cinco kits no especifican si el almacenamiento es microSD, eMMC u otro soporte, dato que afecta directamente a la velocidad y vida útil."
+    why: "Tres de los cuatro kits que incluyen almacenamiento no especifican si es microSD, eMMC u otro soporte, dato que afecta directamente a la velocidad y vida útil."
 ---
 
-Todas las Raspberry Pi comparten el mismo principio: son ordenadores completos en una placa cuyo rendimiento real no depende solo del procesador, sino de tres factores que sí varían entre estos kits: cuánta corriente les llega (alimentación), cómo evacúan el calor bajo carga (refrigeración) y en qué soporte guardan el sistema (tipo de almacenamiento). Una Pi 5 mal alimentada o sin disipación adecuada rinde por debajo de su potencial aunque el chip sea el mismo en todos los kits.
+Todas las Raspberry Pi comparten el mismo principio: son ordenadores completos en una placa cuyo rendimiento real no depende solo del procesador, sino de tres factores que sí varían entre las cinco fichas de esta comparativa (cuatro kits y una placa suelta): cuánta corriente les llega (alimentación), cómo evacúan el calor bajo carga (refrigeración) y en qué soporte guardan el sistema (tipo de almacenamiento). Una Pi 5 mal alimentada o sin disipación adecuada rinde por debajo de su potencial aunque el chip sea el mismo en todos los kits.
 
 Por eso, comparar estos kits no es solo mirar el precio de la placa: es ver qué decide incluir cada fabricante alrededor de ella, y qué deja sin especificar. En este grupo, ese es precisamente el punto débil de varias fichas: la potencia del alimentador y el tipo exacto de almacenamiento no siempre aparecen, y son justo los datos que determinan si el kit aguanta el uso que tienes en mente.
