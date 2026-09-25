@@ -45,7 +45,7 @@ products:
     price: 64.95
     rating: 4.6
     reviews: 344
-    specs: ["no disponible", "no disponible", "no disponible", "no disponible", "no disponible"]
+    specs: ["ninguna incluida (compatible con 5, 4B, 3B+, 500 y Zero 2W)", "no disponible", "no disponible", "no disponible", "no disponible"]
     highlight: "Pensado para quien ya tiene una Raspberry Pi (5, 4B, 3B+, 500 o Zero 2W) y quiere proyectos guiados con cámara y altavoces incluidos. Su ficha no especifica placa, RAM, potencia ni refrigeración porque el kit no incluye el ordenador en sí."
   - name: "db-tronic Raspberry Pi 4 2 GB Starter Kit | Edición 64 GB | Alimentación 15 W | Carcasa | HDMI 4K | Disipadores | Ideal para Home Assistant y el Smart Home"
     shortName: "db-tronic Pi4 2GB Kit"
@@ -55,7 +55,7 @@ products:
     price: 119.99
     rating: 4.2
     reviews: 69
-    specs: ["Raspberry Pi 4", "2 GB", "microSD 64GB", "15 W", "disipadores (pasiva)"]
+    specs: ["Raspberry Pi 4", "2 GB", "64 GB, soporte no declarado", "15 W", "disipadores (pasiva)"]
     highlight: "Según su ficha, es el kit más económico con placa incluida, orientado a Home Assistant básico. 2GB de RAM limita cuántas integraciones puedes correr a la vez sin ralentizaciones."
   - name: "db-tronic Raspberry Pi 4 4 GB Starter Kit | Edición 64 GB | Alimentación 15 W | Carcasa | HDMI 4K | Disipadores | Ideal para Home Assistant y el Smart Home"
     shortName: "db-tronic Pi4 4GB Kit"
@@ -65,7 +65,7 @@ products:
     price: 154.99
     rating: 4.4
     reviews: 347
-    specs: ["Raspberry Pi 4", "4 GB", "microSD 64GB", "15 W", "disipadores (pasiva)"]
+    specs: ["Raspberry Pi 4", "4 GB", "64 GB, soporte no declarado", "15 W", "disipadores (pasiva)"]
     highlight: "Dobla la RAM del kit anterior manteniendo la misma fuente de 15W y refrigeración pasiva según ficha. Da más margen para varios add-ons sin cambiar de generación de Pi."
   - name: "iRasptek Kit de inicio para Raspberry Pi 5 RAM 4 GB- 64 GB edición de OS-Bookworm precargado (funda roja y blanca)"
     shortName: "iRasptek Pi5 4GB Kit"
@@ -75,7 +75,7 @@ products:
     price: 203.21
     rating: 4.6
     reviews: 56
-    specs: ["Raspberry Pi 5", "4 GB", "microSD 64GB (OS precargado)", "no disponible", "no disponible"]
+    specs: ["Raspberry Pi 5", "4 GB", "64 GB con OS precargado, soporte no declarado", "no disponible", "no disponible"]
     highlight: "Incluye Raspberry Pi 5 con sistema operativo Bookworm precargado, según su ficha. No declara la potencia de la fuente ni el tipo de refrigeración, un dato crítico porque la Pi 5 exige más energía que la 4."
   - name: "db-tronic Raspberry Pi 5 8 GB NVMe Kit | Edición 64 GB | Alimentación 27 W | Carcasa metálica | Refrigeración Activa | SSD M.2 NVMe PCIe | Ideal para Home Assistant y el Smart Home"
     shortName: "db-tronic Pi5 8GB NVMe"
@@ -92,7 +92,7 @@ pitfalls:
   - claim: "Kit completo para iniciarte en Raspberry Pi"
     reality: "Algunos kits, como el de accesorios, no incluyen la placa Raspberry Pi según su ficha; hay que comprarla aparte y elegir tú el modelo compatible."
   - claim: "Edición 64 GB"
-    reality: "Se refiere a la capacidad de almacenamiento (microSD o NVMe), no a la RAM del equipo. Hay que mirar el dato de RAM por separado para saber cuánta memoria de trabajo tiene la placa."
+    reality: "Se refiere a la capacidad de almacenamiento, no a la RAM del equipo: son dos cifras en gigabytes que no tienen nada que ver, y la del título es la que menos condiciona el rendimiento. Además, salvo el kit NVMe, ninguna ficha dice en qué soporte van esos 64 GB, y no es lo mismo una microSD que un SSD: cambia la velocidad de escritura y la vida útil si vas a registrar datos de forma continua."
   - claim: "Alimentación incluida"
     reality: "Una fuente de 15W puede ser correcta para Raspberry Pi 4 según ficha, pero la Pi 5 de este grupo declara necesitar 27W; una fuente insuficiente en Pi 5 puede provocar avisos de bajo voltaje."
   - claim: "Refrigeración activa o pasiva incluida"
@@ -104,7 +104,7 @@ verdicts:
     why: "Tutorial de 1170 páginas y 164 proyectos con cámara y altavoces, pero verifica compatibilidad porque el kit no incluye la placa."
   - profile: "domótica ligera con Home Assistant"
     pick: "db-tronic Pi4 2GB Kit (B0DDZGB6S5)"
-    why: "RAM y 15W suficientes para tareas básicas según ficha, con el precio más bajo del grupo que incluye placa."
+    why: "RAM y 15W suficientes para tareas básicas según ficha, y el más barato de los comparados que incluye placa. El grupo de Airtable tiene kits con placa aún más económicos que no entraron en esta selección."
   - profile: "domótica con varios add-ons o multitarea"
     pick: "db-tronic Pi4 4GB Kit (B0D1N3V2FF)"
     why: "Dobla la RAM del kit anterior manteniendo la misma fuente, dando margen sin cambiar de generación de Pi."
