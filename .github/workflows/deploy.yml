@@ -3,6 +3,11 @@ name: Deploy Astro a GitHub Pages
 on:
   push:
     branches: [main]
+  # Permite relanzar el despliegue a mano desde la pestana Actions, sin tener
+  # que inventarse un commit. Hizo falta el 2026-10-11: poner el repo en
+  # privado desactivo Pages, y al volver a publico el sitio siguio en 404
+  # porque reactivar Pages no relanza el workflow por si solo.
+  workflow_dispatch:
 
 permissions:
   contents: read
