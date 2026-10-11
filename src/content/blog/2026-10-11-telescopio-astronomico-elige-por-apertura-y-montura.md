@@ -84,7 +84,7 @@ products:
     rating: 4.4
     reviews: 2105
     specs: ["130", "Computerizada (GoTo)", "No"]
-    highlight: "Es la única montura computerizada (GoTo) del grupo según ficha, con apertura 130mm, pero no menciona compatibilidad con app StarSense. También es el precio más alto del grupo (778,99€)."
+    highlight: "Es la única montura computerizada (GoTo) de las cinco comparadas según ficha, con apertura 130mm, pero no menciona compatibilidad con app StarSense. También es el precio más alto del grupo (778,99€)."
 
 pitfalls:
   - claim: "Compatible con app para smartphone (StarSense)"
@@ -108,7 +108,7 @@ verdicts:
     why: "Apertura 130mm en montura Dobsoniana estable, con app incluida; según ficha equilibra apertura y precio en este grupo."
   - profile: "prioriza apuntado automático sobre el precio"
     pick: "Celestron NexStar 130SLT"
-    why: "Única montura computerizada (GoTo) del grupo según ficha; apunta sola a un catálogo de objetos, pero es también la opción más cara."
+    why: "Única montura computerizada (GoTo) de las cinco comparadas según ficha; apunta sola a un catálogo de objetos, pero es también la opción más cara."
   - profile: "quiere 130mm con app pero duda del tipo de montura"
     pick: "Celestron StarSense DX130, confirmando antes el dato de montura"
     why: "Su ficha no indica tipo de montura pese a costar más que el Dobson de igual apertura; verifica ese dato antes de pagar la diferencia."
@@ -119,3 +119,5 @@ La apertura es el dato físico más objetivo de un telescopio: es el diámetro d
 Por encima de la óptica está la montura: define si mueves el tubo a mano (AZ), si priorizas estabilidad sencilla (Dobsoniana) o si un motor apunta y sigue objetos por ti (GoTo computerizada). La compatibilidad con una app como StarSense añade una capa de ayuda para localizar objetos con la cámara del móvil, pero según las fichas no sustituye a un motor: sigue siendo guiado manual asistido.
 
 El precio en este grupo va de 67 a 779 euros sin que el diseño óptico (refractor o reflector) esté declarado en todos los modelos de entrada, así que apertura y tipo de montura son los dos ejes que de verdad puedes comparar con los datos disponibles.
+
+Y una última cosa antes de comparar precios: si alguna de estas fichas te tienta con una cifra de aumentos enorme, esa cifra no significa lo que parece. La apertura pone un techo físico a lo que se puede resolver, y pasado ese techo ampliar solo agranda el borrón — lo desarrollo en [aumentos vacíos: por qué 525x en un telescopio de 60 mm es imposible](/blog/2026-08-21-aumentos-vacios-por-que-525x-en-un-telescopio-de-60-mm-es-imposible/).
