@@ -140,7 +140,9 @@ def main():
     escribir("referentes.csv", ["referente", "visitas"], filas, destino)
 
     # ── Qué se lee ───────────────────────────────────────────────────────
-    pags = pedir(base, token, f"{sitio}/metrics", {**ventana, "type": "url"})
+    # `path`, no `url`: esta versión de Umami devuelve 400 con `url` y con `host`.
+    # Comprobado el 2026-10-11 probando los tipos uno a uno contra la instancia.
+    pags = pedir(base, token, f"{sitio}/metrics", {**ventana, "type": "path"})
     filas = [[r.get("x", ""), r.get("y", 0)] for r in pags]
     escribir("paginas.csv", ["ruta", "vistas"], filas, destino)
 
@@ -152,16 +154,20 @@ def main():
     # ── Lectura rápida ───────────────────────────────────────────────────
     clics = sum(int(v) for nombre, v in eventos if str(nombre).startswith("amazon-click"))
     visitantes = sum(d.get("visitantes", 0) for d in por_dia.values())
-    directo = next((int(v) for ref, v in
-                    [[r.get("x") or "(directo)", r.get("y", 0)] for r in refs]
-                    if ref == "(directo)"), 0)
-    print(f"\n  clics de afiliado que ve Umami: {clics}")
-    print(f"  visitantes en la ventana:       {visitantes}")
-    print(f"  de ellos, tráfico directo:      {directo}")
+    con_referente = sum(int(r.get("y", 0)) for r in refs)
+    # Umami no devuelve una fila para el referente vacío: la ausencia NO es cero.
+    # Lo que queda sin atribuir es directo, o referentes que el navegador no manda.
+    sin_atribuir = max(visitantes - con_referente, 0)
+
+    print(f"\n  visitantes en la ventana:        {visitantes}")
+    print(f"  con referente identificado:      {con_referente}")
+    print(f"  sin referente (directo o quitado): {sin_atribuir}")
+    print(f"  clics de afiliado que ve Umami:  {clics}")
     print(
-        "\n  Compáralo con los 31 clics de Amazon y los clics de GSC. Si Umami ve bastantes menos\n"
-        "  que Amazon, hay clics que no pasan por el sitio o el bloqueo de rastreadores se está\n"
-        "  comiendo eventos. Si la mayoría de referentes son '(directo)', mira si son tuyos."
+        "\n  Umami solo cuenta lo que su JavaScript consigue enviar. Si Amazon reporta bastantes\n"
+        "  más clics que los de aquí, lo más probable es que los bloqueadores se estén comiendo\n"
+        "  eventos: el enlace a Amazon funciona igual, pero el evento no sale. Es decir que estas\n"
+        "  cifras son un SUELO, no una medida."
     )
 
 
