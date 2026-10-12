@@ -12,7 +12,7 @@ es información útil, y aquí se dice.
 De ahí salen dos reglas que condicionan todo lo demás:
 
 - **No hay experiencia de uso.** Estos productos no se han probado. Todo se escribe desde la ficha
-  («según su ficha», «el fabricante declara»), y la página [/metodologia](https://physicsofhobbies.com/metodologia)
+  («según su ficha», «el fabricante declara»), y la página [/metodologia](https://physicsofhobbies.com/metodologia/)
   lo explica sin rodeos.
 - **No hay números inventados.** Si un dato no está en la ficha, la tabla comparativa dice
   «no disponible» en vez de estimarlo. Rellenar ese hueco con algo verosímil destruiría lo único
