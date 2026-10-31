@@ -56,7 +56,7 @@ products:
     rating: 4.4
     reviews: 608
     specs: ["Analógico (dial)", "Acero inoxidable"]
-    highlight: "El fabricante declara 0,05 mm de precisión y es el único analógico del grupo: no necesita pila para funcionar, aunque su lectura de dial es menos cómoda que una pantalla digital."
+    highlight: "El fabricante declara 0,05 mm de precisión y es el único analógico de los cinco comparados: no necesita pila para funcionar, aunque su lectura de dial es menos cómoda que una pantalla digital."
   - name: "Calibre Digital Acero Inoxidable, Kynup Pie de Rey Digital Profesional de 150mm/6 Pulgadas, IP54 Impermeable Calibrador Vernier Digital, Gran Pantalla LCD Calibrador, Precisión de 0.01mm, Metalico"
     shortName: "Kynup Digital IP54"
     tier: "Digital de resolución fina"
