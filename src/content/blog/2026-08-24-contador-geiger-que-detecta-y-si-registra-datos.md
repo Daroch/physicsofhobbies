@@ -1,8 +1,8 @@
 ---
-title: "Mejor contador Geiger: CPM, µSv/h y qué mide cada ficha"
+title: "Mejor contador Geiger: cuál mide y cuál solo avisa"
 pubDate: 2026-08-24
 updatedDate: 2026-09-25
-description: "Siete contadores Geiger comparados por su ficha: solo uno declara en qué unidades mide. Por qué CPM y µSv/h no son la misma medida y cuál te interesa."
+description: "De siete modelos, solo uno dice en qué unidades mide. Te cuento por qué eso importa más que el precio y cómo distinguir el que mide del que solo detecta."
 category: "óptica"
 tags: ["comparativa", "ciencia", "hobbies"]
 type: "roundup"

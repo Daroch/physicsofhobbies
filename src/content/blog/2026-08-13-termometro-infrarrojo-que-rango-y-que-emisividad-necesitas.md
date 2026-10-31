@@ -1,7 +1,7 @@
 ---
-title: "Mejor termómetro infrarrojo: qué rango y emisividad necesitas"
+title: "Termómetro infrarrojo: cuál sirve para cocina y cuál no"
 pubDate: 2026-08-13
-description: "Ninguna de las cinco fichas declara precisión en °C ni ratio distancia:punto. Lo que sí varía, y decide la compra, es el rango y la emisividad ajustable."
+description: "Uno llega a 500 °C y otro a 800 °C por 8 € más, pero lo que de verdad separa cocina de taller es si puedes ajustar la emisividad. Cinco fichas comparadas."
 category: "óptica"
 tags: ["comparativa", "ciencia", "hobbies"]
 type: "roundup"
