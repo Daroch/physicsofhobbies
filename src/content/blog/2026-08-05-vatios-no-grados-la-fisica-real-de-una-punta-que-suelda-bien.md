@@ -22,3 +22,5 @@ La mayoría de la gente sube la temperatura objetivo cuando debería estar preoc
 4. Repite el mismo test alimentando el soldador con una fuente de menor potencia (un cargador de móvil básico, por ejemplo) y compara los tiempos de recuperación.
 
 El Pinecil resuelve este problema de forma directa porque separa el control de temperatura (gestionado por su SoC RISC-V a 108 MHz, con precisión razonable gracias al IronOS) de la potencia disponible, que depende enteramente de lo que le conectes: con USB-C PD llega a 65W y con el conector de barril a 63W (21V, 3A), suficiente para la mayoría de trabajos de electrónica de consumo. Su limitación real es que sin una fuente PD/QC decente detrás, no vas a exprimir su rango de 100-400°C en piezas exigentes, así que la inversión en un buen cargador USB-C no es opcional, es parte del sistema.
+
+Si lo que estás es decidiendo cuál comprar, el reparto entre potencia, rango de temperatura y tipo de alimentación cambia bastante entre modelos: en [mejor soldador de estaño: portátil o de banco según la ficha](/blog/2026-08-22-mejor-soldador-de-estano-portatil-o-de-banco-segun-la-ficha/) comparo cinco fichas y señalo qué dato decide.
