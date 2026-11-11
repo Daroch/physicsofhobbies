@@ -39,7 +39,7 @@ products:
     shortName: "VRURC Mini 20000mAh"
     tier: "Compacto multi-puerto"
     image: "/images/blog/2026-08-24-power-bank-20000mah-potencia-w-o-cable-usb-c-1.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B099F29H7Y?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B099F29H7Y?tag=physicsofhobbies-21"
     price: 21.99
     rating: 4.5
     reviews: 11069
@@ -49,7 +49,7 @@ products:
     shortName: "Anker Zolo 20000mAh"
     tier: "Mayor potencia declarada"
     image: "/images/blog/2026-08-24-power-bank-20000mah-potencia-w-o-cable-usb-c-2.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0CZ9LH53B?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0CZ9LH53B?tag=physicsofhobbies-21"
     price: 25.64
     rating: 4.4
     reviews: 11012
@@ -59,7 +59,7 @@ products:
     shortName: "INIU 20000mAh PD"
     tier: "Cable desmontable, apto avión"
     image: "/images/blog/2026-08-24-power-bank-20000mah-potencia-w-o-cable-usb-c-3.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0FX9HMGWS?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0FX9HMGWS?tag=physicsofhobbies-21"
     price: 27.99
     rating: 4.5
     reviews: 9562
@@ -69,7 +69,7 @@ products:
     shortName: "INIU 20000mAh Rojo"
     tier: "Mismo perfil, color rojo"
     image: "/images/blog/2026-08-24-power-bank-20000mah-potencia-w-o-cable-usb-c-4.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0DFLHZQ18?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0DFLHZQ18?tag=physicsofhobbies-21"
     price: 32.99
     rating: 4.5
     reviews: 9562
@@ -79,7 +79,7 @@ products:
     shortName: "VRURC 4-Cable 20000mAh"
     tier: "Cables integrados múltiples"
     image: "/images/blog/2026-08-24-power-bank-20000mah-potencia-w-o-cable-usb-c-5.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B099DXRF1G?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B099DXRF1G?tag=physicsofhobbies-21"
     price: 24.69
     rating: 4.5
     reviews: 6962

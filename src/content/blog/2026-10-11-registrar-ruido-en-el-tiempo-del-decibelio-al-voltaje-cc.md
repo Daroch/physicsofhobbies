@@ -5,7 +5,7 @@ description: "Medir un pico de ruido no te dice nada sobre cómo vive ese ruido 
 category: "acústica"
 image: "/images/blog/2026-10-11-registrar-ruido-en-el-tiempo-del-decibelio-al-voltaje-cc.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B0DJT42M9K?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B0DJT42M9K?tag=physicsofhobbies-21"
 productName: "Medidor de decibelios"
 ---
 

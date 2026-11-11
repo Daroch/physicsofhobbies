@@ -39,7 +39,7 @@ products:
     shortName: "Kylietech 12x42"
     tier: "compacto, alto aumento"
     image: "/images/blog/2026-08-20-que-pupila-de-salida-necesitas-segun-cuando-uses-los-prismaticos-1.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B07J6QXBP4?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B07J6QXBP4?tag=physicsofhobbies-21"
     price: 38.99
     rating: 4.3
     reviews: 18171
@@ -49,7 +49,7 @@ products:
     shortName: "Bushnell Falcon 10x50"
     tier: "gran angular, prisma porro"
     image: "/images/blog/2026-08-20-que-pupila-de-salida-necesitas-segun-cuando-uses-los-prismaticos-2.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B000051ZOA?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B000051ZOA?tag=physicsofhobbies-21"
     price: 75.06
     rating: 4.4
     reviews: 6332
@@ -59,7 +59,7 @@ products:
     shortName: "Celestron UpClose G2"
     tier: "Porro, 10x50"
     image: "/images/blog/2026-08-20-que-pupila-de-salida-necesitas-segun-cuando-uses-los-prismaticos-3.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B006ZN4TZS?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B006ZN4TZS?tag=physicsofhobbies-21"
     price: 66.91
     rating: 4.2
     reviews: 2641
@@ -69,7 +69,7 @@ products:
     shortName: "Usogood 12x50"
     tier: "alto aumento, gran objetivo"
     image: "/images/blog/2026-08-20-que-pupila-de-salida-necesitas-segun-cuando-uses-los-prismaticos-4.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B07V67966L?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B07V67966L?tag=physicsofhobbies-21"
     price: 59.99
     rating: 4.4
     reviews: 1537
@@ -79,7 +79,7 @@ products:
     shortName: "Nikon Aculon A211 10x50"
     tier: "10x50, ficha incompleta"
     image: "/images/blog/2026-08-20-que-pupila-de-salida-necesitas-segun-cuando-uses-los-prismaticos-5.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B00BF8G5CS?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B00BF8G5CS?tag=physicsofhobbies-21"
     rating: 4.5
     reviews: 1128
     specs: ["10x", "50", "no disponible", "no disponible", "no disponible", "5.0"]

@@ -5,7 +5,7 @@ description: "La diferencia entre ver algo borroso al atardecer o nítido hasta 
 category: "óptica"
 image: "/images/blog/2026-10-02-pupila-de-salida-la-clave-optica-de-unos-prismaticos-10x50.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B09VXLPPG3?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B09VXLPPG3?tag=physicsofhobbies-21"
 productName: "PENTAX Jumelles Jupiter 10x50"
 ---
 

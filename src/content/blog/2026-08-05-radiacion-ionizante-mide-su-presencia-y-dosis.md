@@ -5,7 +5,7 @@ description: "Cómo un tubo Geiger-Müller convierte una partícula en un clic, 
 category: "óptica"
 image: "/images/blog/2026-08-05-radiacion-ionizante-mide-su-presencia-y-dosis.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B0B541D433?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B0B541D433?tag=physicsofhobbies-21"
 productName: "GQ GMC-300S Contador Geiger"
 ---
 

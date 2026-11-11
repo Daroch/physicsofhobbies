@@ -5,7 +5,7 @@ description: "Pones el láser en una esquina torcida de la pared y la línea ver
 category: "óptica"
 image: "/images/blog/2026-10-07-el-pendulo-oculto-que-nivela-tu-laser-solo-sin-tocarlo.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B0D5CX7SFL?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B0D5CX7SFL?tag=physicsofhobbies-21"
 productName: "HYCHIKA Nivel Láser Autonivelante 15M"
 ---
 

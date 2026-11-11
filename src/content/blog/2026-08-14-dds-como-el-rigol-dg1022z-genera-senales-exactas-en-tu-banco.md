@@ -5,7 +5,7 @@ description: "Cada onda que sale de un generador parte de un reloj digital preci
 category: "electrónica"
 image: "/images/blog/2026-08-14-dds-como-el-rigol-dg1022z-genera-senales-exactas-en-tu-banco.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B01N3LBIU6?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B01N3LBIU6?tag=physicsofhobbies-21"
 productName: "RIGOL Generador de Funciones,DG1022Z Generador de"
 ---
 

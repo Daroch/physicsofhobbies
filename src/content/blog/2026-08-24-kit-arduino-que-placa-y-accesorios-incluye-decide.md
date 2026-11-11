@@ -39,7 +39,7 @@ products:
     shortName: "ELEGOO Kit Medio UNO R3"
     tier: "Kit intermedio con relé y servo"
     image: "/images/blog/2026-08-24-kit-arduino-que-placa-y-accesorios-incluye-decide-1.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B01MXGST4I?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B01MXGST4I?tag=physicsofhobbies-21"
     price: 39.07
     rating: 4.6
     reviews: 2867
@@ -49,7 +49,7 @@ products:
     shortName: "ELEGOO Kit Mega 2560"
     tier: "Kit avanzado con placa Mega 2560"
     image: "/images/blog/2026-08-24-kit-arduino-que-placa-y-accesorios-incluye-decide-2.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B01MQPT9OD?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B01MQPT9OD?tag=physicsofhobbies-21"
     price: 59.48
     rating: 4.6
     reviews: 1920
@@ -59,7 +59,7 @@ products:
     shortName: "ELEGOO Kit Avanzado UNO R3"
     tier: "Kit avanzado con motor paso a paso"
     image: "/images/blog/2026-08-24-kit-arduino-que-placa-y-accesorios-incluye-decide-3.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B01M9J4GCU?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B01M9J4GCU?tag=physicsofhobbies-21"
     price: 56.51
     rating: 4.6
     reviews: 950
@@ -69,7 +69,7 @@ products:
     shortName: "ELEGOO Kit Básico UNO R3"
     tier: "Kit básico de entrada"
     image: "/images/blog/2026-08-24-kit-arduino-que-placa-y-accesorios-incluye-decide-4.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B06W2KF3PJ?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B06W2KF3PJ?tag=physicsofhobbies-21"
     price: 24.01
     rating: 4.6
     reviews: 922
@@ -79,7 +79,7 @@ products:
     shortName: "Miuzei Kit Starter UNO"
     tier: "Kit alternativo con sensores variados"
     image: "/images/blog/2026-08-24-kit-arduino-que-placa-y-accesorios-incluye-decide-5.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B07CXKP3R3?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B07CXKP3R3?tag=physicsofhobbies-21"
     price: 37.99
     rating: 4.5
     reviews: 843

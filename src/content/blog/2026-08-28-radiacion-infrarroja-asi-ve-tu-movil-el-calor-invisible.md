@@ -5,7 +5,7 @@ description: "Conecta esto a tu móvil y verás fugas de calor, cables recalenta
 category: "óptica"
 image: "/images/blog/2026-08-28-radiacion-infrarroja-asi-ve-tu-movil-el-calor-invisible.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B0FFMHNDXM?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B0FFMHNDXM?tag=physicsofhobbies-21"
 productName: "TOPDON TC002C Duo Cámara Térmica para Android e iPhone"
 ---
 

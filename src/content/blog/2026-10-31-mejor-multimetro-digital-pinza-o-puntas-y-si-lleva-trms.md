@@ -41,7 +41,7 @@ products:
     shortName: "ULTRICS Multímetro básico"
     tier: "Básico de puntas, sin TRMS"
     image: "/images/blog/2026-10-31-mejor-multimetro-digital-pinza-o-puntas-y-si-lleva-trms-1.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0DWSB3QGB?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0DWSB3QGB?tag=physicsofhobbies-21"
     price: 10.99
     rating: 4.3
     reviews: 170
@@ -51,7 +51,7 @@ products:
     shortName: "AstroAI Multímetro básico"
     tier: "Entrada, mayor volumen de reseñas"
     image: "/images/blog/2026-10-31-mejor-multimetro-digital-pinza-o-puntas-y-si-lleva-trms-2.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0FBGGP41Y?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0FBGGP41Y?tag=physicsofhobbies-21"
     price: 16.99
     rating: 4.4
     reviews: 54971
@@ -61,7 +61,7 @@ products:
     shortName: "Proster Pinza 2000 cuentas"
     tier: "Pinza con TRMS y NCV"
     image: "/images/blog/2026-10-31-mejor-multimetro-digital-pinza-o-puntas-y-si-lleva-trms-3.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B07PLYY8RJ?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B07PLYY8RJ?tag=physicsofhobbies-21"
     price: 23.99
     rating: 4.5
     reviews: 5890
@@ -71,7 +71,7 @@ products:
     shortName: "AstroAI Pinza TRMS"
     tier: "Pinza profesional TRMS"
     image: "/images/blog/2026-10-31-mejor-multimetro-digital-pinza-o-puntas-y-si-lleva-trms-4.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B08MTTX66X?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B08MTTX66X?tag=physicsofhobbies-21"
     price: 26.34
     rating: 4.6
     reviews: 8903
@@ -81,7 +81,7 @@ products:
     shortName: "VENLAB VM-600A TRMS 6000"
     tier: "Puntas, TRMS, alta resolución"
     image: "/images/blog/2026-10-31-mejor-multimetro-digital-pinza-o-puntas-y-si-lleva-trms-5.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0B2BT7SQS?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0B2BT7SQS?tag=physicsofhobbies-21"
     price: 32.99
     rating: 4.6
     reviews: 2115

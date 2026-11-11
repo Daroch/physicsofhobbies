@@ -39,7 +39,7 @@ products:
     shortName: "Amazon Basics 70mm AZ"
     tier: "Entrada económica"
     image: "/images/blog/2026-10-11-telescopio-astronomico-elige-por-apertura-y-montura-1.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0F7WD36CX?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0F7WD36CX?tag=physicsofhobbies-21"
     price: 67.62
     rating: 4
     reviews: 246
@@ -49,7 +49,7 @@ products:
     shortName: "Celestron LT70AZ StarSense"
     tier: "Entrada con guiado app"
     image: "/images/blog/2026-10-11-telescopio-astronomico-elige-por-apertura-y-montura-2.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B088PPBC5Z?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B088PPBC5Z?tag=physicsofhobbies-21"
     price: 207
     rating: 4.4
     reviews: 184
@@ -59,7 +59,7 @@ products:
     shortName: "Celestron StarSense 130 Dob"
     tier: "130mm Dobson con app"
     image: "/images/blog/2026-10-11-telescopio-astronomico-elige-por-apertura-y-montura-3.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0CBQXHXX3?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0CBQXHXX3?tag=physicsofhobbies-21"
     price: 399.99
     rating: 4.5
     reviews: 349
@@ -69,7 +69,7 @@ products:
     shortName: "Celestron StarSense DX130"
     tier: "Reflector 130mm con app"
     image: "/images/blog/2026-10-11-telescopio-astronomico-elige-por-apertura-y-montura-4.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B083JRF1MH?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B083JRF1MH?tag=physicsofhobbies-21"
     price: 541.21
     rating: 4
     reviews: 980
@@ -79,7 +79,7 @@ products:
     shortName: "Celestron NexStar 130SLT"
     tier: "GoTo motorizado 130mm"
     image: "/images/blog/2026-10-11-telescopio-astronomico-elige-por-apertura-y-montura-5.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0007UQNNQ?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0007UQNNQ?tag=physicsofhobbies-21"
     price: 778.99
     rating: 4.4
     reviews: 2105

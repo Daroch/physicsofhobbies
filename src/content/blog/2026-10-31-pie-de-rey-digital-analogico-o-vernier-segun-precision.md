@@ -41,7 +41,7 @@ products:
     shortName: "Gvolatee Fibra Carbono 150mm"
     tier: "Digital económico"
     image: "/images/blog/2026-10-31-pie-de-rey-digital-analogico-o-vernier-segun-precision-1.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0B82CFP9H?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0B82CFP9H?tag=physicsofhobbies-21"
     price: 7.49
     rating: 4.1
     reviews: 1900
@@ -51,7 +51,7 @@ products:
     shortName: "Spurtar Analógico Acero"
     tier: "Analógico sin batería"
     image: "/images/blog/2026-10-31-pie-de-rey-digital-analogico-o-vernier-segun-precision-2.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B09W91FRBK?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B09W91FRBK?tag=physicsofhobbies-21"
     price: 18.99
     rating: 4.4
     reviews: 608
@@ -61,7 +61,7 @@ products:
     shortName: "Kynup Digital IP54"
     tier: "Digital de resolución fina"
     image: "/images/blog/2026-10-31-pie-de-rey-digital-analogico-o-vernier-segun-precision-3.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B07X8JQ8L5?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B07X8JQ8L5?tag=physicsofhobbies-21"
     price: 23.74
     rating: 4.6
     reviews: 13605
@@ -71,7 +71,7 @@ products:
     shortName: "HARDELL Digital Apag. Auto"
     tier: "Digital con autoapagado"
     image: "/images/blog/2026-10-31-pie-de-rey-digital-analogico-o-vernier-segun-precision-4.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0CS34XR1J?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0CS34XR1J?tag=physicsofhobbies-21"
     price: 23.99
     rating: 4.5
     reviews: 2404
@@ -81,7 +81,7 @@ products:
     shortName: "Mitutoyo 530-101 DIN 862"
     tier: "Vernier mecánico de referencia"
     image: "/images/blog/2026-10-31-pie-de-rey-digital-analogico-o-vernier-segun-precision-5.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B000VBAC0Q?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B000VBAC0Q?tag=physicsofhobbies-21"
     price: 52.73
     rating: 4.6
     reviews: 934

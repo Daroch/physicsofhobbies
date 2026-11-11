@@ -5,7 +5,7 @@ description: "Un microcontrolador no entiende de continuo ni de analógico real,
 category: "electrónica"
 image: "/images/blog/2026-08-18-pwm-y-microcontroladores-la-logica-detras-del-mega-2560.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B01MQPT9OD?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B01MQPT9OD?tag=physicsofhobbies-21"
 productName: "ELEGOO Conjunto Más Completo y Avanzado de Iniciación Mega"
 ---
 

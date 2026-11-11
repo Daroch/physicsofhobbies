@@ -41,7 +41,7 @@ products:
     shortName: "TOPDON TC004 Mini"
     tier: "Rango y Hz declarados"
     image: "/images/blog/2026-08-17-camara-termografica-que-mirar-detras-del-pixel-anunciado-1.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0DJQ91653?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0DJQ91653?tag=physicsofhobbies-21"
     price: 159.98
     rating: 4.5
     reviews: 1495
@@ -51,7 +51,7 @@ products:
     shortName: "TOPDON TC004 (512x384)"
     tier: "Almacenamiento y WiFi"
     image: "/images/blog/2026-08-17-camara-termografica-que-mirar-detras-del-pixel-anunciado-2.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0DZ2FZYQH?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0DZ2FZYQH?tag=physicsofhobbies-21"
     price: 303.99
     rating: 4.5
     reviews: 1495
@@ -61,7 +61,7 @@ products:
     shortName: "HIKMICRO E01"
     tier: "Sensor declarado, barato"
     image: "/images/blog/2026-08-17-camara-termografica-que-mirar-detras-del-pixel-anunciado-4.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0CF28BNNX?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0CF28BNNX?tag=physicsofhobbies-21"
     price: 159
     rating: 4.4
     reviews: 1270
@@ -71,7 +71,7 @@ products:
     shortName: "HIKMICRO E02"
     tier: "Cámara dual, fusión"
     image: "/images/blog/2026-08-17-camara-termografica-que-mirar-detras-del-pixel-anunciado-5.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0CP99QBVJ?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0CP99QBVJ?tag=physicsofhobbies-21"
     price: 179.99
     rating: 4.5
     reviews: 744
@@ -81,7 +81,7 @@ products:
     shortName: "AMPBANK 240x240 TISR"
     tier: "IP65 y 24 h"
     image: "/images/blog/2026-08-17-camara-termografica-que-mirar-detras-del-pixel-anunciado-6.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0DFM69TPS?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0DFM69TPS?tag=physicsofhobbies-21"
     price: 179.99
     rating: 4.5
     reviews: 605

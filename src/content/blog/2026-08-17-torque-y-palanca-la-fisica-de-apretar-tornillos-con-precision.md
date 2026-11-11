@@ -5,7 +5,7 @@ description: "Cada tornillo que aprietas de más o de menos te está diciendo al
 category: "mecánica"
 image: "/images/blog/2026-08-17-torque-y-palanca-la-fisica-de-apretar-tornillos-con-precision.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B0DNQ8CJ3H?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B0DNQ8CJ3H?tag=physicsofhobbies-21"
 productName: "Llave Dinamometrica 1/2'"
 ---
 

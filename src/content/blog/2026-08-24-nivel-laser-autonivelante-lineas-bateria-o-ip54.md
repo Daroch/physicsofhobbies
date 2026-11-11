@@ -41,7 +41,7 @@ products:
     shortName: "HYCHIKA Nivel Láser 15M"
     tier: "Básico con soporte magnético"
     image: "/images/blog/2026-08-24-nivel-laser-autonivelante-lineas-bateria-o-ip54-1.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0D5CX7SFL?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0D5CX7SFL?tag=physicsofhobbies-21"
     price: 24.04
     rating: 4.3
     reviews: 12406
@@ -51,7 +51,7 @@ products:
     shortName: "Nikotek Básico"
     tier: "Básico económico"
     image: "/images/blog/2026-08-24-nivel-laser-autonivelante-lineas-bateria-o-ip54-2.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0C9CL54R1?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0C9CL54R1?tag=physicsofhobbies-21"
     price: 22.19
     rating: 4.5
     reviews: 2651
@@ -61,7 +61,7 @@ products:
     shortName: "Nikotek con Trípode"
     tier: "Con trípode incluido"
     image: "/images/blog/2026-08-24-nivel-laser-autonivelante-lineas-bateria-o-ip54-3.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0CXJ6SQFZ?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0CXJ6SQFZ?tag=physicsofhobbies-21"
     price: 35.99
     rating: 4
     reviews: 2356
@@ -71,7 +71,7 @@ products:
     shortName: "Huepar B03CG 12L"
     tier: "Gama alta multilínea"
     image: "/images/blog/2026-08-24-nivel-laser-autonivelante-lineas-bateria-o-ip54-4.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B082DDJ3SJ?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B082DDJ3SJ?tag=physicsofhobbies-21"
     price: 129.99
     rating: 4.5
     reviews: 1992
@@ -81,7 +81,7 @@ products:
     shortName: "Nikotek IP54"
     tier: "Básico con IP54"
     image: "/images/blog/2026-08-24-nivel-laser-autonivelante-lineas-bateria-o-ip54-5.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0CR46D95T?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0CR46D95T?tag=physicsofhobbies-21"
     price: 23.99
     rating: 4.4
     reviews: 1320

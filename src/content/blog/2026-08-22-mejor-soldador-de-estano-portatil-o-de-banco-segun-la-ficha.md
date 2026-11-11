@@ -41,7 +41,7 @@ products:
     shortName: "Beizkna Inalámbrico"
     tier: "portátil de reparación rápida"
     image: "/images/blog/2026-08-22-mejor-soldador-de-estano-portatil-o-de-banco-segun-la-ficha-1.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0FQP5B965?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0FQP5B965?tag=physicsofhobbies-21"
     price: 59.83
     rating: 4.4
     reviews: 8915
@@ -51,7 +51,7 @@ products:
     shortName: "Beizkna Kit 13 en 1"
     tier: "banco con más potencia"
     image: "/images/blog/2026-08-22-mejor-soldador-de-estano-portatil-o-de-banco-segun-la-ficha-2.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B09B3GRVTM?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B09B3GRVTM?tag=physicsofhobbies-21"
     price: 22.98
     rating: 4.4
     reviews: 8915
@@ -61,7 +61,7 @@ products:
     shortName: "PINE64 Pinecil"
     tier: "control de precisión y firmware"
     image: "/images/blog/2026-08-22-mejor-soldador-de-estano-portatil-o-de-banco-segun-la-ficha-3.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B096X6SG13?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B096X6SG13?tag=physicsofhobbies-21"
     price: 56.94
     rating: 4.6
     reviews: 2355
@@ -71,7 +71,7 @@ products:
     shortName: "Fanttik T1 Max"
     tier: "inalámbrico con soporte giratorio"
     image: "/images/blog/2026-08-22-mejor-soldador-de-estano-portatil-o-de-banco-segun-la-ficha-4.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0D41ZMDPD?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0D41ZMDPD?tag=physicsofhobbies-21"
     price: 99.99
     rating: 4.4
     reviews: 1825
@@ -81,7 +81,7 @@ products:
     shortName: "Set Soldador 24 en 1"
     tier: "kit económico de inicio"
     image: "/images/blog/2026-08-22-mejor-soldador-de-estano-portatil-o-de-banco-segun-la-ficha-5.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0D6YPJ6LC?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0D6YPJ6LC?tag=physicsofhobbies-21"
     price: 25.99
     rating: 4.5
     reviews: 728

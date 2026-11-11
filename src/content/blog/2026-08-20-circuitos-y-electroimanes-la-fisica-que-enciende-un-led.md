@@ -5,7 +5,7 @@ description: "Un cable, una pila y un LED que no enciende: así descubres por qu
 category: "electrónica"
 image: "/images/blog/2026-08-20-circuitos-y-electroimanes-la-fisica-que-enciende-un-led.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B075KPZM5N?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B075KPZM5N?tag=physicsofhobbies-21"
 productName: "Teenii Kit Científico de Electricidad y Magnetismo para Niños"
 ---
 

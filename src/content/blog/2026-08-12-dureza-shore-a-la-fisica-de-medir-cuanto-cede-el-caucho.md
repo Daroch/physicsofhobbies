@@ -5,7 +5,7 @@ description: "Ese neumático o esa junta de silicona que se deforma raro no es c
 category: "materiales"
 image: "/images/blog/2026-08-12-dureza-shore-a-la-fisica-de-medir-cuanto-cede-el-caucho.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B00M955ZLI?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B00M955ZLI?tag=physicsofhobbies-21"
 productName: "Durómetro Shore A para Caucho y Neumáticos"
 ---
 

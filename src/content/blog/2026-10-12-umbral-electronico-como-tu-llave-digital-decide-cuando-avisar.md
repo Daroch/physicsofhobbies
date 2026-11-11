@@ -5,7 +5,7 @@ description: "Una llave de clic te avisa con un salto mecánico; esta compara tu
 category: "electrónica"
 image: "/images/blog/2026-10-12-umbral-electronico-como-tu-llave-digital-decide-cuando-avisar.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B0CLNM3V54?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B0CLNM3V54?tag=physicsofhobbies-21"
 productName: "ATsafepro Llave dinamométrica digital de 3/8 pulgadas"
 ---
 

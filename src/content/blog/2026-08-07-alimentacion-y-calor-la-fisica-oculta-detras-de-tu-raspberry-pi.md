@@ -5,7 +5,7 @@ description: "Tu Home Assistant se cuelga o va lento y la culpa casi nunca es de
 category: "electrónica"
 image: "/images/blog/2026-08-07-alimentacion-y-calor-la-fisica-oculta-detras-de-tu-raspberry-pi.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B0D3FNL84M?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B0D3FNL84M?tag=physicsofhobbies-21"
 productName: "db-tronic Raspberry Pi 3 B+ Starter Kit"
 ---
 

@@ -41,7 +41,7 @@ products:
     shortName: "Freenove Starter Kit"
     tier: "Accesorios, sin placa"
     image: "/images/blog/2026-09-25-kit-de-iniciacion-raspberry-pi-que-modelo-y-ram-elegir-1.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B09ZXNL2WH?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B09ZXNL2WH?tag=physicsofhobbies-21"
     price: 64.95
     rating: 4.6
     reviews: 344
@@ -51,7 +51,7 @@ products:
     shortName: "db-tronic Pi4 2GB Kit"
     tier: "Pi4 gama entrada"
     image: "/images/blog/2026-09-25-kit-de-iniciacion-raspberry-pi-que-modelo-y-ram-elegir-2.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0DDZGB6S5?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0DDZGB6S5?tag=physicsofhobbies-21"
     price: 119.99
     rating: 4.2
     reviews: 69
@@ -61,7 +61,7 @@ products:
     shortName: "db-tronic Pi4 4GB Kit"
     tier: "Pi4 gama media"
     image: "/images/blog/2026-09-25-kit-de-iniciacion-raspberry-pi-que-modelo-y-ram-elegir-3.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0D1N3V2FF?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0D1N3V2FF?tag=physicsofhobbies-21"
     price: 154.99
     rating: 4.4
     reviews: 347
@@ -71,7 +71,7 @@ products:
     shortName: "iRasptek Pi5 4GB Kit"
     tier: "Pi5 sin potencia declarada"
     image: "/images/blog/2026-09-25-kit-de-iniciacion-raspberry-pi-que-modelo-y-ram-elegir-4.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0CZRJ238K?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0CZRJ238K?tag=physicsofhobbies-21"
     price: 203.21
     rating: 4.6
     reviews: 56
@@ -81,7 +81,7 @@ products:
     shortName: "db-tronic Pi5 8GB NVMe"
     tier: "Pi5 gama alta NVMe"
     image: "/images/blog/2026-09-25-kit-de-iniciacion-raspberry-pi-que-modelo-y-ram-elegir-5.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0CRMQCYXH?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0CRMQCYXH?tag=physicsofhobbies-21"
     price: 259.99
     rating: 4.2
     reviews: 351

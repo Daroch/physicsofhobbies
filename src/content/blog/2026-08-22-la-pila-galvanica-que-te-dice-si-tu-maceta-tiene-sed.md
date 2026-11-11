@@ -5,7 +5,7 @@ description: "Clavas dos varillas en la tierra y el aparato genera su propia cor
 category: "electrónica"
 image: "/images/blog/2026-08-22-la-pila-galvanica-que-te-dice-si-tu-maceta-tiene-sed.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B0G25F31KR?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B0G25F31KR?tag=physicsofhobbies-21"
 productName: "YAMRON Medidor de Humedad del Suelo"
 ---
 

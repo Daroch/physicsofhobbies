@@ -39,7 +39,7 @@ products:
     shortName: "Eventek IR -50/500°C"
     tier: "Entrada, sin emisividad ajustable"
     image: "/images/blog/2026-08-13-termometro-infrarrojo-que-rango-y-que-emisividad-necesitas-1.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B06Y557PC6?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B06Y557PC6?tag=physicsofhobbies-21"
     price: 18.99
     rating: 4.4
     reviews: 7420
@@ -49,7 +49,7 @@ products:
     shortName: "Eventek IR -50/600°C"
     tier: "Equilibrado con emisividad ajustable"
     image: "/images/blog/2026-08-13-termometro-infrarrojo-que-rango-y-que-emisividad-necesitas-2.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B07F7HX5T9?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B07F7HX5T9?tag=physicsofhobbies-21"
     price: 19.99
     rating: 4.4
     reviews: 4981
@@ -59,7 +59,7 @@ products:
     shortName: "Tilswall W300 -50/800°C"
     tier: "Rango alto + sonda de contacto"
     image: "/images/blog/2026-08-13-termometro-infrarrojo-que-rango-y-que-emisividad-necesitas-3.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B08Z7941ZP?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B08Z7941ZP?tag=physicsofhobbies-21"
     price: 26.99
     rating: 4.3
     reviews: 3060
@@ -69,7 +69,7 @@ products:
     shortName: "ERICKHILL IR compacto"
     tier: "Compacto, rango medio"
     image: "/images/blog/2026-08-13-termometro-infrarrojo-que-rango-y-que-emisividad-necesitas-4.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0C72MDQ2Z?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0C72MDQ2Z?tag=physicsofhobbies-21"
     price: 19.99
     rating: 4.5
     reviews: 2742
@@ -79,7 +79,7 @@ products:
     shortName: "ThermoPro TP30"
     tier: "Ficha incompleta en rango"
     image: "/images/blog/2026-08-13-termometro-infrarrojo-que-rango-y-que-emisividad-necesitas-5.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0BGGJH3G2?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0BGGJH3G2?tag=physicsofhobbies-21"
     price: 18.99
     rating: 4.5
     reviews: 1396

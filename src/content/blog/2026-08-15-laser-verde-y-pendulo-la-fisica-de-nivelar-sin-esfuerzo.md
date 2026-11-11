@@ -5,7 +5,7 @@ description: "Un péndulo interno hace el trabajo de nivelar mientras tú solo a
 category: "óptica"
 image: "/images/blog/2026-08-15-laser-verde-y-pendulo-la-fisica-de-nivelar-sin-esfuerzo.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B0C2PMH641?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B0C2PMH641?tag=physicsofhobbies-21"
 productName: "Enventor Nivel Láser Autonivelante de 50M"
 ---
 

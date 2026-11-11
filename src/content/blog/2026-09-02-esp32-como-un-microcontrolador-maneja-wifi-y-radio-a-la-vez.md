@@ -5,7 +5,7 @@ description: "Un chip que hace de puente entre tus sensores y la nube, con dos n
 category: "electrónica"
 image: "/images/blog/2026-09-02-esp32-como-un-microcontrolador-maneja-wifi-y-radio-a-la-vez.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B0CTMQQ1W4?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B0CTMQQ1W4?tag=physicsofhobbies-21"
 productName: "LAFVIN Kit básico de inicio para placa de desarrollo ESP32"
 ---
 

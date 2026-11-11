@@ -5,7 +5,7 @@ description: "Un multímetro te dice si un condensador está muerto, pero no si 
 category: "electrónica"
 image: "/images/blog/2026-08-13-la-impedancia-oculta-detras-de-cada-condensador-y-bobina.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B0FL7QG7MX?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B0FL7QG7MX?tag=physicsofhobbies-21"
 productName: "FNIRSI LC1020E Medidor Digital LCR 100kHz"
 ---
 

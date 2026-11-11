@@ -5,7 +5,7 @@ description: "Cada superficie de vidrio sin tratar te roba hasta un 4% de luz, y
 category: "óptica"
 image: "/images/blog/2026-10-17-reflexion-de-fresnel-por-que-los-recubrimientos-de-tu-telescopio-importan.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B0CG7PNPCB?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B0CG7PNPCB?tag=physicsofhobbies-21"
 productName: "CELTICBIRD Telescopio para Adultos Principiantes en astronomía"
 ---
 

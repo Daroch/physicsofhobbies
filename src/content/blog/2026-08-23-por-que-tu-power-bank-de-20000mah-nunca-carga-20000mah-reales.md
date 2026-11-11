@@ -5,7 +5,7 @@ description: "La capacidad que ves en la caja y la que realmente llega a tu móv
 category: "electrónica"
 image: "/images/blog/2026-08-23-por-que-tu-power-bank-de-20000mah-nunca-carga-20000mah-reales.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B0F84D5PRT?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B0F84D5PRT?tag=physicsofhobbies-21"
 productName: "Power Bank 22.5W 20000mAh Bateria Externa Carga Rapida"
 ---
 

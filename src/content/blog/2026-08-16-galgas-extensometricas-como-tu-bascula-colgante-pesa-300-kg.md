@@ -5,7 +5,7 @@ description: "Colgar un ciervo de 80 kg de una báscula de baño no funciona, pe
 category: "mecánica"
 image: "/images/blog/2026-08-16-galgas-extensometricas-como-tu-bascula-colgante-pesa-300-kg.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B0DBZHDCZ5?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B0DBZHDCZ5?tag=physicsofhobbies-21"
 productName: "GRAM PRES Báscula Digital Colgante 660 lb/300 kg Con Gancho"
 ---
 

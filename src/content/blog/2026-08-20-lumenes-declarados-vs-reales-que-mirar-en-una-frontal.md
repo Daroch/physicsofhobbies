@@ -41,7 +41,7 @@ products:
     shortName: "Hyted Frontal LED"
     tier: "mayor lúmenes declarados"
     image: "/images/blog/2026-08-20-lumenes-declarados-vs-reales-que-mirar-en-una-frontal-1.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B07Z4WT769?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B07Z4WT769?tag=physicsofhobbies-21"
     price: 19.89
     rating: 4.3
     reviews: 5598
@@ -51,7 +51,7 @@ products:
     shortName: "Frontal LED 2 unidades"
     tier: "pack doble con sensor"
     image: "/images/blog/2026-08-20-lumenes-declarados-vs-reales-que-mirar-en-una-frontal-2.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B09ZSWHN2Z?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B09ZSWHN2Z?tag=physicsofhobbies-21"
     price: 19.99
     rating: 4.5
     reviews: 3063
@@ -61,7 +61,7 @@ products:
     shortName: "POKISEED USB-C 5000mAh"
     tier: "única con batería declarada"
     image: "/images/blog/2026-08-20-lumenes-declarados-vs-reales-que-mirar-en-una-frontal-3.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B09MS489TF?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B09MS489TF?tag=physicsofhobbies-21"
     price: 39.99
     rating: 4.6
     reviews: 2727
@@ -71,7 +71,7 @@ products:
     shortName: "flintronic Frontal USB-C"
     tier: "sin batería incluida"
     image: "/images/blog/2026-08-20-lumenes-declarados-vs-reales-que-mirar-en-una-frontal-4.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0816C6MQ2?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0816C6MQ2?tag=physicsofhobbies-21"
     price: 15.99
     rating: 4.4
     reviews: 2247
@@ -81,7 +81,7 @@ products:
     shortName: "COPIC Frontal con sensor"
     tier: "gama económica con luz roja"
     image: "/images/blog/2026-08-20-lumenes-declarados-vs-reales-que-mirar-en-una-frontal-5.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B09JZJ4JHK?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B09JZJ4JHK?tag=physicsofhobbies-21"
     price: 15.47
     rating: 4.5
     reviews: 1305

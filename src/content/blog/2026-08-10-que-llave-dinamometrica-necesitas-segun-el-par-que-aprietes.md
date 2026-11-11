@@ -39,7 +39,7 @@ products:
     shortName: "Amazon Basics 1/4\""
     tier: "1/4\" · par bajo"
     image: "/images/blog/roundup-llave-14.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B07SZVW98Z?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B07SZVW98Z?tag=physicsofhobbies-21"
     price: 15.49
     rating: 4.2
     reviews: 4060
@@ -49,7 +49,7 @@ products:
     shortName: "VANPO 3/8\""
     tier: "3/8\" · uso general"
     image: "/images/blog/roundup-llave-38.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0CXDNQYT2?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0CXDNQYT2?tag=physicsofhobbies-21"
     price: 30.38
     rating: 4.5
     reviews: 1161
@@ -59,7 +59,7 @@ products:
     shortName: "Genérica 1/2\""
     tier: "1/2\" · par alto"
     image: "/images/blog/roundup-llave-12.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0DNQ8CJ3H?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0DNQ8CJ3H?tag=physicsofhobbies-21"
     price: 28.29
     rating: 4.5
     reviews: 270

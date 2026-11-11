@@ -5,7 +5,7 @@ description: "Cada foto que tomas de una galaxia esconde más ruido que señal, 
 category: "óptica"
 image: "/images/blog/2026-10-22-ruido-y-senal-la-fisica-del-apilado-en-astrofotografia.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B0GYX9GSVX?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B0GYX9GSVX?tag=physicsofhobbies-21"
 productName: "ZWO Seestar - Telescopio inteligente S30 Pro"
 ---
 

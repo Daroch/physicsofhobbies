@@ -5,7 +5,7 @@ description: "Apuntas, disparas y lees la temperatura de una sartén al rojo sin
 category: "óptica"
 image: "/images/blog/2026-08-21-radiacion-termica-como-un-laser-mide-temperatura-sin-tocar.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B0DQY696LG?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B0DQY696LG?tag=physicsofhobbies-21"
 productName: "HOTUT Termómetro Infrarrojo"
 ---
 

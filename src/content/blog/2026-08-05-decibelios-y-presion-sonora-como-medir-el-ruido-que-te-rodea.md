@@ -5,7 +5,7 @@ description: "El vecino de arriba, la sierra de mesa, la oficina abierta: aquí 
 category: "acústica"
 image: "/images/blog/2026-08-05-decibelios-y-presion-sonora-como-medir-el-ruido-que-te-rodea.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B0D9835CLV?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B0D9835CLV?tag=physicsofhobbies-21"
 productName: "Sonómetro digital 30-130 dB"
 ---
 

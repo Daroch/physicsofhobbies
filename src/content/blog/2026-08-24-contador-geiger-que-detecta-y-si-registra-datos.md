@@ -40,7 +40,7 @@ products:
     shortName: "AEGTEST Radar-5633"
     tier: "el único que dice en qué mide"
     image: "/images/blog/2026-08-24-contador-geiger-que-detecta-y-si-registra-datos-6.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0DT5TKH6P?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0DT5TKH6P?tag=physicsofhobbies-21"
     price: 69.99
     rating: 4.2
     reviews: 279
@@ -50,7 +50,7 @@ products:
     shortName: "GQ GMC-800"
     tier: "registro de datos declarado"
     image: "/images/blog/2026-08-24-contador-geiger-que-detecta-y-si-registra-datos-3.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0CKM8NML7?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0CKM8NML7?tag=physicsofhobbies-21"
     price: 99
     rating: 4.6
     reviews: 1211
@@ -60,7 +60,7 @@ products:
     shortName: "FS5000"
     tier: "software de PC declarado"
     image: "/images/blog/2026-08-24-contador-geiger-que-detecta-y-si-registra-datos-7.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0D3PX1W5B?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0D3PX1W5B?tag=physicsofhobbies-21"
     price: 79
     rating: 4.5
     reviews: 215
@@ -70,7 +70,7 @@ products:
     shortName: "GQ GMC-500+"
     tier: "el de más reseñas"
     image: "/images/blog/2026-08-24-contador-geiger-que-detecta-y-si-registra-datos-1.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B071JWB7TJ?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B071JWB7TJ?tag=physicsofhobbies-21"
     price: 157
     rating: 4.6
     reviews: 1824
@@ -80,7 +80,7 @@ products:
     shortName: "GQ GMC-320 Plus"
     tier: "gama media GQ"
     image: "/images/blog/2026-08-24-contador-geiger-que-detecta-y-si-registra-datos-4.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B00ROHGWIQ?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B00ROHGWIQ?tag=physicsofhobbies-21"
     price: 125
     rating: 4.6
     reviews: 849
@@ -90,7 +90,7 @@ products:
     shortName: "GQ GMC-300S"
     tier: "entrada de la gama GQ"
     image: "/images/blog/2026-08-24-contador-geiger-que-detecta-y-si-registra-datos-2.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0B541D433?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0B541D433?tag=physicsofhobbies-21"
     price: 89
     rating: 4.6
     reviews: 1252
@@ -100,7 +100,7 @@ products:
     shortName: "Fellat Dosímetro"
     tier: "pantalla grande"
     image: "/images/blog/2026-08-24-contador-geiger-que-detecta-y-si-registra-datos-5.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0B3MH4G2T?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0B3MH4G2T?tag=physicsofhobbies-21"
     price: 79.99
     rating: 4.3
     reviews: 331

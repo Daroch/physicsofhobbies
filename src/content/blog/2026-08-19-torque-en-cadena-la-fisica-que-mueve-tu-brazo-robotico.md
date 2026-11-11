@@ -5,7 +5,7 @@ description: "Cada centímetro que alargas el brazo multiplica la carga sobre el
 category: "robótica"
 image: "/images/blog/2026-08-19-torque-en-cadena-la-fisica-que-mueve-tu-brazo-robotico.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B085C2S1N7?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B085C2S1N7?tag=physicsofhobbies-21"
 productName: "Adeept Kit de brazo robótico 5-DOF compatible con Arduino IDE"
 ---
 

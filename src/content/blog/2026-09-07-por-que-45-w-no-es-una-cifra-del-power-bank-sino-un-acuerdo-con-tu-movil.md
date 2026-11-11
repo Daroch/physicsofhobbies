@@ -5,7 +5,7 @@ description: "Los 45 W de la caja solo existen si tu móvil, el cable y la bater
 category: "electrónica"
 image: "/images/blog/2026-09-07-por-que-45-w-no-es-una-cifra-del-power-bank-sino-un-acuerdo-con-tu-movil.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B0DSPVDYQ9?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B0DSPVDYQ9?tag=physicsofhobbies-21"
 productName: "UGREEN Nexode 45W Power Bank 20000mAh Batería Externa Portátil"
 ---
 

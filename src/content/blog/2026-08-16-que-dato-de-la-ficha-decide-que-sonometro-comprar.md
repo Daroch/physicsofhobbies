@@ -41,7 +41,7 @@ products:
     shortName: "Tadeto básico (2 colores)"
     tier: "Entrada, sin extras declarados"
     image: "/images/blog/2026-08-16-que-dato-de-la-ficha-decide-que-sonometro-comprar-1.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B09T37812W?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B09T37812W?tag=physicsofhobbies-21"
     price: 32.99
     rating: 4.3
     reviews: 3339
@@ -51,7 +51,7 @@ products:
     shortName: "TopTes TS-501B"
     tier: "Con captura de pico"
     image: "/images/blog/2026-08-16-que-dato-de-la-ficha-decide-que-sonometro-comprar-3.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0B9BC4N2X?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0B9BC4N2X?tag=physicsofhobbies-21"
     price: 32.99
     rating: 4.4
     reviews: 2474
@@ -61,7 +61,7 @@ products:
     shortName: "Mcbazel Digital"
     tier: "Precio más bajo"
     image: "/images/blog/2026-08-16-que-dato-de-la-ficha-decide-que-sonometro-comprar-4.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0D5TBSSR6?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0D5TBSSR6?tag=physicsofhobbies-21"
     price: 16.14
     rating: 4
     reviews: 514
@@ -71,7 +71,7 @@ products:
     shortName: "Tadeto con HOLD/MAX-MIN"
     tier: "Más completo, más caro"
     image: "/images/blog/2026-08-16-que-dato-de-la-ficha-decide-que-sonometro-comprar-5.jpg"
-    amazonUrl: "https://www.amazon.es/dp/B0BHYWZTDM?tag=physicshobbie-21"
+    amazonUrl: "https://www.amazon.es/dp/B0BHYWZTDM?tag=physicsofhobbies-21"
     price: 35.99
     rating: 4.3
     reviews: 401

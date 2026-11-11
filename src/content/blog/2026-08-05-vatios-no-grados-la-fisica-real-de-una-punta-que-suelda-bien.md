@@ -5,7 +5,7 @@ description: "Tocas un cable grueso con el soldador y la punta se enfría de gol
 category: "electrónica"
 image: "/images/blog/2026-08-05-vatios-no-grados-la-fisica-real-de-una-punta-que-suelda-bien.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B096X6SG13?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B096X6SG13?tag=physicsofhobbies-21"
 productName: "PINECIL Soldador portátil USB-C"
 ---
 

@@ -5,7 +5,7 @@ description: "Mil quinientos lúmenes no dicen nada sobre cuánta luz te llega a
 category: "óptica"
 image: "/images/blog/2026-09-27-lumenes-vs-lux-la-fisica-del-haz-de-230-en-tu-frontal.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
-amazonUrl: "https://www.amazon.es/dp/B09MS489TF?tag=physicshobbie-21"
+amazonUrl: "https://www.amazon.es/dp/B09MS489TF?tag=physicsofhobbies-21"
 productName: "POKISEED Linterna Frontal LED Recargable 1500 Lúmenes"
 ---
 
