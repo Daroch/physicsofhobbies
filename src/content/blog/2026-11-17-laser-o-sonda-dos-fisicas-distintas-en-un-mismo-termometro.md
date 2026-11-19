@@ -1,7 +1,7 @@
 ---
 title: "Láser o sonda: dos físicas distintas en un mismo termómetro"
 pubDate: 2026-11-17
-description: "El láser mide la superficie por radiación, la sonda mide por contacto directo: entender la diferencia evita errores de 20 o 30 grados en la cocina o el taller."
+description: "El láser mide la superficie por radiación, la sonda mide por contacto directo: entender la diferencia evita que leas la piel del objeto creyendo que es su interior."
 category: "materiales"
 image: "/images/blog/2026-11-17-laser-o-sonda-dos-fisicas-distintas-en-un-mismo-termometro.jpg"
 tags: ["ciencia", "hobbies", "divulgación"]
@@ -15,9 +15,9 @@ El punto láser no mide temperatura directamente: capta la radiación infrarroja
 
 La trampa más común es usar el láser para decidir si un líquido o un alimento ya alcanzó su temperatura objetivo. El aceite en la sartén puede marcar 180°C en la superficie mientras el centro de la masa sigue frío, porque el calor tarda en propagarse hacia adentro por conducción. Lo mismo pasa con el aceite para freír: la capa superior se calienta antes que el fondo si no remueves. Si tu objetivo es temperatura interna —carne, repostería, líquidos en un recipiente profundo—, la sonda es la única herramienta fiable; el láser solo te sirve para verificar temperaturas superficiales rápidas, como una plancha, un radiador o un componente electrónico accesible.
 
-Prueba rápida: calienta un vaso de agua a fuego medio. En el minuto 2, apunta con el láser a la superficie del agua y anota el valor. Acto seguido, sumerge la sonda 3-4 cm y espera a que el número se estabilice, unos 8-10 segundos. Compara ambas lecturas: la diferencia que veas es exactamente la que existe entre temperatura superficial y temperatura interna, y crece cuanto más lento sea el calentamiento o más grueso el material.
+Prueba rápida: calienta un vaso de agua a fuego medio. En el minuto 2, apunta con el láser a la superficie del agua y anota el valor. Acto seguido, sumerge la sonda 3-4 cm y espera a que el número deje de moverse. Compara ambas lecturas: la diferencia que veas es exactamente la que existe entre temperatura superficial y temperatura interna, y crece cuanto más lento sea el calentamiento o más grueso el material.
 
-Este modelo de MESTEK integra ambos sistemas en un solo cuerpo: el láser IR cubre de -50°C a 800°C con emisividad ajustable, útil para hornos, motores o superficies metálicas, y la sonda de contacto añadida permite medir temperatura interna en líquidos o alimentos hasta valores más moderados, con pantalla LCD a color y alarma configurable. La emisividad ajustable del láser sigue siendo clave para superficies reflectantes (acero pulido, aluminio), donde sin corregirla el valor puede desviarse 15-20°C por defecto. Como limitación real: la sonda tiene un tiempo de respuesta de varios segundos y no sustituye a un termómetro de cocina de alta gama para repostería de precisión, pero cubre bien el uso mixto taller-cocina que la mayoría necesita.
+Este modelo de MESTEK integra ambos sistemas en un solo cuerpo: el láser IR cubre de -50°C a 800°C con emisividad ajustable, útil para hornos, motores o superficies metálicas, y la sonda de contacto añadida permite medir temperatura interna en líquidos o alimentos hasta valores más moderados, con pantalla LCD a color y alarma configurable. La emisividad ajustable del láser sigue siendo clave para superficies reflectantes (acero pulido, aluminio), que emiten muy poco: sin corregirla, el termómetro interpreta esa poca radiación como un objeto más frío y la lectura se queda corta, tanto más cuanto más caliente esté la pieza. Lo que su ficha no declara es el tiempo de respuesta ni el rango de la sonda, así que para repostería de precisión conviene un termómetro de cocina que sí los especifique; para el uso mixto taller-cocina, la combinación cubre lo habitual.
 
 ---
 
