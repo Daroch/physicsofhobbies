@@ -1,7 +1,7 @@
 ---
-title: "Arrancador de baterías: cilindrada y compresor según ficha"
+title: "Arrancador de baterías con compresor: cuál arranca tu motor"
 pubDate: 2026-11-20
-description: "La corriente pico declarada va de 1000 A a 9000 A y la cilindrada máxima oscila entre 5 L y 12 L, con datos de batería casi siempre ausentes."
+description: "Del 1000 A al 9000 A sin norma que los mida: la cilindrada declarada y los Wh dicen mucho más que el amperaje sobre si arrancará tu coche."
 category: "electrónica"
 tags: ["comparativa", "ciencia", "hobbies"]
 type: "roundup"
@@ -12,7 +12,7 @@ audience: "Útil para quien necesita arrancar un coche o furgoneta con la bater�
 
 specsThatMatter:
   - spec: "Corriente pico (A)"
-    why: "Es la corriente instantánea que el aparato puede entregar durante el arranque, no una corriente sostenida. Un valor alto en A no garantiza por sí solo que el motor arranque: lo relevante es que la ficha declare una cilindrada compatible con tu motor, no solo el pico en amperios."
+    why: "Es la corriente instantánea que el aparato dice poder entregar, no una corriente sostenida, y no hay una norma común que fije cómo se mide: cada fabricante usa su método, o ninguno. Por eso 9000 A de una marca no son comparables con 1000 A de otra. Úsala solo para comparar modelos de un mismo fabricante; para decidir, mira la cilindrada declarada."
   - spec: "Cilindrada máxima declarada (gasolina y diésel)"
     why: "El diésel exige más corriente de arranque en frío que la gasolina de la misma cilindrada, así que un mismo aparato suele declarar cifras distintas para cada combustible. Cuando la propia ficha se contradice entre título y viñetas (como en uno de estos modelos), no hay forma fiable de saber el límite real."
   - spec: "Compresor de aire (PSI y L/min)"
@@ -27,8 +27,8 @@ chooseBy:
     priority: "peso bajo con compresor de PSI declarado (no solo arrancador)"
   - scenario: "necesitas saber cuántos arranques da una carga"
     priority: "número de arranques por carga declarado explícitamente, no estimado por mAh"
-  - scenario: "priorizas la garantía por si falla el BMS"
-    priority: "meses de garantía declarados en la ficha"
+  - scenario: "priorizas la garantía"
+    priority: "meses declarados en la ficha: de los cinco, solo WOLFBOX MegaVolt10 Air (24) y NOCO (12) los dan"
 
 comparison:
   columns: ["Corriente pico (A)", "Compresor (PSI)", "Cilindrada gasolina (L)", "Cilindrada diésel (L)", "Peso (kg)"]
@@ -37,14 +37,14 @@ comparison:
 products:
   - name: "BRPOM Arrancador de Baterías de Coche 9000A con Compresor de Aire 160 PSI, Arrancador de Coches 12 V, para Motores Gasolina y Diésel hasta 12 L, Pantalla LCD de 3,2 Pulgadas y Luz LED 600 LM Plata"
     shortName: "BRPOM G20"
-    tier: "Ligero con compresor"
+    tier: "El que más promete"
     image: "/images/blog/2026-11-20-arrancador-de-baterias-cilindrada-y-compresor-segun-ficha-1.jpg"
     amazonUrl: "https://www.amazon.es/dp/B0F6Y1L3Y4?tag=physicsofhobbies-21"
     price: 54.14
     rating: 4.6
     reviews: 73
-    specs: ["9000", "160", "12 (combinado con diésel según título)", "no disponible (cifra combinada)", "0.9"]
-    highlight: "Según su ficha es el más ligero del grupo (900 g) con compresor de 160 PSI. La cilindrada de 12 L no distingue gasolina de diésel, viene del título, no de una especificación separada."
+    specs: ["9000", "160", "12 (solo en el título)", "12 (solo en el título)", "0.9"]
+    highlight: "Es el más barato y el más ligero de los cinco comparados, y el que más promete: 9000 A y 12 L tanto para gasolina como para diésel. Pesa 50 g menos que el WOLFBOX MegaVolt10 Air, que declara 2000 A y 5 L, y su ficha no da la energía en Wh: no hay batería que respalde esa diferencia."
   - name: "WOLFBOX 2000A Arrancador de Emergencia 12V con Compresor 150 PSI, Jump Starter Portátil 37Wh para Gasolina hasta 5L, Power Bank con Cables, Función Boost y Luz LED"
     shortName: "WOLFBOX MegaVolt10 Air"
     tier: "Entrada con batería en Wh"
@@ -54,7 +54,7 @@ products:
     rating: 4.6
     reviews: 229
     specs: ["2000", "150", "5", "no disponible", "0.95"]
-    highlight: "Es de los pocos de este grupo que declara la energía en Wh (37 Wh) y el número de arranques por carga (hasta 30). Su cilindrada máxima de gasolina declarada es la más baja del grupo y no da cifra para diésel."
+    highlight: "El único de los cinco que declara a la vez la energía (37 Wh), los arranques por carga (hasta 30) y una prueba de inflado con medida de neumático (195/65 R15, de 29 a 36 PSI en poco más de un minuto). Su límite es honesto pero corto: 5 L de gasolina y ningún dato para diésel. También se vende en color Rose Gold (B0GMH634TN) al mismo precio."
   - name: "Arrancador de Baterias de Coche con Compresor de Aire, 3000A WOLFBOX Arrancador de Coche Portatil (8L Gas/10L Diesel) con Cargador Rápido 65W, Pantalla Grande y Linterna LED"
     shortName: "WOLFBOX MegaVolt16 Air"
     tier: "Potencia de carga más alta"
@@ -64,7 +64,7 @@ products:
     rating: 4.6
     reviews: 1672
     specs: ["3000", "160", "8", "6 o 10 (ficha contradictoria)", "2.4"]
-    highlight: "Su ficha se contradice en la cilindrada diésel (6 L en viñetas, 10 L en título), así que no uses ese dato para decidir. Destaca por su puerto USB-C de 65 W para carga de dispositivos, superior al resto del grupo."
+    highlight: "Su ficha se contradice en diésel (6 L en las viñetas, 10 L en el título): cuenta con 6 L. Aun así, iguala al TOPDON en diésel, declara 59,2 Wh y su USB-C de 65 W es la potencia de carga más alta declarada de los cinco."
   - name: "NOCO Boost GB40: Arrancador de Batería de Litio de 1000A UltraSafe – Antichispas y Protección contra Polaridad Inversa – Power Bank USB y Linterna LED – para Motores de Gasolina 6,0L y Diésel 3,0L"
     shortName: "NOCO Boost GB40"
     tier: "Sin compresor, con arranques declarados"
@@ -74,7 +74,7 @@ products:
     rating: 4.4
     reviews: 127604
     specs: ["1000", "sin compresor", "6.0", "3.0", "1.1 (o 1.36 según tabla)"]
-    highlight: "Es el único sin compresor del grupo, pero su ficha es de las más completas: declara 20 arranques por carga y retención de carga a un año. Su pico de 1000 A es el más bajo del grupo."
+    highlight: "El único sin compresor de los cinco. Anuncia el pico más bajo, 1000 A, y a cambio declara 20 arranques por carga y que conserva el 70 % de la carga hasta un año, el dato que importa en un aparato que vive en el maletero. No declara la energía en Wh."
   - name: "TOPDON V2200Air Arrancador de Baterias de Coche con Compresor"
     shortName: "TOPDON V2200Air"
     tier: "Sin batería declarada"
@@ -84,35 +84,35 @@ products:
     rating: 4.3
     reviews: 53
     specs: ["2200", "150", "8.0", "6.0", "2.14"]
-    highlight: "Declara cilindrada diésel de 6 L, la más alta junto con la contradicción del WOLFBOX de 16, pero no da ninguna cifra de batería (ni mAh ni Wh), lo que impide estimar su autonomía real."
+    highlight: "Declara 8 L de gasolina y 6 L de diésel, y un USB PD de 45 W. Es el más caro de los cinco y el único que no da ninguna cifra de batería (ni mAh ni Wh), así que no hay forma de saber cuánta energía pagas."
 
 pitfalls:
   - claim: "Arrancador de 9000 A"
-    reality: "Es la corriente pico instantánea, no sostenida. No implica que arranque motores más grandes que otro con menos amperios si la ficha no declara una cilindrada mayor compatible."
+    reality: "No hay norma común para la corriente pico. El BRPOM anuncia 9000 A con 900 g, el WOLFBOX MegaVolt10 Air 2000 A con 950 g y el NOCO GB40 1000 A con 1,1 kg. Con masas de batería tan parecidas, un factor de 4,5 no sale de la química: sale de cómo, o si, se mide."
   - claim: "Infla un neumático en 60 segundos / 3 minutos"
     reality: "Cada fabricante mide con una medida de neumático distinta (o no la indica), así que estos tiempos no son comparables entre fichas."
   - claim: "Para motores de gasolina y diésel hasta 12 L"
-    reality: "La cifra procede del título y mezcla ambos combustibles sin desglosar; no hay valor separado para diésel en la ficha de ese producto."
+    reality: "Un diésel pide más corriente de arranque que un gasolina de la misma cilindrada, por eso las fichas serias dan dos cifras: el NOCO declara 6 L de gasolina y 3 L de diésel. La misma cifra para los dos combustibles es la señal de que nadie la ha medido."
   - claim: "Power bank incluido"
     reality: "La mayoría de fichas no declara la potencia en W de los puertos USB, así que no se puede saber si carga un móvil rápido o lento."
 
 verdicts:
-  - profile: "uso ocasional en coche de gasolina pequeño"
+  - profile: "coche de gasolina de hasta 5 L y quieres compresor: la mejor relación calidad-precio"
     pick: "WOLFBOX MegaVolt10 Air (B0FNWHS4DQ)"
-    why: "Declara Wh, arranques por carga y compresor, con el menor precio del grupo entre los que dan estos tres datos."
-  - profile: "furgoneta o motor diésel grande"
-    pick: "TOPDON V2200Air (B0F846Q8F8)"
-    why: "Es el único con cilindrada diésel declarada sin contradicción (6 L) y sin ambigüedad en el título."
-  - profile: "prioriza llevarlo siempre en la guantera"
-    pick: "BRPOM G20 (B0F6Y1L3Y4)"
-    why: "900 g es el peso más bajo del grupo, con compresor de 160 PSI incluido."
-  - profile: "quiere comparar autonomía real entre arranques"
-    pick: "no comprar ninguno de estos sin pedir el dato al vendedor"
-    why: "Tres de cinco fichas no declaran Wh ni número de arranques por carga, así que no se puede comparar autonomía real."
+    why: "Por 59,99 € es el único que declara energía, arranques por carga y una prueba de inflado verificable, con la garantía más larga declarada (24 meses). Sus cifras son modestas, pero son cifras."
+  - profile: "motor diésel o gasolina de más de 5 L"
+    pick: "WOLFBOX MegaVolt16 Air (B0DGSJWN8D)"
+    why: "Contando con el dato más bajo de su ficha (6 L de diésel) iguala al TOPDON, declara 59,2 Wh y cuesta 60 € menos."
+  - profile: "ya tienes compresor y quieres el arrancador que aguante meses en el maletero"
+    pick: "NOCO Boost GB40 (B015TKUPIC)"
+    why: "Es el único que declara cuánta carga conserva con el tiempo (70 % a un año). No lleva compresor y su ficha no da Wh."
+  - profile: "presupuesto mínimo absoluto"
+    pick: "BRPOM G20 (B0F6Y1L3Y4), con cautela"
+    why: "Es el más barato, pero sus 9000 A y 12 L no casan con su peso. Trátalo como un arrancador para gasolina pequeña, no como lo que anuncia."
 ---
 
 Un arrancador de baterías entrega un pulso de corriente muy alto durante unos segundos para suplir la falta de carga de la batería del coche, y un compresor de aire integrado añade la función de inflar neumáticos con la misma unidad. La física detrás es sencilla: cuanta más cilindrada tiene el motor, más corriente de arranque (y más tiempo sostenido) necesita, especialmente en diésel por su mayor compresión.
 
 El problema es que las fichas de este grupo no siempre separan bien ese dato por tipo de combustible, y en algún caso se contradicen entre el título del anuncio y las viñetas de características. Eso convierte la cilindrada declarada en el primer filtro real, por delante del número grande de amperios pico que anuncia cada título.
 
-La capacidad de batería en Wh, que determinaría cuántos arranques puedes hacer con una carga, es el dato que menos fabricantes declaran aquí: solo dos de los cinco productos dan una cifra de energía o de arranques por carga comprobable.
+La capacidad de batería en Wh, que determina cuántos arranques puedes hacer con una carga, es el dato que menos fabricantes declaran aquí: solo los dos WOLFBOX la dan, y el NOCO declara al menos cuántos arranques salen de una carga. Y hay una pista física que no falla: la energía y la corriente que puede soltar una batería de litio crecen con la masa de sus celdas. Tres de estos aparatos pesan entre 0,9 y 1,1 kg y anuncian de 1000 A a 9000 A. Esa diferencia no está en la batería.
